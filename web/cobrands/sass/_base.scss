@@ -1987,12 +1987,17 @@ table.nicetable {
   #sub_map_links,
   #fms_pan_zoom,
   .screen-only,
-  .olMapViewport {
+  .olMapViewport,
+  .big-green-banner,
+  .click-the-map,
+  #skip-this-step,
+  .my-account-buttons {
     display: none !important;
   }
 
   #map_box {
-    position: static !important;
+    position: relative !important;
+    top: 0 !important;
     height: 256px !important;
     width: auto !important;
     background: #f1eee9 !important; // cream colour to match OSM image
