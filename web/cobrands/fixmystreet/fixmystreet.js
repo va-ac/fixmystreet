@@ -213,6 +213,12 @@ fixmystreet.geolocate = {
     }
 };
 
+fixmystreet.update_list_item_buttons = function($list) {
+  $list.find('[name="shortlist-up"], [name="shortlist-down"]').prop('disabled', false);
+  $list.children(':first-child').find('[name="shortlist-up"]').prop('disabled', true);
+  $list.children(':last-child').find('[name="shortlist-down"]').prop('disabled', true);
+};
+
 fixmystreet.set_up = fixmystreet.set_up || {};
 $.extend(fixmystreet.set_up, {
   basics: function() {
@@ -227,7 +233,7 @@ $.extend(fixmystreet.set_up, {
     $('#pc').focus();
 
     // In case we've come here by clicking back to a form that disabled a submit button
-    $('input[type=submit]').removeAttr('disabled');
+    $('form.validate input[type=submit]').removeAttr('disabled');
 
     $('[data-confirm]').on('click', function() {
         return confirm(this.getAttribute('data-confirm'));
@@ -390,6 +396,57 @@ $.extend(fixmystreet.set_up, {
     });
   },
 
+  list_item_actions: function() {
+    $('.item-list').on('click', ':submit', function(e) {
+      e.preventDefault();
+
+      var $submitButton = $(this);
+      var $form = $(this).parents('form');
+      var $item = $form.parent('.item-list__item');
+      var $list = $item.parent('.item-list');
+
+      // The server expects to be told which button/input triggered the form
+      // submission. But $form.serialize() doesn't know that. So we inject a
+      // hidden input into the form, that can pass the name and value of the
+      // submit button to the server, as it expects.
+      var whatUserWants = $submitButton.prop('name');
+      var $hiddenInput =  $('<input>').attr({
+        type: 'hidden',
+        name: whatUserWants,
+        value: $submitButton.prop('value')
+      }).appendTo($form);
+
+      // Update UI while the ajax request is sent in the background.
+      if ('shortlist-down' === whatUserWants) {
+        $item.insertAfter( $item.next() );
+      } else if ('shortlist-up' === whatUserWants) {
+        $item.insertBefore( $item.prev() );
+      }
+
+      // Items have moved around. We need to make sure the "up" button on the
+      // first item, and the "down" button on the last item, are disabled.
+      fixmystreet.update_list_item_buttons($list);
+
+      $.ajax({
+        url: $form.prop('action'),
+        type: $form.prop('method'),
+        data: $form.serialize()
+      }).fail(function() {
+        // Undo the UI changes we made.
+        if ('shortlist-down' === whatUserWants) {
+          $item.insertBefore( $item.prev() );
+        } else if ('shortlist-up' === whatUserWants) {
+          $item.insertAfter( $item.next() );
+        }
+        fixmystreet.update_list_item_buttons($list);
+      }).complete(function() {
+        $hiddenInput.remove();
+      });
+
+      // :TODO: On ajax success, should we replace the current page markup
+      // with the markup returned in the ajax response?
+    });
+  },
 
   contribute_as: function() {
     $('.content').on('change', '.js-contribute-as', function(){

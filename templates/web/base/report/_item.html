@@ -1,3 +1,31 @@
+[% IF c.user.has_permission_to('planned_reports', problem.bodies_str_ids) AND c.user.is_planned_report(problem) %]
+    [% item_extra_class = "item-list__item--indented" %]
+    [% item_action = BLOCK %]
+        <input type="submit" name="shortlist-remove" value="[% loc('Remove from shortlist') %]" title="[% loc('Remove from shortlist') %]" class="item-list__item__shortlist-remove">
+    [% END %]
+
+[% ELSIF c.user.has_permission_to('planned_reports', problem.bodies_str_ids) AND problem.shortlisted_user %]
+    [% item_extra_class = "item-list__item--indented" %]
+    [% item_action = BLOCK %]
+        <input type="submit" name="shortlist-take" value="[% loc('Add to shortlist') %]" title="[% loc('Add to shortlist') %]" class="item-list__item__shortlist-take">
+    [% END %]
+
+[% ELSIF c.user.has_permission_to('planned_reports', problem.bodies_str_ids) %]
+    [% item_extra_class = "item-list__item--indented" %]
+    [% item_action = BLOCK %]
+        <input type="submit" name="shortlist-add" value="[% loc('Add to shortlist') %]" title="[% loc('Add to shortlist') %]" class="item-list__item__shortlist-add">
+    [% END %]
+[% END %]
+
+[% IF shortlist %]
+    [% item_extra_class = "item-list__item--indented item-list__item--act-and-sort" %]
+    [% item_action = BLOCK %]
+        [% item_action %]
+        <input type="submit" name="shortlist-up" value="[% loc('Up one') %]" title="[% loc('Up one') %]" class="item-list__item__shortlist-up" [% IF loop.first %]disabled[% END %]>
+        <input type="submit" name="shortlist-down" value="[% loc('Down one') %]" title="[% loc('Down one') %]" class="item-list__item__shortlist-down" [% IF loop.last %]disabled[% END %]>
+    [% END %]
+[% END %]
+
 <li class="item-list__item item-list--reports__item [% item_extra_class %]">
 <a href="[% c.cobrand.base_url_for_report( problem ) %][% problem.url %]">
     [% IF problem.photo %]
@@ -30,17 +58,11 @@
             [% END %]
         </small>
 </a>
-[% IF shortlist %]
+[% IF item_action %]
     <form action="" method="post">
         <input type="hidden" name="id" value="[% problem.id %]">
         <input type="hidden" name="token" value="[% csrf_token %]">
-      [% IF NOT loop.first %]
-        <input type="submit" name="shortlist-up" value="[% loc('Up one') %]">
-        <input type="submit" name="shortlist-0" value="[% loc('To top') %]">
-      [% END %]
-      [% IF NOT loop.last %]
-        <input type="submit" name="shortlist-down" value="[% loc('Down one') %]">
-      [% END %]
+        [% item_action %]
     </form>
 [% END ~%]
 </li>
