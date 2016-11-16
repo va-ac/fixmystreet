@@ -1044,4 +1044,16 @@ has duplicate_of => (
     },
 );
 
+has duplicates => (
+    is => 'ro',
+    lazy => 1,
+    default => sub {
+        my $self = shift;
+        my $id = $self->id;
+        my $idlen = length $id;
+        my @duplicates = $self->result_source->schema->resultset('Problem')->search({ extra => { like => "\%duplicate_of,I$idlen:$id%" } })->all;
+        return \@duplicates;
+    },
+);
+
 1;
