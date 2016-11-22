@@ -30,4 +30,17 @@
             [% END %]
         </small>
 </a>
+[% IF shortlist %]
+    <form action="" method="post">
+        <input type="hidden" name="id" value="[% problem.id %]">
+        <input type="hidden" name="token" value="[% csrf_token %]">
+      [% IF NOT loop.first %]
+        <input type="submit" name="shortlist-up" value="[% loc('Up one') %]">
+        <input type="submit" name="shortlist-0" value="[% loc('To top') %]">
+      [% END %]
+      [% IF NOT loop.last %]
+        <input type="submit" name="shortlist-down" value="[% loc('Down one') %]">
+      [% END %]
+    </form>
+[% END ~%]
 </li>
