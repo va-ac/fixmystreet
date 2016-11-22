@@ -319,6 +319,7 @@ sub inspect : Private {
         my $valid = 1;
         my $update_text;
         my $reputation_change = 0;
+        my %update_params = ();
 
         if ($permissions->{report_inspect}) {
             foreach (qw/detailed_information traffic_information duplicate_of/) {
@@ -345,6 +346,14 @@ sub inspect : Private {
             }
             if ( $problem->state eq 'hidden' ) {
                 $problem->get_photoset->delete_cached;
+            }
+            if ( $problem->state eq 'duplicate' && $old_state ne 'duplicate' ) {
+                # We only want to add an automatic update if one doesn't already
+                # exist.
+                if ( $problem->comments->search({ problem_state => 'duplicate' })->count == 0 ) {
+                    $update_text = $update_text || _("Thank you for your report. This problem has already been reported.");
+                }
+                $update_params{problem_state} = "duplicate";
             }
             if ( $problem->state ne 'duplicate' ) {
                 $problem->unset_extra_metadata('duplicate_of');
@@ -392,6 +401,7 @@ sub inspect : Private {
                     state => 'confirmed',
                     mark_fixed => 0,
                     anonymous => 0,
+                    %update_params,
                 } );
             }
             # This problem might no longer be visible on the current cobrand,
