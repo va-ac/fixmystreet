@@ -440,14 +440,21 @@ sub nearby : Private {
     my $nearby = $c->model('DB::Nearby')->nearby(
         $c, $dist, [ $p->id ], 5, $p->latitude, $p->longitude, undef, [ $p->category ], undef
     );
-    # my @reports = map { $_->problem : $_; } @$nearby;
+    my @pins = map {
+        my $p = $_->problem;
+        my $colour = $c->cobrand->pin_colour( $p, 'around' );
+        [ $p->latitude, $p->longitude,
+          $colour,
+          $p->id, $p->title_safe
+        ]
+    } @$nearby;
 
     my $on_map_list_html = $c->render_fragment(
         'around/on_map_list_items.html',
         { on_map => [], around_map => $nearby }
     );
 
-    my $json = {};
+    my $json = { pins => \@pins };
     $json->{current} = $on_map_list_html if $on_map_list_html;
     my $body = encode_json($json);
     $c->res->content_type('application/json; charset=utf-8');

@@ -402,7 +402,8 @@ $.extend(fixmystreet.set_up, {
               longitude: $('input[name="longitude"]').val()
           };
           $("#js-duplicate-reports ul").html("<li>Loading...</li>");
-          $.getJSON('/report/'+report_id+'/nearby', args, function(data) {
+          var nearby_url = '/report/'+report_id+'/nearby';
+          $.getJSON(nearby_url, args, function(data) {
               var duplicate_of = $("#report_inspect_form [name=duplicate_of]").val();
               var $reports = $(data.current)
                               .filter("li")
@@ -419,7 +420,17 @@ $.extend(fixmystreet.set_up, {
                   $(this).closest("li").addClass("item-list--reports__item--selected");
                   return false;
               });
+
+              show_nearby_pins(data);
           });
+      }
+
+      function show_nearby_pins(data) {
+          var markers = fixmystreet.maps.markers_list( data.pins, true );
+          // while (fixmystreet.markers.) {
+          //
+          // }
+          fixmystreet.markers.addFeatures( markers );
       }
 
       function state_change() {
