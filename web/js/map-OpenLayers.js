@@ -167,6 +167,35 @@ var fixmystreet = fixmystreet || {};
           } );
           fixmystreet.map.addControl( drag );
           drag.activate();
+      },
+
+      // `markers.redraw()` in markers_highlight will trigger an
+      // `overFeature` event if the mouse cursor is still over the same
+      // marker on the map, which would then run markers_highlight
+      // again, causing an infinite flicker while the cursor remains over
+      // the same marker. We really only want to redraw the markers when
+      // the cursor moves from one marker to another (ie: when there is an
+      // overFeature followed by an outFeature followed by an overFeature).
+      // Therefore, we keep track of the previous event in
+      // fixmystreet.latest_map_hover_event and only call markers_highlight
+      // if we know the previous event was different to the current one.
+      // (See the `overFeature` and `outFeature` callbacks inside of
+      // fixmystreet.select_feature).
+
+      markers_highlight: function(problem_id) {
+          for (var i = 0; i < fixmystreet.markers.features.length; i++) {
+              if (typeof problem_id == 'undefined') {
+                  // There is no highlighted marker, so unfade this marker
+                  fixmystreet.markers.features[i].attributes.faded = 0;
+              } else if (problem_id == fixmystreet.markers.features[i].attributes.id) {
+                  // This is the highlighted marker, unfade it
+                  fixmystreet.markers.features[i].attributes.faded = 0;
+              } else {
+                  // This is not the hightlighted marker, fade it
+                  fixmystreet.markers.features[i].attributes.faded = 1;
+              }
+          }
+          fixmystreet.markers.redraw();
       }
     };
 
@@ -193,35 +222,6 @@ var fixmystreet = fixmystreet || {};
             z = 13;
         }
         fixmystreet.map.setCenter(center, z);
-    }
-
-    // `markers.redraw()` in markers_highlight will trigger an
-    // `overFeature` event if the mouse cursor is still over the same
-    // marker on the map, which would then run markers_highlight
-    // again, causing an infinite flicker while the cursor remains over
-    // the same marker. We really only want to redraw the markers when
-    // the cursor moves from one marker to another (ie: when there is an
-    // overFeature followed by an outFeature followed by an overFeature).
-    // Therefore, we keep track of the previous event in
-    // fixmystreet.latest_map_hover_event and only call markers_highlight
-    // if we know the previous event was different to the current one.
-    // (See the `overFeature` and `outFeature` callbacks inside of
-    // fixmystreet.select_feature).
-
-    function markers_highlight(problem_id) {
-        for (var i = 0; i < fixmystreet.markers.features.length; i++) {
-            if (typeof problem_id == 'undefined') {
-                // There is no highlighted marker, so unfade this marker
-                fixmystreet.markers.features[i].attributes.faded = 0;
-            } else if (problem_id == fixmystreet.markers.features[i].attributes.id) {
-                // This is the highlighted marker, unfade it
-                fixmystreet.markers.features[i].attributes.faded = 0;
-            } else {
-                // This is not the hightlighted marker, fade it
-                fixmystreet.markers.features[i].attributes.faded = 1;
-            }
-        }
-        fixmystreet.markers.redraw();
     }
 
     function sidebar_highlight(problem_id) {
@@ -505,7 +505,7 @@ var fixmystreet = fixmystreet || {};
                     overFeature: function (feature) {
                         if (fixmystreet.latest_map_hover_event != 'overFeature') {
                             document.getElementById('map').style.cursor = 'pointer';
-                            markers_highlight(feature.attributes.id);
+                            fixmystreet.maps.markers_highlight(feature.attributes.id);
                             sidebar_highlight(feature.attributes.id);
                             fixmystreet.latest_map_hover_event = 'overFeature';
                         }
@@ -513,7 +513,7 @@ var fixmystreet = fixmystreet || {};
                     outFeature: function (feature) {
                         if (fixmystreet.latest_map_hover_event != 'outFeature') {
                             document.getElementById('map').style.cursor = '';
-                            markers_highlight();
+                            fixmystreet.maps.markers_highlight();
                             sidebar_highlight();
                             fixmystreet.latest_map_hover_event = 'outFeature';
                         }
@@ -665,9 +665,9 @@ var fixmystreet = fixmystreet || {};
                 var href = $('a', this).attr('href');
                 var id = parseInt(href.replace(/^.*[/]([0-9]+)$/, '$1'));
                 clearTimeout(timeout);
-                markers_highlight(id);
+                fixmystreet.maps.markers_highlight(id);
             }).on('mouseleave', '.item-list--reports__item', function(){
-                timeout = setTimeout(markers_highlight, 50);
+                timeout = setTimeout(fixmystreet.maps.markers_highlight, 50);
             });
         })();
     });
