@@ -440,7 +440,7 @@ sub nearby : Private {
         my $colour = $c->cobrand->pin_colour( $p, 'around' );
         [ $p->latitude, $p->longitude,
           $colour,
-          $p->id, $p->title_safe
+          $p->id, $p->title_safe, 'small', JSON->false
         ]
     } @$nearby;
 

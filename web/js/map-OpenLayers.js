@@ -90,7 +90,8 @@ var fixmystreet = fixmystreet || {};
                 size: pin[5] || marker_size,
                 faded: 0,
                 id: pin[3],
-                title: pin[4] || ''
+                title: pin[4] || '',
+                draggable: pin[6] === false ? false : true
             });
             markers.push( marker );
         }
@@ -144,7 +145,7 @@ var fixmystreet = fixmystreet || {};
       admin_drag: function(pin_moved_callback, confirm_change) {
           confirm_change = confirm_change || false;
           var original_lonlat;
-          var drag = new OpenLayers.Control.DragFeature( fixmystreet.markers, {
+          var drag = new OpenLayers.Control.DragFeatureFMS( fixmystreet.markers, {
               onStart: function(feature, e) {
                   // Keep track of where the feature started, so we can put it
                   // back if the user cancels the operation.
@@ -201,7 +202,7 @@ var fixmystreet = fixmystreet || {};
 
     var drag = {
         activate: function() {
-            this._drag = new OpenLayers.Control.DragFeature( fixmystreet.markers, {
+            this._drag = new OpenLayers.Control.DragFeatureFMS( fixmystreet.markers, {
                 onComplete: function(feature, e) {
                     fixmystreet.update_pin( feature.geometry );
                 }
@@ -886,6 +887,19 @@ OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
         }
     }
 });
+
+/* Drag handler that allows individual features to disable dragging */
+OpenLayers.Control.DragFeatureFMS = OpenLayers.Class(OpenLayers.Control.DragFeature, {
+    CLASS_NAME: "OpenLayers.Control.DragFeatureFMS",
+
+    overFeature: function(feature) {
+        if (feature.attributes.draggable) {
+            return OpenLayers.Control.DragFeature.prototype.overFeature.call(this, feature);
+        } else {
+            return false;
+        }
+    }
+})
 
 OpenLayers.Renderer.SVGBig = OpenLayers.Class(OpenLayers.Renderer.SVG, {
     MAX_PIXEL: 15E7,
