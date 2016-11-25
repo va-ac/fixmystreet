@@ -411,6 +411,16 @@ $.extend(fixmystreet.set_up, {
                               .slice(0, 5);
               $reports.filter("[data-report-id="+duplicate_of+"]").addClass("item-list--reports__item--selected");
 
+              (function() {
+                  var timeout;
+                  $reports.on('mouseenter', function(){
+                      clearTimeout(timeout);
+                      fixmystreet.maps.markers_highlight(parseInt($(this).data('reportId'), 10));
+                  }).on('mouseleave', function(){
+                      timeout = setTimeout(fixmystreet.maps.markers_highlight, 50);
+                  });
+              })();
+
               $("#js-duplicate-reports ul").empty().prepend($reports);
 
               $reports.find("a").click(function() {
@@ -421,15 +431,17 @@ $.extend(fixmystreet.set_up, {
                   return false;
               });
 
-              show_nearby_pins(data);
+              show_nearby_pins(data, report_id);
           });
       }
 
-      function show_nearby_pins(data) {
+      function show_nearby_pins(data, report_id) {
           var markers = fixmystreet.maps.markers_list( data.pins, true );
-          // while (fixmystreet.markers.) {
-          //
-          // }
+          var report_marker = fixmystreet.maps.get_marker_by_id(parseInt(report_id, 10));
+          if (report_marker) {
+              markers.unshift(report_marker);
+          }
+          fixmystreet.markers.removeAllFeatures();
           fixmystreet.markers.addFeatures( markers );
       }
 
