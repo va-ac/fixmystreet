@@ -231,12 +231,7 @@ sub generate_map_tags : Private {
         latitude  => $problem->latitude,
         longitude => $problem->longitude,
         pins      => $problem->used_map
-        ? [ {
-            latitude  => $problem->latitude,
-            longitude => $problem->longitude,
-            colour    => $c->cobrand->pin_colour($problem, 'report'),
-            type      => 'big',
-          } ]
+        ? [ $problem->pin_data($c, 'report', type => 'big') ]
         : [],
     );
 
