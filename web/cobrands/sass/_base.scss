@@ -970,12 +970,25 @@ input.final-submit {
     padding: 0.25em 0;
   }
 }
+
 .item-list__heading {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.5;
   padding-top: 0.25em;
   margin: 0;
+}
+
+.item-list__item__state {
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  vertical-align: -0.1em;
+  background: #888;
+  color: #fff;
+  border-radius: 0.3em;
+  margin-right: 0.1em;
 }
 
 .item-list__item--empty p {
