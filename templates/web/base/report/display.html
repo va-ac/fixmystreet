@@ -41,23 +41,14 @@
 [% INCLUDE 'report/banner.html' %]
 [% INCLUDE 'report/_main.html' %]
 
-[% IF problem.duplicate_of %]
-  <div>
-    <h4>[% loc('This report is a duplicate') %]</h4>
-    <p>[% loc("Please leave updates on the original report:") %]</p>
-    <ul class="item-list">
-      [% INCLUDE 'report/_item.html' item_extra_class = 'item-list__item--with-pin item-list--reports__item--selected' problem = problem.duplicate_of %]
-    </ul>
-  </div>
-  [% SET shown_form = 1 # To stop users leaving updates on duplicate reports. %]
-[% END %]
-
 [% TRY %][% INCLUDE 'report/_message_manager.html' %][% CATCH file %][% END %]
 [% INCLUDE 'report/display_tools.html' %]
 [% TRY %][% INCLUDE 'report/sharing.html' %][% CATCH file %][% END %]
 [% INCLUDE 'report/updates.html' %]
 
-[% IF NOT shown_form %]
+[% IF problem.duplicate_of %]
+    [% INCLUDE 'report/duplicate-no-updates.html' %]
+[% ELSIF NOT shown_form %]
     [% INCLUDE 'report/update-form.html' %]
 [% END %]
 
