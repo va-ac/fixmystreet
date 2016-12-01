@@ -1,3 +1,63 @@
+fixmystreet.offlineBanner = (function() {
+    function formText() {
+        var num = fixmystreet.offlineData.getForms().length;
+        return num + ' form' + (num===1 ? '' : 's');
+    }
+
+    function onlineText() {
+        return 'You have <a id="oFN" href=""><span>' + formText() + '</span> saved to submit</a>';
+    }
+
+    function offlineText() {
+        return 'You are offline \u2013 <span>' + formText() + '</span> saved';
+    }
+
+    return {
+        make: function(offline) {
+            var num = fixmystreet.offlineData.getForms().length;
+            if (!offline && num === 0) {
+                return;
+            }
+            var banner = ['<div class="top_banner top_banner--offline"><p>'];
+            banner.push(offline ? offlineText() : onlineText());
+            banner.push('</p></div>');
+            $('body').prepend(banner.join(''));
+
+            window.addEventListener("offline", function(e) {
+                $('top_banner--offline p').html(offlineText());
+            });
+
+            window.addEventListener("online", function(e) {
+                $('top_banner--offline p').html(onlineText());
+            });
+
+            $(document).on('click', '#oFN', function(e) {
+                e.preventDefault();
+                fixmystreet.offlineData.getForms().forEach(function(form) {
+                    $(document).queue('postForm', function() {
+                        $.ajax({
+                            url: form[0],
+                            type: 'POST',
+                            data: form[1],
+                            success: function(data, textStatus, jqXHR) {
+                                fixmystreet.offlineData.shiftForm();
+                                $(document).dequeue('postForm');
+                            },
+                            error: function() {
+                                $(document).clearQueue('postForm');
+                            }
+                        });
+                    });
+                });
+                $(document).dequeue('postForm');
+            });
+        },
+        update: function() {
+            $('.top_banner--offline span').text(formText);
+        }
+    };
+})();
+
 fixmystreet.offlineData = (function() {
     var data;
 
@@ -5,7 +65,7 @@ fixmystreet.offlineData = (function() {
         if (data === undefined) {
             data = JSON.parse(localStorage.getItem('offlineData'));
             if (!data) {
-                data = { cachedReports: {} };
+                data = { cachedReports: {}, forms: [] };
             }
         }
         return data;
@@ -16,6 +76,22 @@ fixmystreet.offlineData = (function() {
     }
 
     return {
+        getForms: function() {
+            return getData().forms;
+        },
+        addForm: function(action, formData) {
+            var forms = getData().forms;
+            if (!forms.length || formData != forms[forms.length - 1][1]) {
+                forms.push([action, formData]);
+                saveData();
+            }
+            fixmystreet.offlineBanner.update();
+        },
+        shiftForm: function(idx) {
+            getData().forms.shift();
+            saveData();
+            fixmystreet.offlineBanner.update();
+        },
         getCachedUrls: function() {
             return Object.keys(getData().cachedReports);
         },
@@ -183,6 +259,15 @@ fixmystreet.offline = (function() {
         document.body.outerHTML = found[0];
         $('#map_box').html('<img src="' + map + '">').css({ textAlign: 'center', height: 'auto' });
         replaceImages('img');
+
+        // XXX Remove these on download? Easier not to?
+        $('.moderate-display.segmented-control, .shadow-wrap, #update_form, #report-cta, .mysoc-footer, .nav-wrapper').hide();
+
+        $('#report_inspect_form').submit(function() {
+            var data = $(this).serialize() + '&save=1';
+            fixmystreet.offlineData.addForm(this.action, data);
+            return false;
+        });
         return true;
     }
 
@@ -217,12 +302,15 @@ if ($('#offline_list').length) {
         $('#offline_list').html(html);
         fixmystreet.offline.replaceImages('#offline_list img');
     }
+    fixmystreet.offlineBanner.make(true);
 } else {
     // Put the appcache manifest in a page in an iframe so that HTML pages
     // aren't cached (thanks to Jake Archibald for documenting this!)
     if (window.applicationCache && window.localStorage) {
         $(document.body).prepend('<iframe src="/offline/appcache" style="position:absolute;top:-999em;visibility:hidden"></iframe>');
     }
+
+    fixmystreet.offlineBanner.make(false);
 
     // On /my/planned, when online, cache all shortlisted
     if (location.pathname === '/my/planned') {

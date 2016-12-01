@@ -38,6 +38,18 @@
 .top_banner--country {
     display: none;
 }
+.top_banner--offline {
+    position: fixed; left: 0; right: 0; top: 0; z-index: 100;
+    opacity: 0.9;
+    background: #c33;
+    color: #fff;
+}
+.top_banner--offline a {
+    color: #fff;
+}
+.top_banner--offline a:hover {
+    color: #000;
+}
 .top_banner__close {
     float: $right;
 }
