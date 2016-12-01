@@ -661,6 +661,12 @@ $.extend(fixmystreet.set_up, {
         } else {
             $submit.val($submit.data('valueOriginal'));
         }
+
+        // We might also have a response template to preselect for the new state
+        var $option = $("#report_inspect_form select.js-template-name option[data-problem-state='"+state+"']").first();
+        if ($option.length) {
+            $("#report_inspect_form select.js-template-name").val($option.val()).change();
+        }
     }).change();
 
     $('.js-toggle-public-update').each(function() {
@@ -980,9 +986,20 @@ $.extend(fixmystreet.set_up, {
   },
 
   response_templates: function() {
+      // If the user has manually edited the contents of an update field,
+      // mark it as dirty so it doesn't get clobbered if we select another
+      // response template. If the field is empty, it's not considered dirty.
+      $('.js-template-name').each(function() {
+          var $input = $('#' + $(this).data('for'));
+          $input.change(function() { $(this).data('dirty', !/^\s*$/.test($(this).val())); });
+      });
+
       $('.js-template-name').change(function() {
           var $this = $(this);
-          $('#' + $this.data('for')).val($this.val());
+          var $input = $('#' + $this.data('for'));
+          if (!$input.data('dirty')) {
+              $input.val($this.val());
+          }
       });
   }
 });
