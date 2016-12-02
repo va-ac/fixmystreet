@@ -1,3 +1,7 @@
+[% IF NOT report_blocks_included ~%]
+[% PROCESS 'admin/report_blocks.html' ~%]
+[% END ~%]
+
 <li class="item-list__item item-list--reports__item [% item_extra_class %]">
 <a href="[% c.cobrand.base_url_for_report( problem ) %][% problem.url %]">
     [% IF problem.photo %]
@@ -28,29 +32,6 @@
                 [% loc('(closed)') %]
             [% END %]
         </small>
-
-[%# TODO: This is directly copied from report_blocks.html %]
-[%
-SET state_pretty = {
-    'confirmed' = loc('Open')
-    'investigating' = loc('Investigating')
-    'planned' = loc('Planned')
-    'in progress' = loc('In progress')
-    'action scheduled' = loc('Action Scheduled')
-    'fixed' = loc('Fixed')
-    'fixed - user' = loc('Fixed - User')
-    'fixed - council' = loc('Fixed - Council')
-    'unable to fix' = loc('Unable to fix')
-    'not responsible' = loc('Not Responsible')
-    'duplicate' = loc('Duplicate')
-    'closed' = loc('Closed')
-    'internal referral' = loc('Internal referral')
-    'hidden' = loc('Hidden')
-    'partial' = loc('Partial')
-    'unconfirmed' = loc('Unconfirmed')
-};
-%]
-
 
     [% IF c.user.has_permission_to('report_inspect', problem.bodies_str_ids) %]
         <div class="item-list__item__metadata">
