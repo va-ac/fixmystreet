@@ -70,6 +70,16 @@
                 <p>[% problem.get_extra_metadata('detailed_information') | html %]</p>
             </div>
         </div>
+
+      [% SET fields = problem.get_extra_fields; IF fields.size %]
+        <dl>
+          [% FOR f IN fields %]
+            <dt>[% f.description %]</dt>
+            <dd>[% f.value %]</dd>
+          [% END %]
+        </dl>
+      [% END %]
+
     [% END %]
 
 
