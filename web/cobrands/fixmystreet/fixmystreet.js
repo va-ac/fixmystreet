@@ -415,12 +415,25 @@ $.extend(fixmystreet.set_up, {
         name: whatUserWants,
         value: $submitButton.prop('value')
       }).appendTo($form);
+      var data = $form.serialize() + '&ajax=1';
 
       // Update UI while the ajax request is sent in the background.
       if ('shortlist-down' === whatUserWants) {
         $item.insertAfter( $item.next() );
       } else if ('shortlist-up' === whatUserWants) {
         $item.insertBefore( $item.prev() );
+      } else if ('shortlist-remove' === whatUserWants) {
+          $submitButton.attr('class', 'item-list__item__shortlist-add');
+          $submitButton.attr('name', 'shortlist-add');
+          // TODO Change title/value to Add
+      } else if ('shortlist-take' === whatUserWants) {
+          $submitButton.attr('class', 'item-list__item__shortlist-remove');
+          $submitButton.attr('name', 'shortlist-remove');
+          // TODO Change title/value to Remove
+      } else if ('shortlist-add' === whatUserWants) {
+          $submitButton.attr('class', 'item-list__item__shortlist-remove');
+          $submitButton.attr('name', 'shortlist-remove');
+          // TODO Change title/value to Remove
       }
 
       // Items have moved around. We need to make sure the "up" button on the
@@ -430,7 +443,7 @@ $.extend(fixmystreet.set_up, {
       $.ajax({
         url: $form.prop('action'),
         type: $form.prop('method'),
-        data: $form.serialize()
+        data: data
       }).fail(function() {
         // Undo the UI changes we made.
         if ('shortlist-down' === whatUserWants) {
