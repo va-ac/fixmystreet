@@ -1,6 +1,6 @@
-[% USE date %][% USE Math ~%]
-
 CACHE MANIFEST
+
+[% PROCESS 'common_scripts.html' ~%]
 
 CACHE:
 [%
@@ -13,24 +13,10 @@ ELSE;
 END %]
 [% version('/cobrands/' _ css_dir _ '/base.css') %]
 [% version('/cobrands/' _ css_dir _ '/layout.css') %]
-/js/translation_strings.[% lang_code %].js?[% Math.int( date.now / 3600 ) %]
-[% version('/jslib/jquery-1.7.2.min.js') %]
-[% version('/js/validation_rules.js') %]
-[% version('/js/jquery.validate.min.js') %]
-[% version('/js/dropzone.min.js') %]
-[% version('/js/jquery.multi-select.js') %]
-[% version('/js/geo.min.js') %]
-[% version('/cobrands/fixmystreet/fixmystreet.js') %]
 
-[% version('/cobrands/fixmystreet/map.js') %]
-[% version('/cobrands/fixmystreet/offline.js') %]
-
-[%# These are the fixmystreet.com files
-Need a way to get cobrand's list of JS files.
-And indeed its static images/fonts etc. %]
-[% version('/js/OpenLayers.Projection.OrdnanceSurvey.js') %]
-[% version('/js/jquery.cookie.min.js') %]
-[% version('/cobrands/fixmystreet.com/js.js') %]
+[% FOR script IN scripts ~%]
+    [%- script %]
+[% END %]
 
 NETWORK:
 *
