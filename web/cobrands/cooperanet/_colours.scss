@@ -1,0 +1,34 @@
+/* LAYOUT */
+
+// If you are wanting a right-to-left layout, uncomment the following line.
+// $direction: right;
+
+/* COLOURS */
+
+$orange: #ff9900;
+$bluey: #6688ff;
+
+$sunflowers: #fece00;
+$starrynight: #037584;
+$irises: #007849;
+$evening: #262228;
+
+$primary: $sunflowers;
+$primary_b: #000000;
+$primary_text: #222222;
+
+$base_bg: $starrynight;
+$base_fg: #000;
+
+$map_nav_bg: $irises;
+$nav_fg: #000;
+$nav_fg_hover: $primary;
+
+// Colour used for front page 'how to report a problem' steps
+$col_big_numbers: $evening;
+
+$col_click_map: $starrynight;
+
+$col_fixed_label: #00BD08;
+$col_fixed_label_dark: #4B8304;
+
