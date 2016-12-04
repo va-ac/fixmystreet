@@ -46,3 +46,8 @@ UG_FixMyCommunity.pm
 gh_fixmycommunity
 *[Aa]rregla[Mm]i[Bb]arrio*
 *[Ff]ix[Mm]indelo*
+
+#Vertical Advise
+#.git_org
+#.gitignore_org
+*_org
