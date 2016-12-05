@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-04 23:03-0300\n"
+"PO-Revision-Date: 2016-12-05 00:42-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -257,7 +257,7 @@ msgid ""
 msgstr ""
 "Agregue un <strong>órgano</strong> para cada órgano administrativo, por ejemplo una municipalidad o departamento\n"
 "al que se puede enviar las notificaciones. Puedes asignar uno o más contactos a cada\n"
-"órgano para las diferentes categorías de problemas."
+"órgano para las diferentes categorías de incidentes."
 
 #: templates/web/base/admin/body.html:60
 msgid "Add a contact using the form below."
@@ -349,7 +349,7 @@ msgstr "Todas las notificaciones entre %s y %s"
 
 #: templates/web/base/questionnaire/index.html:47
 msgid "An update marked this problem as fixed."
-msgstr "Una actualización marcó este problema como arreglado."
+msgstr "Una actualización marcó este incidente como arreglado."
 
 #: templates/web/base/admin/list_updates.html:32
 #: templates/web/base/admin/problem_row.html:20
@@ -394,7 +394,7 @@ msgstr ""
 #: templates/web/base/admin/bodies.html:19
 #: templates/web/base/admin/body.html:64
 msgid "As this is a staging site and %s is false, reports made on this site will be sent to the problem reporter, not the contact given for the report’s category."
-msgstr "Puesto que éste es un servidor de integración y %s es falsa, las notificaciones serán enviados al email del propio informante, no al contacto establecido para la categoría de problema."
+msgstr "Puesto que éste es un servidor de integración y %s es falsa, las notificaciones serán enviados al email del propio informante, no al contacto establecido para la categoría de incidente."
 
 #: templates/web/zurich/admin/report_edit.html:209
 msgid "Assign to competent body:"
@@ -535,7 +535,7 @@ msgstr "por ejemplo, '%s' o '%s'"
 #: templates/web/base/admin/stats.html:58
 #: templates/web/base/admin/stats_fix_rate.html:1
 msgid "Category fix rate for problems > 4 weeks old"
-msgstr "Ratio de arreglo de problemas > 4 semanas"
+msgstr "Ratio de arreglo de incidentes > 4 semanas"
 
 #: templates/web/base/admin/report_edit.html:125
 #: templates/web/zurich/admin/body.html:43
@@ -581,7 +581,7 @@ msgid ""
 "        It will not appear as an available category in the drop-down menu on the report-a-problem page."
 msgstr ""
 "Marcar <strong>borrado</ strong> para dejar de usar la categoría. \n"
-"Dejará de aparecer en el menú desplegable que se muestra al notificar los problemas."
+"Dejará de aparecer en el menú desplegable que se muestra al registrar los incidentes."
 
 #: templates/web/base/admin/contact-form.html:79
 msgid "Check <strong>inspection required</strong> if reports in this category <strong>must be inspected</strong> before being sent."
@@ -1386,7 +1386,7 @@ msgstr "Inicio"
 
 #: templates/web/base/index-steps.html:1
 msgid "How to report a problem"
-msgstr "Cómo notificar un problema"
+msgstr "Cómo registrar un incidente"
 
 #: templates/web/base/js/translation_strings.html:32
 msgid "How to send successful reports"
@@ -1395,16 +1395,16 @@ msgstr "¿Cómo enviar informes exitosos?"
 #: templates/web/base/tokens/confirm_problem.html:36
 #: templates/web/base/tokens/confirm_problem.html:40
 msgid "I just reported a problem on @fixmystreet"
-msgstr "Acabo de informar de un problema en @fixmystreet"
+msgstr "Acabo de registrar un incidente en @cooperanet"
 
 #: templates/web/base/tokens/confirm_update.html:19
 #: templates/web/base/tokens/confirm_update.html:23
 msgid "I just updated a problem on @fixmystreet"
-msgstr "Acabo de actualizar un problema en @fixmystreet"
+msgstr "Acabo de actualizar un incidente en @cooperanet"
 
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:88
 msgid "I'm afraid we couldn't locate your problem in the database.\n"
-msgstr "No se ha podido localizar su problema en la base de datos.\n"
+msgstr "No se ha podido localizar su incidente en la base de datos.\n"
 
 #: templates/web/base/admin/flagged.html:14
 #: templates/web/base/admin/index.html:54
@@ -1437,7 +1437,7 @@ msgstr ""
 
 #: templates/web/base/questionnaire/completed.html:8
 msgid "If you get some more information about the status of your problem, please come back to the site and leave an update."
-msgstr "Si usted consigue algo más de información sobre el estado del problema, por favor regrese a esta web y añádale una actualización."
+msgstr "Si usted consigue algo más de información sobre el estado del incidente, por favor regrese a esta web y agregue una actualización."
 
 #: templates/web/base/admin/responsepriorities/edit.html:23
 msgid "If you only want this priority to be an option for specific categories, pick them here. By default they will show for all categories."
@@ -1450,13 +1450,13 @@ msgstr "Si sólo desea que esta plantilla para ser una opción para categorías 
 #: templates/web/base/report/new/top_message_none.html:10
 #: templates/web/base/report/new/top_message_none.html:9
 msgid "If you submit a problem here the problem will <strong>not</strong> be reported to the council."
-msgstr "Si presentas un problema el problema que <strong>no</strong> se informó al Consejo."
+msgstr "Si registras un incidente este <strong>no</strong> se informó a CooperaNet."
 
 #: templates/web/base/questionnaire/index.html:70
 msgid ""
 "If you wish to leave a public update on the problem, please enter it here\n"
 "(please note it will not be sent to the council)."
-msgstr "Si desea dejar una actualización pública en el problema, por favor introdúzcalo aquí (tenga en cuenta no se enviará a CooperaNet)."
+msgstr "Si desea dejar una actualización pública en el incidente, por favor introdúzcalo aquí (tenga en cuenta no se enviará a CooperaNet)."
 
 #: templates/web/base/admin/contact-form.html:30
 msgid "If you're using <strong>a send method that is not email</strong>, enter the service ID (Open311) or equivalent identifier here."
@@ -1548,7 +1548,7 @@ msgstr "Inspección requerida"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:712
 msgid "Instruct contractors to fix problems"
-msgstr "Instruir a los contratistas para solucionar los problemas"
+msgstr "Instruir a los contratistas para solucionar los incidentes"
 
 #: templates/web/zurich/admin/list_updates.html:35
 msgid "Internal notes"
@@ -1637,7 +1637,7 @@ msgstr "Deje en blanco si todos las notificaciones a este órgano administrativo
 
 #: templates/web/base/admin/body.html:31
 msgid "List all reported problems"
-msgstr "Listar todos los problemas notificados"
+msgstr "Listar todos los incidente notificados"
 
 #: templates/web/base/report/new/category_wrapper.html:4
 msgid "Loading..."
@@ -1662,7 +1662,7 @@ msgstr "Alertas locales"
 
 #: templates/web/base/index-steps.html:5
 msgid "Locate the problem on a map of the area"
-msgstr "Señale en el mapa de la zona la localización del problema"
+msgstr "Señale en el mapa de la zona la localización del incidente"
 
 #: templates/web/base/js/translation_strings.html:44
 msgid "MAP"
@@ -1775,9 +1775,8 @@ msgid "Name: %s"
 msgstr "Nombre: %s"
 
 #: templates/web/base/report/_inspect.html:23
-#, fuzzy
 msgid "Navigate to this problem"
-msgstr "Listado RSS de actualizaciones sobre este problema"
+msgstr "Listado RSS de actualizaciones sobre este incidente"
 
 #: perllib/FixMyStreet/Geocode/FixaMinGata.pm:160
 #: perllib/FixMyStreet/Geocode/OSM.pm:145
@@ -1807,7 +1806,7 @@ msgstr ""
 
 #: templates/web/base/reports/index.html:24
 msgid "New <br>problems"
-msgstr "Nuevos <br>problemas"
+msgstr "Nuevos <br>incidentes"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:259
 msgid "New body added"
@@ -1829,7 +1828,7 @@ msgstr "Nueva nota interna:"
 
 #: db/alert_types.pl:18 db/alert_types.pl:22
 msgid "New local problems on FixMyStreet"
-msgstr "Nuevos problemas locales en FixMyStreet"
+msgstr "Nuevos incidente locales en CooperaNet"
 
 #: templates/web/zurich/admin/report_edit-sdm.html:113
 msgid "New note to DM:"
@@ -1848,23 +1847,23 @@ msgstr "Nuevos informes"
 
 #: db/alert_types.pl:38
 msgid "New problems for {{COUNCIL}} within {{WARD}} ward on FixMyStreet"
-msgstr "Nuevos problemas en {{COUNCIL}} para el barrio {{WARD}} en FixMyStreet"
+msgstr "Nuevos incidente en {{COUNCIL}} para el barrio {{WARD}} en CooperaNet"
 
 #: db/alert_types.pl:26 db/alert_types.pl:30
 msgid "New problems near {{POSTCODE}} on FixMyStreet"
-msgstr "Nuevos problemas cerca de {{POSTCODE}} En FixMyStreet"
+msgstr "Nuevos incidentes cerca de {{POSTCODE}} en CooperaNet"
 
 #: db/alert_types.pl:10
 msgid "New problems on FixMyStreet"
-msgstr "Nuevos problemas en FixMyStreet"
+msgstr "Nuevos incidente en CooperaNet"
 
 #: db/alert_types.pl:34
 msgid "New problems to {{COUNCIL}} on FixMyStreet"
-msgstr "Nuevos problemas en {{COUNCIL}} en FixMyStreet"
+msgstr "Nuevos incidentes en {{COUNCIL}} en CooperaNet"
 
 #: db/alert_types.pl:42
 msgid "New problems within {{NAME}}'s boundary on FixMyStreet"
-msgstr "Nuevos problemas en los límites de {{NAME}} en FixMyStreet"
+msgstr "Nuevos incidentes en los límites de {{NAME}} en CooperaNet"
 
 #: templates/web/zurich/admin/index-sdm.html:4
 msgid "New reports"
@@ -1927,7 +1926,7 @@ msgstr "No se han hecho ediciones aún."
 
 #: templates/web/base/admin/flagged.html:25
 msgid "No flagged problems found."
-msgstr "No se encuentran problemas marcados."
+msgstr "No se encuentran incidentes marcados."
 
 #: templates/web/base/admin/flagged.html:58
 msgid "No flagged users found."
@@ -2052,7 +2051,7 @@ msgstr "OK"
 
 #: templates/web/base/reports/index.html:26
 msgid "Old / unknown <br>problems"
-msgstr "Problemas<br>Antiguos / desconocidos"
+msgstr "Incidentes<br>Antiguos / desconocidos"
 
 #: templates/web/base/admin/questionnaire.html:24
 msgid "Old state"
@@ -2064,7 +2063,7 @@ msgstr "Antiguo <br>arreglado"
 
 #: templates/web/base/reports/index.html:25
 msgid "Older <br>problems"
-msgstr "Problemas <br>antiguos"
+msgstr "Incidentes <br>antiguos"
 
 #: templates/web/base/reports/_list-filters.html:36
 msgid "Oldest"
@@ -2115,7 +2114,7 @@ msgstr "Especificación Open311"
 
 #: templates/web/base/alert/_list.html:61
 msgid "Or problems reported to:"
-msgstr "O problemas notificados a:"
+msgstr "O incidentes notificados a:"
 
 #: templates/web/base/alert/_list.html:37
 msgid "Or you can subscribe to an alert based upon what ward or council you&rsquo;re in:"
@@ -2390,16 +2389,16 @@ msgstr "Por favor, siéntase libre para <a href=\"%s\">acceder nuevamente</a> o 
 #: templates/web/base/report/new/fill_in_details_text.html:1
 #: templates/web/base/report/new/fill_in_details_text.html:8
 msgid "Please fill in details of the problem below."
-msgstr "Por favor proporcione a continuación las informaciones sobre el problema."
+msgstr "Por favor proporcione a continuación las informaciones sobre el incidente."
 
 #: templates/web/zurich/report/new/fill_in_details_form.html:49
 msgid "Please fill in details of the problem."
-msgstr "Por favor proporcione las informaciones sobre el problema."
+msgstr "Por favor proporcione las informaciones sobre el incidente."
 
 #: templates/web/base/report/new/sidebar.html:7
 #: templates/web/zurich/report/new/sidebar.html:14
 msgid "Please fill in the form below with details of the problem, and describe the location as precisely as possible in the details box."
-msgstr "Por favor, complete el siguiente formulario con los detalles del problema y describa la ubicación con la mayor precisión posible en el cuadro de detalles."
+msgstr "Por favor, complete el siguiente formulario con los detalles del incidente y describa la ubicación con la mayor precisión posible en el cuadro de detalles."
 
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:240
 msgid "Please indicate whether you'd like to receive another questionnaire"
@@ -2443,7 +2442,7 @@ msgstr "Proporcione un texto y una foto"
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:116
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:236
 msgid "Please say whether you've ever reported a problem to your council before"
-msgstr "Por favor, indique si ha notificado un problema al ayuntamiento alguna vez."
+msgstr "Por favor, indique si ha notificado un incidente en CooperaNet alguna vez."
 
 #: templates/web/zurich/admin/report_edit.html:204
 msgid "Please select a body."
@@ -2459,7 +2458,7 @@ msgstr "Por favor, seleccione el tipo de alerta que desea"
 
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:232
 msgid "Please state whether or not the problem has been fixed"
-msgstr "Por favor, indique si el problema se ha solucionado"
+msgstr "Por favor, indique si el incidente se ha solucionado"
 
 #: perllib/FixMyStreet/App/Model/PhotoSet.pm:129
 #: perllib/FixMyStreet/App/Model/PhotoSet.pm:163
@@ -2529,64 +2528,64 @@ msgstr "Privado"
 
 #: templates/web/base/maps/pin.html:13
 msgid "Problem"
-msgstr "Problema"
+msgstr "Incidente"
 
 #: templates/web/base/admin/timeline.html:22
 msgid "Problem %d created"
-msgstr "Problema %d creado"
+msgstr "Incidente %d creado"
 
 #: templates/web/base/admin/timeline.html:24
 msgid "Problem %s confirmed"
-msgstr "Problema %s confirmado"
+msgstr "Incidente %s confirmado"
 
 #: templates/web/base/admin/timeline.html:26
 msgid "Problem %s sent to council %s"
-msgstr "Problema %s enviado al Ayuntamiento %s"
+msgstr "Incidente %s enviado a CooperaNet %s"
 
 #: templates/web/base/admin/stats.html:57
 #: templates/web/base/admin/stats_by_state.html:12
 #: templates/web/zurich/admin/index.html:9
 msgid "Problem breakdown by state"
-msgstr "Desglose de problemas según estado"
+msgstr "Desglose de incidentes según estado"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1171
 msgid "Problem marked as open."
-msgstr "Problema marcado como abierto."
+msgstr "Incidente marcado como abierto."
 
 #: templates/web/base/admin/questionnaire.html:21
 msgid "Problem state change based on survey results"
-msgstr "El estado del problema cambió debido a los resultados de la encuesta"
+msgstr "El estado del incidente cambió debido a los resultados de la encuesta"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:706
 #: templates/web/base/admin/flagged.html:10
 msgid "Problems"
-msgstr "Problemas"
+msgstr "Incidentes"
 
 #: templates/web/base/report/display_tools.html:20
 msgid "Problems nearby"
-msgstr "Problemas cercanos"
+msgstr "Incidentes cercanos"
 
 #: templates/web/base/report/display_tools.html:18
 msgid "Problems on the map"
-msgstr "Problemas en el mapa"
+msgstr "Incidentes en el mapa"
 
 #: db/alert_types.pl:14
 msgid "Problems recently reported fixed on FixMyStreet"
-msgstr "Problemas recientemente notificados como arreglados en FixMyStreet"
+msgstr "Incidentes recientemente notificados como arreglados en CooperaNet"
 
 #: templates/web/base/alert/_list.html:22
 msgid "Problems within %.1fkm of this location"
-msgstr "Problemas en %.1fkm alrededor"
+msgstr "Incidentes en %.1fkm alrededor"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:833
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:137
 #: perllib/FixMyStreet/Cobrand/UK.pm:208
 msgid "Problems within %s"
-msgstr "Problemas en %s"
+msgstr "Incidentes en %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:222
 msgid "Problems within %s ward"
-msgstr "Problemas en el barrio %s"
+msgstr "Incidentes en el barrio %s"
 
 #. ("First %s is the body name, second %s the site name")
 #: templates/web/base/reports/body.html:0
@@ -2596,7 +2595,7 @@ msgstr ""
 
 #: templates/web/base/alert/_list.html:43
 msgid "Problems within the boundary of:"
-msgstr "Problemas en:"
+msgstr "Incidentes en:"
 
 #: templates/web/base/admin/report_edit.html:74
 msgid "Property address:"
@@ -2613,12 +2612,12 @@ msgstr "Proporcionar una actualización"
 
 #: templates/web/base/auth/general.html:112
 msgid "Providing a name and password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports."
-msgstr "Proporcionar un nombre y una contraseña es opcional, pero hacerlo le permitirá notificar y actualizar los problemas más fácilmente, así como administrar sus informes."
+msgstr "Proporcionar un nombre y una contraseña es opcional, pero hacerlo le permitirá notificar y actualizar los incidentes más fácilmente, así como administrar sus registros."
 
 #: templates/web/base/report/new/form_user_loggedout_by_email.html:31
 #: templates/web/base/report/update/form_user_loggedout_by_email.html:9
 msgid "Providing a password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports."
-msgstr "Proporcionar una contraseña es opcional, pero hacerlo le permitirá notificar y actualizar los problemas más fácilmente, así como administrar sus informes."
+msgstr "Proporcionar una contraseña es opcional, pero hacerlo le permitirá notificar y actualizar los incidentes más fácilmente, así como administrar sus registros."
 
 #: templates/web/zurich/admin/report_edit.html:241
 #: templates/web/zurich/admin/report_edit.html:268
@@ -2644,15 +2643,15 @@ msgstr "Cuestionario"
 
 #: templates/web/base/admin/timeline.html:30
 msgid "Questionnaire %d answered for problem %d, %s to %s"
-msgstr "Cuestionario %d para el problema %d respondido, %s para %s"
+msgstr "Cuestionario %d para el incidente %d respondido, %s para %s"
 
 #: templates/web/base/admin/timeline.html:28
 msgid "Questionnaire %d sent for problem %d"
-msgstr "Cuestionario %d enviado para el problema %d"
+msgstr "Cuestionario %d enviado para el incidente %d"
 
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:192
 msgid "Questionnaire filled in by problem reporter"
-msgstr "Cuestionario cumplimentado por el notificador problema"
+msgstr "Cuestionario rellenado por el usuario que registro el incidente"
 
 #: templates/web/base/alert/_list.html:23
 #: templates/web/base/alert/updates.html:9
@@ -2684,32 +2683,32 @@ msgstr "Listado RSS para %s, en el barrio %s"
 
 #: templates/web/base/alert/_list.html:23
 msgid "RSS feed of nearby problems"
-msgstr "Listado RSS de los problemas cercanos"
+msgstr "Listado RSS de los incidente cercanos"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:834
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:136
 #: perllib/FixMyStreet/Cobrand/UK.pm:215
 msgid "RSS feed of problems within %s"
-msgstr "Listado RSS de los problemas dentro de %s"
+msgstr "Listado RSS de los incidentes dentro de %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:221
 msgid "RSS feed of problems within %s ward"
-msgstr "Listado RSS de los problemas dentro del barrio %s"
+msgstr "Listado RSS de los incidentes dentro del barrio %s"
 
 #: templates/web/base/around/display_location.html:1
 #: templates/web/base/around/display_location.html:4
 msgid "RSS feed of recent local problems"
-msgstr "Listado RSS de los problemas locales más recientes"
+msgstr "Listado RSS de los incidentes locales más recientes"
 
 #: templates/web/base/alert/updates.html:9
 #: templates/web/base/report/display_tools.html:40
 msgid "RSS feed of updates to this problem"
-msgstr "Listado RSS de actualizaciones sobre este problema"
+msgstr "Listado RSS de actualizaciones sobre este incidente"
 
 #: templates/web/base/alert/updates.html:14
 #: templates/web/base/report/display_tools.html:42
 msgid "Receive email when updates are left on this problem."
-msgstr "Reciba un correo cuando se dejen actualizaciones sobre este problema."
+msgstr "Reciba un correo cuando se dejen actualizaciones sobre este incidentes."
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:720
 msgid "Received by %s moments later"
@@ -2727,7 +2726,7 @@ msgstr "Recientemente <br>arreglado"
 
 #: templates/web/base/front/recent.html:11
 msgid "Recently reported problems"
-msgstr "Problemas recientemente notificados"
+msgstr "Incidentes recientemente notificados"
 
 #: templates/web/base/reports/_list-filters.html:37
 #, fuzzy
@@ -2736,7 +2735,7 @@ msgstr "Recibe actualizaciones"
 
 #: templates/web/zurich/report/new/notes.html:5
 msgid "Remember that FixMyStreet is primarily for reporting physical problems that can be fixed. If your problem is not appropriate for submission via this site remember that you can contact your council directly using their own website."
-msgstr "Recuerde que FixMyStreet es principalmente para informar sobre problemas físicos que pueden ser arreglados. Si su problema no es apropiado para ser presentado a través de este sitio recuerde que puede ponerse en contacto con su Ayuntamiento directamente mediante su página web."
+msgstr "Recuerde que CooperaNet es principalmente para informar sobre incidentes. Si su problema no es apropiado para ser presentado a través de este sitio recuerde que puede ponerse en contacto con las Autoridades directamente mediante su página web."
 
 #: templates/web/base/admin/report_blocks.html:46
 msgid "Remove flag"
@@ -2775,7 +2774,7 @@ msgstr "Notificar"
 #: templates/web/zurich/footer.html:19
 #: templates/web/zurich/nav_over_content.html:4
 msgid "Report a problem"
-msgstr "Notificar un problema"
+msgstr "Notificar un incidente"
 
 #: templates/web/base/report/display_tools.html:9
 msgid "Report abuse"
@@ -2799,7 +2798,7 @@ msgstr "Notifique su incidencia"
 #: templates/web/base/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1
 msgid "Report, view, or discuss local problems"
-msgstr "Notifique, consulte o discuta problemas locales"
+msgstr "Notifique, consulte o discuta incidentes locales"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:605
 #: templates/web/base/contact/index.html:57
@@ -2865,7 +2864,7 @@ msgstr ""
 #: templates/web/base/report/new/fill_in_details.html:8
 #: templates/web/zurich/report/new/fill_in_details_form.html:4
 msgid "Reporting a problem"
-msgstr "Notificando un problema"
+msgstr "Registrando un incidente"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:655
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:383
@@ -3311,9 +3310,8 @@ msgid "Subscribe me to an email alert"
 msgstr "Suscríbeme a alertas por email"
 
 #: templates/web/base/report/new/form_report.html:19
-#, fuzzy
 msgid "Summarise the problem"
-msgstr "Introduzca detalles del problema"
+msgstr "Introduzca detalles del incidente"
 
 #: templates/web/base/admin/contact-form.html:129
 #, fuzzy
@@ -3383,7 +3381,7 @@ msgstr "¡Gracias por notificar esta incidencia!"
 
 #: templates/web/base/tokens/error.html:6
 msgid "Thank you for trying to confirm your update or problem. We seem to have an error ourselves though, so <a href=\"%s\">please let us know what went on</a> and we'll look into it."
-msgstr "Gracias por tratar de confirmar la actualización o problema. Parece que tenemos un error interno, así que <a href=\"%s\"> por favor, háganos saber lo que pasó </a> y echaremos un vistazo."
+msgstr "Gracias por tratar de confirmar la actualización o incidente. Parece que tenemos un error interno, así que <a href=\"%s\"> por favor, háganos saber lo que pasó </a> y echaremos un vistazo."
 
 #: templates/web/base/tokens/confirm_update.html:15
 msgid "Thank you for updating this issue!"
@@ -3404,7 +3402,7 @@ msgstr "Gracias por subir una foto. Ahora necesitamos situar la incidencia, así
 
 #: templates/web/base/questionnaire/creator_fixed.html:9
 msgid "Thanks, glad to hear it's been fixed! Could we just ask if you have ever reported a problem to a council before?"
-msgstr "¡Gracias, nos alegra saber que fue arreglado! ¿Podría decirnos si había notificado un problema a un ayuntamiento con anterioridad?"
+msgstr "¡Gracias, nos alegra saber que fue arreglado! ¿Podría decirnos si había registrado un incidente en CooperaNet con anterioridad?"
 
 #: perllib/FixMyStreet/App/Model/PhotoSet.pm:170
 msgid "That image doesn't appear to have uploaded correctly (%s), please try again."
