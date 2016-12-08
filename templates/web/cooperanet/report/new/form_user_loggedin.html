@@ -25,7 +25,7 @@
     </select>
 [% END %]
 
-    <label for="form_email">[% loc('Email address') %]</label>
+    <label for="form_email" id="form_email_label">[% loc('Email address') %]</label>
     <input class="form-control" id="form_email"
     [%- IF js OR can_contribute_as_another_user OR can_contribute_as_body -%]
     name="email"
@@ -37,7 +37,7 @@
     [% INCLUDE 'report/new/extra_name.html' %]
     [% PROCESS 'user/_anonymity.html' anonymous = report.anonymous %]
 
-    <label for="form_name">[% loc('Name') %]
+    <label for="form_name" id="form_name_label">[% loc('Name') %]
     [% TRY %]
         [% INCLUDE 'report/new/after_name.html' %]
         [% CATCH file %]
@@ -54,7 +54,7 @@
         <label class="inline" for="form_may_show_name">[% loc('Show my name publicly') %] </label>
     </div>
 
-    <label for="form_phone">[% loc('Phone number (optional)') %]</label>
+    <label for="form_phone" id="form_phone_label">[% loc('Phone number (optional)') %]</label>
     <input class="form-control" type="text" value="[% report.user.phone | html %]" name="phone" id="form_phone">
 
     <div class="form-txt-submit-box">
