@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-08 16:23-0300\n"
+"PO-Revision-Date: 2016-12-08 17:00-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -36,7 +36,7 @@ msgstr " y "
 #: templates/web/base/report/new/top_message_some.html:12
 #: templates/web/base/report/new/top_message_some.html:9
 msgid " or "
-msgstr " o "
+msgstr ","
 
 #: templates/web/base/admin/edit-league.html:12
 msgid "%d edits by %s"
@@ -1134,7 +1134,7 @@ msgstr "Categoría existente"
 
 #: templates/web/base/report/new/form_report.html:52
 msgid "Explain what’s wrong"
-msgstr "Explicar lo que está mal"
+msgstr "Entregue mayores antecedentes de lo sucedido"
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:174
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:913
@@ -3024,7 +3024,7 @@ msgstr "La búsqueda no encontró usuarios."
 #: templates/web/base/report/new/councils_text_private.html:7
 #: templates/web/base/report/new/form_user.html:5
 msgid "See our privacy policy"
-msgstr ""
+msgstr "revise nuestra política de confidencialidad"
 
 #: templates/web/base/admin/body-form.html:39
 #: templates/web/zurich/admin/body-form.html:16
@@ -3311,7 +3311,7 @@ msgstr "Suscríbeme a alertas por email"
 
 #: templates/web/base/report/new/form_report.html:19
 msgid "Summarise the problem"
-msgstr "Introduzca detalles del incidente"
+msgstr "Escriba un resumen del incidente"
 
 #: templates/web/base/admin/contact-form.html:129
 #, fuzzy
@@ -3623,20 +3623,18 @@ msgstr ""
 
 #: templates/web/base/report/new/councils_text.html:3
 #: templates/web/base/report/new/councils_text.html:4
-#, fuzzy
 msgid "These will be published online for others to see, in accordance with our <a href=\"%s\">privacy policy</a>."
-msgstr "Sólo utilizaremos su información personal de acuerdo a nuestra <a href=\"/faq#privacy\">política de privacidad</a>."
+msgstr "Esta información será publica para que otros puedan verla de acuerdo a nuestra <a href=\"%s\">política de privacidad</a>."
 
 #: templates/web/base/report/new/councils_text_all.html:4
 #: templates/web/base/report/new/councils_text_all.html:6
-#, fuzzy
 msgid "These will be sent to <strong>%s</strong> and also published online for others to see, in accordance with our <a href=\"%s\">privacy policy</a>."
-msgstr "Sólo utilizaremos su información personal de acuerdo a nuestra <a href=\"/faq#privacy\">política de privacidad</a>."
+msgstr "Esto será enviado a <strong>%s</strong> y también publicados en línea para que otros puedan verla, de acuerdo con nuestra <a href=\"%s\">política de privacidad</a>."
 
 #: templates/web/base/report/new/councils_text_private.html:5
 #: templates/web/base/report/new/form_user.html:4
 msgid "These will be sent to the council, but will never be shown online."
-msgstr "Esta información se enviará a CooperaNet, pero nunca aparecerá publicamente."
+msgstr "Esta información (email, nombre, teléfono) se enviará a CooperaNet, pero nunca aparecerá públicamente."
 
 #: templates/web/base/report/new/councils_text_private.html:3
 msgid "These will never be shown online."
@@ -4167,7 +4165,7 @@ msgstr "Ya respondió a esta encuesta. Si tiene alguna pregunta, por favor, <a h
 #: templates/web/base/report/new/form_report.html:37
 #: templates/web/zurich/report/new/fill_in_details_form.html:30
 msgid "You have already attached photos to this report.  Note that you can attach a maximum of 3 to this report (if you try to upload more, the oldest will be removed)."
-msgstr ""
+msgstr "Ya has adjuntado 3 fotos, que es el máximo para a este registro (si tratas de subir más, la primera se eliminará)."
 
 #: templates/web/base/questionnaire/index.html:87
 #: templates/web/base/report/update/form_update.html:16
@@ -4277,7 +4275,7 @@ msgstr "Su número de teléfono"
 
 #: templates/web/base/questionnaire/index.html:16
 msgid "Your report"
-msgstr ""
+msgstr "Tus Registros"
 
 #: templates/web/base/my/my.html:28
 msgid "Your reports"
@@ -4440,7 +4438,7 @@ msgstr "salir"
 
 #: templates/web/base/report/new/form_report.html:13
 msgid "the local council"
-msgstr "ayuntamiento"
+msgstr "CooperaNet"
 
 #: templates/web/base/report/_report_meta_info.html:2
 #: templates/web/zurich/report/_main.html:5
