@@ -43,3 +43,36 @@ $image-sprite: '/cobrands/cooperanet/images/sprite.png';
 a.platform-logo{
 	background-image:url("../cooperanet/images/mci-logo-platform.png") !important;
 }
+// Iconos Formulario
+label#form_category_label {
+    background: transparent url(/cobrands/cooperanet/images/24/filter.png) no-repeat;
+    padding-left: 25px;
+}
+label#form_title {
+    background: transparent url(/cobrands/cooperanet/images/24/exclamation-triangle.png) no-repeat;
+    padding-left: 25px;
+}
+label#form_photo {
+    background: transparent url(/cobrands/cooperanet/images/24/camera.png) no-repeat;
+    padding-left: 25px;
+}
+label#form_detail {
+    background: transparent url(/cobrands/cooperanet/images/24/file-text-o.png) no-repeat;
+    padding-left: 25px;
+}
+label#form_email {
+    background: transparent url(/cobrands/cooperanet/images/24/envelope-o.png) no-repeat;
+    padding-left: 25px;
+}
+label#form_name {
+    background: transparent url(/cobrands/cooperanet/images/24/male.png) no-repeat;
+    padding-left: 25px;
+}
+label#form_phone {
+    background: transparent url(/cobrands/cooperanet/images/24/mobile-phone.png) no-repeat;
+    padding-left: 25px;
+}
+
+
+
+
