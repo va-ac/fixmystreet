@@ -10,14 +10,14 @@
 
 [% IF report.used_map %]
 
-<form action="[% c.uri_for('/report/new') %]" method="post" name="mapForm" id="mapForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
+<form action="[% c.uri_for('/report/espacios') %]" method="post" name="mapForm" id="mapForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
     [% IF c.req.params.map_override %]
         <input type="hidden" name="map_override" value="[% c.req.params.map_override | html %]">
     [% END %]
 
 [% ELSE %]
 
-<form action="[% c.uri_for('/report/new') %]" method="post" name="mapSkippedForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
+<form action="[% c.uri_for('/report/espacios') %]" method="post" name="mapSkippedForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
     <input type="hidden" name="skipped" value="1">
 
 [% END %]
