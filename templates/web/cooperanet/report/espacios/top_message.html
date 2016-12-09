@@ -1,9 +1,9 @@
 [% FILTER collapse ~%]
 [%~ IF unresponsive.ALL ~%]
     [% PROCESS 'report/espacios/unresponsive_body.html' body_id = unresponsive.ALL %]
-[%~ ELSIF bodies_to_list.size == 0 # On a /new page, no bodies ~%]
+[%~ ELSIF bodies_to_list.size == 0 # On a /espacios page, no bodies ~%]
     <div class="box-warning">[% PROCESS 'report/espacios/top_message_none.html' %]</div>
-[%~ ELSIF bodies_to_list.size != bodies.size # On a /new page, some missing bodies ~%]
+[%~ ELSIF bodies_to_list.size != bodies.size # On a /espacios page, some missing bodies ~%]
     <div class="box-warning">[% PROCESS 'report/espacios/top_message_some.html' %]</div>
 [%~ END ~%]
 [%~ END ~%]
