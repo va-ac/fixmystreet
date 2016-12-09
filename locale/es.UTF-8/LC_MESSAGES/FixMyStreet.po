@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-08 17:00-0300\n"
+"PO-Revision-Date: 2016-12-08 17:53-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -2286,7 +2286,7 @@ msgstr "Por favor no <strong>no</strong> reportar problemas a través de este fo
 
 #: templates/web/base/report/new/notes.html:6
 msgid "Please do not be abusive&nbsp;&mdash; abusing your council devalues the service for all users."
-msgstr "Por favor notifique incidencias relevantes y no abuse; abusando de su ayuntamiento degrada su capacidad de servicio a toda la ciudadanía."
+msgstr "Por favor notifique incidencias relevantes y no abuse; al abusar degrada la capacidad de servicio para toda la ciudadanía."
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:351
 #: perllib/FixMyStreet/DB/Result/Comment.pm:126
@@ -2424,7 +2424,7 @@ msgstr "Tenga en cuenta que su actualización tiene <strong>aún no se ha public
 #: templates/web/base/report/new/notes.html:1
 #: templates/web/zurich/report/new/notes.html:1
 msgid "Please note:"
-msgstr "Por favor, tenga en cuenta:"
+msgstr "Tenga en consideración:"
 
 #: perllib/FixMyStreet/App/Controller/Report.pm:335
 #, fuzzy
@@ -3489,7 +3489,7 @@ msgstr ""
 #: templates/web/base/report/new/fill_in_details_text.html:1
 #: templates/web/base/report/new/fill_in_details_text.html:3
 msgid "The council won&rsquo;t be able to help unless you leave as much detail as you can. Please describe the exact location of the problem (e.g. on a wall), what it is, how long it has been there, a description (and a photo of the problem if you have one), etc."
-msgstr "El ayuntamiento necesita la mayor cantidad de detalles posibles para atender su notificación. Por favor, describa la ubicación exacta del problema (e.g. \"sobre tal o cual pared\"), en qué consiste éste, el tiempo que lleva ahí, una descripción y si es posible también una foto que permita localizarlo, etc."
+msgstr "La Gobernación necesita la mayor cantidad de detalles posibles para atender su incidente. Por favor, describa la ubicación exacta del problema, en qué consiste éste, el tiempo que lleva ahí, una descripción y si es posible también una foto que permita localizarlo, etc."
 
 #: templates/web/base/admin/edit-league.html:3
 #: templates/web/base/admin/edit-league.html:4

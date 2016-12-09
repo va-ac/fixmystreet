@@ -1,5 +1,5 @@
 [%
-    sidebar_html = PROCESS 'report/new/sidebar.html';
+    sidebar_html = PROCESS 'report/espacios/sidebar.html';
 
     SET bodyclass = '';
     SET bodyclass = 'mappage';
@@ -39,11 +39,11 @@
 
             <div id="report-a-problem-main">
               [% IF login_success %]
-                [% PROCESS 'report/new/login_success_form.html' %]
+                [% PROCESS 'report/espacios/login_success_form.html' %]
               [% ELSIF oauth_need_email %]
-                [% PROCESS 'report/new/oauth_email_form.html' %]
+                [% PROCESS 'report/espacios/oauth_email_form.html' %]
               [% ELSE %]
-                [% PROCESS 'report/new/fill_in_details_form.html' %]
+                [% PROCESS 'report/espacios/fill_in_details_form.html' %]
               [% END %]
             </div>
 

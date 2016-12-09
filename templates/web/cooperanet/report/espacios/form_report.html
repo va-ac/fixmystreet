@@ -1,18 +1,18 @@
-[% INCLUDE 'report/new/form_heading.html' %]
+[% INCLUDE 'report/espacios/form_heading.html' %]
 
 [% IF field_errors.bodies %]
     <p class='form-error'>[% field_errors.bodies %]</p>
 [% END %]
 
-[% PROCESS "report/new/category_wrapper.html" %]
-[% TRY %][% PROCESS 'report/new/after_category.html' %][% CATCH file %][% END %]
+[% PROCESS "report/espacios/category_wrapper.html" %]
+[% TRY %][% PROCESS 'report/espacios/after_category.html' %][% CATCH file %][% END %]
 
     <h2 class="form-section-heading">Public details</h2>
     <div class="form-section-description" id="js-councils_text">
       [% IF js %]
-        [% PROCESS 'report/new/councils_text_all.html' list_of_names = [ loc('the local council') ] %]
+        [% PROCESS 'report/espacios/councils_text_all.html' list_of_names = [ loc('the local council') ] %]
       [% ELSE %]
-        [% PROCESS 'report/new/councils_text.html' %]
+        [% PROCESS 'report/espacios/councils_text.html' %]
       [% END %]
     </div>
 
@@ -47,7 +47,7 @@
     </div>
 [% END %]
 
-[% TRY %][% PROCESS 'report/new/after_photo.html' %][% CATCH file %][% END %]
+[% TRY %][% PROCESS 'report/espacios/after_photo.html' %][% CATCH file %][% END %]
 
     <label for="form_detail">[% loc('Explain what’s wrong') %]</label>
 [% IF field_errors.detail %]
@@ -55,7 +55,7 @@
 [% END %]
     <textarea class="form-control" rows="7" cols="26" name="detail" id="form_detail" placeholder="[% loc('This pothole has been here for two months and…') %]" required>[% report.detail | html %]</textarea>
 
-[% TRY %][% PROCESS 'report/new/inline-tips.html' %][% CATCH file %][% END %]
+[% TRY %][% PROCESS 'report/espacios/inline-tips.html' %][% CATCH file %][% END %]
 
 [% IF partial_token %]
     <input type="hidden" name="partial" value="[% partial_token.token %]">

@@ -16,15 +16,15 @@
     </div>
   [% END %]
     <div id="js-social-email-hide">
-    [% PROCESS 'report/new/form_user_loggedout_email.html' required = 0 %]
+    [% PROCESS 'report/espacios/form_user_loggedout_email.html' required = 0 %]
 [% ELSE %]
-    [% PROCESS 'report/new/form_user_loggedout_email.html' required = 1 %]
+    [% PROCESS 'report/espacios/form_user_loggedout_email.html' required = 1 %]
 [% END %]
 
 <div id="form_sign_in">
     <h2>[% tprintf(loc("Do you have a %s password?", "%s is the site name"), site_name) %]</h2>
-    [% PROCESS 'report/new/form_user_loggedout_password.html' %]
-    [% PROCESS 'report/new/form_user_loggedout_by_email.html' %]
+    [% PROCESS 'report/espacios/form_user_loggedout_password.html' %]
+    [% PROCESS 'report/espacios/form_user_loggedout_by_email.html' %]
 </div>
 
 [% IF c.config.FACEBOOK_APP_ID OR c.config.TWITTER_KEY %]

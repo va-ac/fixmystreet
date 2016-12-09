@@ -7,11 +7,11 @@
         [% IF field_errors.category %]
           <p class='form-error'>[% field_errors.category %]</p>
         [% END %]
-        [% PROCESS "report/new/category.html" %]
+        [% PROCESS "report/espacios/category.html" %]
     [% END %]
 [% END %]
 </div>
 
 [%- IF category_extras %]
-    [% PROCESS "report/new/category_extras.html" %]
+    [% PROCESS "report/espacios/category_extras.html" %]
 [%- END %]

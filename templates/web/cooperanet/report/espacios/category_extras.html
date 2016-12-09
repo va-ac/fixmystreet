@@ -3,7 +3,7 @@
 <div id="category_meta">
   [%- IF unresponsive.$category %]
     [%# Note: this is only shown on FMS.com %]
-    [% INCLUDE "report/new/unresponsive_body.html" body_id = unresponsive.$category %]
+    [% INCLUDE "report/espacios/unresponsive_body.html" body_id = unresponsive.$category %]
   [%- END %]
 
   [%- IF category_extras.$category.size %]
@@ -15,7 +15,7 @@
         list_of_names.join( '</strong>' _ loc(' or ') _ '<strong>' )
       ); %]
     </p>
-    [% INCLUDE 'report/new/category_extras_fields.html' %]
+    [% INCLUDE 'report/espacios/category_extras_fields.html' %]
     </div>
   [%- END %]
 </div>
