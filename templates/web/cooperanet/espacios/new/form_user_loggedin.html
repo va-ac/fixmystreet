@@ -34,12 +34,12 @@
     [%- END -%]
     type="text" value="[% c.user.email | html %]">
 
-    [% INCLUDE 'report/espacios/extra_name.html' %]
+    [% INCLUDE 'espacios/new/extra_name.html' %]
     [% PROCESS 'user/_anonymity.html' anonymous = report.anonymous %]
 
     <label for="form_name" id="form_name_label">[% loc('Name') %]
     [% TRY %]
-        [% INCLUDE 'report/espacios/after_name.html' %]
+        [% INCLUDE 'espacios/new/after_name.html' %]
         [% CATCH file %]
     [% END %]
     </label>

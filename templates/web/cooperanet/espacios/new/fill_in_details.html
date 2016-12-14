@@ -1,5 +1,5 @@
 [%
-    sidebar_html = PROCESS 'report/espacios/sidebar.html';
+    sidebar_html = PROCESS 'espacios/new/sidebar.html';
 
     SET bodyclass = '';
     SET bodyclass = 'mappage';
@@ -10,14 +10,14 @@
 
 [% IF report.used_map %]
 
-<form action="[% c.uri_for('/report/espacios') %]" method="post" name="mapForm" id="mapForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
+<form action="[% c.uri_for('/espacios/new') %]" method="post" name="mapForm" id="mapForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
     [% IF c.req.params.map_override %]
         <input type="hidden" name="map_override" value="[% c.req.params.map_override | html %]">
     [% END %]
 
 [% ELSE %]
 
-<form action="[% c.uri_for('/report/espacios') %]" method="post" name="mapSkippedForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
+<form action="[% c.uri_for('/espacios/new') %]" method="post" name="mapSkippedForm"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %] class="validate">
     <input type="hidden" name="skipped" value="1">
 
 [% END %]
@@ -39,11 +39,11 @@
 
             <div id="report-a-problem-main">
               [% IF login_success %]
-                [% PROCESS 'report/espacios/login_success_form.html' %]
+                [% PROCESS 'espacios/new/login_success_form.html' %]
               [% ELSIF oauth_need_email %]
-                [% PROCESS 'report/espacios/oauth_email_form.html' %]
+                [% PROCESS 'espacios/new/oauth_email_form.html' %]
               [% ELSE %]
-                [% PROCESS 'report/espacios/fill_in_details_form.html' %]
+                [% PROCESS 'espacios/new/fill_in_details_form.html' %]
               [% END %]
             </div>
 

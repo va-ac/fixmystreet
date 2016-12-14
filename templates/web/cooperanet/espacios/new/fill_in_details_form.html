@@ -5,7 +5,7 @@
 [% END %]
 
 <div id="js-top-message">
-    [% PROCESS 'report/espacios/top_message.html' %]
+    [% PROCESS 'espacios/new/top_message.html' %]
 </div>
 
 [% IF report.used_map && partial_token %]
@@ -21,7 +21,7 @@
 
 <fieldset>
     <div id="problem_form">
-        [% PROCESS 'report/espacios/form_report.html' %]
-        [% PROCESS 'report/espacios/form_user.html' %]
+        [% PROCESS 'espacios/new/form_report.html' %]
+        [% PROCESS 'espacios/new/form_user.html' %]
     </div>
 </fieldset>

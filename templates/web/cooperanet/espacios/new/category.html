@@ -1,0 +1,65 @@
+[% IF category_options.size ~%]
+    [% IF category;
+        category_lc = category | lower;
+       END; ~%]
+    <label for='form_category' id="form_category_label">
+        [%~ loc('Category') ~%]
+    </label>[% =%]
+    <select class="form-control" name='category' id='form_category'>
+        <option value=''>Selecione una Categoría</option>
+        <optgroup label="==» EMERGENCIA «==">
+        <option value='ACCIDENTES AUTOMOVILÍSTICO'>ACCIDENTES AUTOMOVILÍSTICO</option>
+        <option value='CAIDA DE ARBOLES'>CAIDA DE ARBOLES</option>
+        <option value='DERRAME DE COMBUSTIBLE EN LA VÍA'>DERRAME DE COMBUSTIBLE EN LA VÍA</option>
+        <option value='FUGAS DE GAS'>FUGAS DE GAS</option>
+        <option value='INCENDIO'>INCENDIO</option>
+        <option value='INUNDACIONES/ANEGAMIENTO'>INUNDACIONES/ANEGAMIENTO</option>
+        <option value='MATRIZ DE AGUA ROTA'>MATRIZ DE AGUA ROTA</option>
+        <option value='NIEVE O ESCARCHA PELIGROSA'>NIEVE O ESCARCHA PELIGROSA</option>
+        </optgroup>
+        <optgroup label="==» CONTROL DE ESPACIOS «==">
+        <option value='DOMICILIO ABANDONADO'>DOMICILIO ABANDONADO (punto riesgoso)</option>
+        <option value='LUGAR RIESGOSO'>LUGAR RIESGOSO</option>
+        <option value='OCUPACIÓN ILEGALES'>OCUPACIÓN ILEGALES</option>
+        <option value='SITIO ERIAZO'>SITIO ERIAZO</option>
+        </optgroup>
+        <optgroup label="==» DELITO «==">
+        <option value='ROBO/HURTO'>ROBO/HURTO</option>
+        <option value='TRÁFICO DE DROGAS'>TRÁFICO DE DROGAS</option>
+        <option value='VIF'>VIF</option>
+        </optgroup>
+        <optgroup label="==» GESTIÓN ESCOLAR «==">
+        <option value='ACCIDENTE ESCOLAR'>ACCIDENTE ESCOLAR (sólo tutor)</option>
+        <option value='BULLYNG '>BULLYNG </option>
+        <option value='INASISTENCIA INJUSTIFICADA'>INASISTENCIA INJUSTIFICADA</option>
+        <option value='SUSPENCIÓN DE CLASES'>SUSPENCIÓN DE CLASES</option>
+        </optgroup>
+        <optgroup label="==» GESTIÓN LOCAL «==">
+        <option value='ABUNDANTE FOLLAJE'>ABUNDANTE FOLLAJE</option>
+        <option value='AGUA TURBIA EN LAS CAÑERÍAS'>AGUA TURBIA EN LAS CAÑERÍAS</option>
+        <option value='ALCANTARILLAS ABIERTAS O ROTAS'>ALCANTARILLAS ABIERTAS O ROTAS</option>
+        <option value='ANIMALES EN LA VÍA'>ANIMALES EN LA VÍA</option>
+        <option value='CABLES EXPUESTOS'>CABLES EXPUESTOS</option>
+        <option value='CALLES EN MAL ESTADO'>CALLES EN MAL ESTADO</option>
+        <option value='CORTE DE AGUA'>CORTE DE AGUA</option>
+        <option value='CORTE DE INTERNET'>CORTE DE INTERNET</option>
+        <option value='CORTE DE LUZ'>CORTE DE LUZ</option>
+        <option value='FALTA DE SEÑALIZACION'>FALTA DE SEÑALIZACION</option>
+        <option value='PERROS VAGOS'>PERROS VAGOS</option>
+        <option value='PLAZAS EN MAL ESTADO'>PLAZAS EN MAL ESTADO</option>
+        <option value='POSTES O ALUMBRADO PÚBLICO MAL ESTADO'>POSTES O ALUMBRADO PÚBLICO MAL ESTADO</option>
+        <option value='SEMAFOROS APAGADOS'>SEMAFOROS APAGADOS</option>
+        <option value='VEHÍCULOS ABANDONADOS'>VEHÍCULOS ABANDONADOS</option>
+        <option value='VEREDAS O ESPACIOS PÚBLICOS EN MAL ESTADO'>VEREDAS O ESPACIOS PÚBLICOS EN MAL ESTADO</option>
+        <option value='VERTEDERO ILEGAL'>VERTEDERO ILEGAL</option>
+        </optgroup>
+        <optgroup label="==» INCIVILIDAD «==">
+        <option value='CARRERAS CLANDESTINAS'>CARRERAS CLANDESTINAS</option>
+        <option value='CONSUMO DE ALCOHOL EN LA VÍA PÚBLICA'>CONSUMO DE ALCOHOL EN LA VÍA PÚBLICA</option>
+        <option value='DAÑOS A LA PROPIEDAD PÚBLICA'>DAÑOS A LA PROPIEDAD PÚBLICA</option>
+        <option value='PERSONA EN SITUACIÓN DE CALLE'>PERSONA EN SITUACIÓN DE CALLE</option>
+        <option value='RIÑAS Y DESÓRDENES'>RIÑAS Y DESÓRDENES</option>
+        <option value='RUIDOS MOLESTOS'>RUIDOS MOLESTOS</option>
+        </optgroup>
+    </select>
+[%~ END ~%]

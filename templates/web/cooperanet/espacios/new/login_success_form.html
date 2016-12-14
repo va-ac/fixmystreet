@@ -9,10 +9,10 @@
 <fieldset>
     <div id="problem_form">
       [% IF c.user_exists %]
-        [% PROCESS "report/espacios/form_user_loggedin.html" %]
+        [% PROCESS "espacios/new/form_user_loggedin.html" %]
       [% ELSE %]
-        [% PROCESS "report/espacios/form_user_loggedout.html" %]
+        [% PROCESS "espacios/new/form_user_loggedout.html" %]
       [% END %]
-        [% PROCESS 'report/espacios/form_report.html' %]
+        [% PROCESS 'espacios/new/form_report.html' %]
     </div>
 </fieldset>
