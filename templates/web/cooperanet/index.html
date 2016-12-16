@@ -2,24 +2,11 @@
 
 [% pre_container_extra = PROCESS 'around/postcode_form.html' %]
 
-<div class="tablewrapper">
-	<ul>
-		<li class='cat-control-de-espacios'><a href='#'>Control de Espacios</a></li>
-		<li class='cat-delito'><a href='#'>Delito</a></li>
-		<li class='cat-emergencia'><a href='#'>Emergencia</a></li>
-		<li class='cat-gestion-escolar'><a href='#'>Gestión Escolar</a></li>
-		<li class='cat-gestion-local'><a href='#'>Gestión Local</a></li>
-		<li class='cat-incivilidad'><a href='#'>Incivilidad</a></li>
-	</ul>
-</div>
-
 [% INCLUDE 'header.html', title = '', bodyclass = 'frontpage fullwidthpage' %]
 
 [% IF error %]
     <p class="form-error">[% error %]</p>
 [% END %]
-
-
 
 [% TRY %][% PROCESS 'front/pre-steps.html' %][% CATCH file %][% END %]
 
