@@ -74,14 +74,40 @@ label#form_phone_label {
 }
 
 .category {
-    margin-left: -60px;
+    margin-left: 5px;
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 120px;
+    padding-left: 130px;
+    height: 130px;
+}
+
+.cat-emergencia {
+    background-image: url(http://icon-icons.com/icons2/631/PNG/128/three-fingers-swipe-up-stroke-symbol_icon-icons.com_57958.png);
+    background-repeat: no-repeat;
+}
+
+.cat-delito {
+    background-image: url(http://icon-icons.com/icons2/631/PNG/128/three-fingers-swipe-up-stroke-symbol_icon-icons.com_57958.png);
+    background-repeat: no-repeat;
+}
+
+.cat-gestion-escolar {
+    background-image: url(http://icon-icons.com/icons2/631/PNG/128/three-fingers-swipe-up-stroke-symbol_icon-icons.com_57958.png);
+    background-repeat: no-repeat;
 }
 
 .cat-incivilidad {
+    background-image: url(http://icon-icons.com/icons2/631/PNG/128/three-fingers-swipe-up-stroke-symbol_icon-icons.com_57958.png);
+    background-repeat: no-repeat;
+}
+
+.cat-gestion-local {
+    background-image: url(http://icon-icons.com/icons2/631/PNG/128/three-fingers-swipe-up-stroke-symbol_icon-icons.com_57958.png);
+    background-repeat: no-repeat;
+}
+
+.cat-control-de-espacios {
     background-image: url(http://icon-icons.com/icons2/631/PNG/128/three-fingers-swipe-up-stroke-symbol_icon-icons.com_57958.png);
     background-repeat: no-repeat;
 }
