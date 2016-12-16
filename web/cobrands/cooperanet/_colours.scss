@@ -73,25 +73,113 @@ label#form_phone_label {
     padding-left: 25px;
 }
 
-.category {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
+
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.category:nth-child(even) {
-  background-color: #ccc;
-  color: #000;
+/* grid */
+[class*="row-"] {
+  margin-bottom: 20px;
+}
+[class*="row-"]:last-child {
+  margin-bottom: 0;
+}
+[class*="col-"] {
 }
 
-.tablecategories {
-  width: 600px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(6, 100px);
-  grid-template-rows: 100px 100px 100px;
-  grid-auto-flow: column;
+@media all and ( min-width: 768px ) {
+
+  /* all cols margin */
+  [class*="col-"] {
+    margin-right: 20px;
+  }
+  [class*="col-"]:last-child {
+    margin-right: 0;
+  }
+
+  /* make the columns responsive */
+  .col-1-2 {
+    float: left;
+    width: 50%;
+  }
+  .col-1-4 {
+    float: left;
+    width: 25%;
+  }
+  .col-1-8 {
+    float: left;
+    width: 25%;
+  }
+
+  /* 2 span rows */
+  .row-2 {
+    padding-left: 20px;
+  }
+  .row-2 [class*="col-"]:first-child {
+    margin-left: -20px;
+  }
+
+  /* 4 span rows */
+  .row-4 {
+    padding-left: 60px;
+  }
+  .row-4 [class*="col-"]:first-child {
+    margin-left: -60px;
+  }
+
+  /* 8 span rows */
+  .row-8 {
+    padding-left: 60px;
+  }
+  .row-8 [class*="col-"]:nth-child(4n+1) {
+    margin-left: -60px;
+  }
+  .row-8 [class*="col-"]:nth-child(5n-1) {
+    margin-right: 0;
+  }
+  .row-8 [class*="col-"]:nth-child(6n-1) {
+    clear: both;
+  }
+
 }
+
+@media all and ( min-width: 1200px ) {
+
+  /* adjust width */
+  .col-1-8 {
+    float: left;
+    width: 12.5%;
+  }
+
+  /* 8 span rows */
+  .row-8 {
+    padding-left: 140px;
+  }
+  /* reset these... */
+  .row-8 [class*="col-"]:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  .row-8 [class*="col-"]:nth-child(5n-1) {
+    margin-right: 20px;
+  }
+  .row-8 [class*="col-"]:nth-child(6n-1) {
+    clear: none;
+  }
+  /* and add this */
+  .row-8 [class*="col-"]:nth-child(1) {
+    margin-left: -140px;
+  }
+
+}
+
 
 
