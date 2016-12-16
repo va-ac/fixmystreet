@@ -86,10 +86,10 @@ label#form_phone_label {
 }
 
 .tablecategories {
-  width: 100%;
+  width: 600px;
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(2, 50%);
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
   grid-template-rows: 100px 100px 100px;
   grid-auto-flow: column;
 }
