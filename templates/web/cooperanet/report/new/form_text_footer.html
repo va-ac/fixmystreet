@@ -1,0 +1,18 @@
+<h2 class="form-section-heading form-section-heading--private">Private details</h2>
+	<p class="form-section-description" id="js-councils_text_private">
+	  [% IF js %]
+	    [% loc('These will be sent to the council, but will never be shown online.') %]
+	    (<a href="/privacy">[% loc('See our privacy policy') %]</a>.)
+	  [% ELSE %]
+	    [% PROCESS 'report/new/councils_text_private.html' %]
+	  [% END %]
+	</p>
+
+<h2 class="form-section-heading">Public details</h2>
+    <div class="form-section-description" id="js-councils_text">
+      [% IF js %]
+        [% PROCESS 'report/new/councils_text_all.html' list_of_names = [ loc('the local council') ] %]
+      [% ELSE %]
+        [% PROCESS 'report/new/councils_text.html' %]
+      [% END %]
+    </div>

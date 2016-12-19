@@ -47,8 +47,6 @@
 
 [% TRY %][% PROCESS 'report/new/after_photo.html' %][% CATCH file %][% END %]
 
-
-
 [% TRY %][% PROCESS 'report/new/inline-tips.html' %][% CATCH file %][% END %]
 
 [% IF partial_token %]
@@ -56,12 +54,3 @@
 [% END %]
 
     <input type="hidden" name="submit_problem" value="1">
-
-    <h2 class="form-section-heading">Public details</h2>
-    <div class="form-section-description" id="js-councils_text">
-      [% IF js %]
-        [% PROCESS 'report/new/councils_text_all.html' list_of_names = [ loc('the local council') ] %]
-      [% ELSE %]
-        [% PROCESS 'report/new/councils_text.html' %]
-      [% END %]
-    </div>
