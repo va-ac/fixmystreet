@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-19 16:47-0300\n"
+"PO-Revision-Date: 2016-12-19 17:07-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -36,7 +36,7 @@ msgstr " y "
 #: templates/web/base/report/new/top_message_some.html:12
 #: templates/web/base/report/new/top_message_some.html:9
 msgid " or "
-msgstr ","
+msgstr ", "
 
 #: templates/web/base/admin/edit-league.html:12
 msgid "%d edits by %s"
@@ -1091,7 +1091,7 @@ msgstr "Introduzca un código postal cercano, o el nombre de la calle y el área
 #: templates/web/base/around/postcode_form.html:5
 #: templates/web/base/around/postcode_form.html:6
 msgid "Enter a nearby street name and area"
-msgstr "Introduzca el nombre de una calle cercana"
+msgstr "Introduzca el nombre de una calle cercana al incidente"
 
 #: templates/web/base/auth/general.html:116
 #: templates/web/base/report/new/form_user_loggedout_by_email.html:35
@@ -2228,7 +2228,7 @@ msgstr "Fotos de notificaciones cercanas recientes"
 #: templates/web/base/around/display_location.html:76
 #: templates/web/base/js/translation_strings.html:30
 msgid "Place pin on map"
-msgstr "Coloque el marcador en el mapa"
+msgstr "Haga click sobre el mapa"
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:940
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:946
@@ -2943,7 +2943,7 @@ msgstr ""
 #: templates/web/base/js/translation_strings.html:28
 #: templates/web/base/js/translation_strings.html:40
 msgid "Right place?"
-msgstr "¿Es correcto el lugar?"
+msgstr "¿es el lugar correcto del Incidente?"
 
 #: perllib/FixMyStreet/Geocode/FixaMinGata.pm:167
 #: perllib/FixMyStreet/Geocode/OSM.pm:152
@@ -3629,7 +3629,7 @@ msgstr "Esta información será publica para que otros puedan verla de acuerdo a
 #: templates/web/base/report/new/councils_text_all.html:4
 #: templates/web/base/report/new/councils_text_all.html:6
 msgid "These will be sent to <strong>%s</strong> and also published online for others to see, in accordance with our <a href=\"%s\">privacy policy</a>."
-msgstr "Esto será enviado a <strong>%s</strong> y también publicados en línea para que otros puedan verla, de acuerdo con nuestra <a href=\"%s\">política de privacidad</a>."
+msgstr "Esto será enviado a <strong>%s</strong> y también publicados en línea para que otros puedan ver los incidentes ya registrados, de acuerdo con nuestra <a href=\"%s\">política de privacidad</a>."
 
 #: templates/web/base/report/new/councils_text_private.html:5
 #: templates/web/base/report/new/form_user.html:4
@@ -3795,7 +3795,7 @@ msgstr "Creado:"
 
 #: templates/web/base/js/translation_strings.html:29
 msgid "Try again"
-msgstr "Inténtelo de nuevo"
+msgstr "click para modificar"
 
 #: templates/web/base/contact/submit.html:14
 msgid "Try emailing us directly:"
@@ -4402,7 +4402,7 @@ msgstr "o"
 
 #: templates/web/base/js/translation_strings.html:27
 msgid "or locate me automatically"
-msgstr "o localízame automáticamente"
+msgstr "Localízame automáticamente"
 
 #: templates/web/base/admin/report_edit.html:48
 #: templates/web/base/admin/report_edit.html:50
@@ -4502,7 +4502,7 @@ msgstr[1] "%d minutos"
 #, perl-format
 msgid "<big>%s</big> update on reports"
 msgid_plural "<big>%s</big> updates on reports"
-msgstr[0] "<big>%s</big> notificaciones actualizadas"
+msgstr[0] "<big>%s</big> incidentes actualizados"
 msgstr[1] "<big>%s</big> notificaciones actualizadas"
 
 #: templates/web/base/report/new/top_message_none.html:3
