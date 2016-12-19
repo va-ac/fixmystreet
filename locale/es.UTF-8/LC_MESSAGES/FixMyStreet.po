@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-08 17:53-0300\n"
+"PO-Revision-Date: 2016-12-19 16:40-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -160,7 +160,7 @@ msgstr "(arreglado)"
 
 #: templates/web/base/around/intro.html:2
 msgid "(like graffiti, fly tipping, broken paving slabs, or street lighting)"
-msgstr "(como graffiti, basuras, veredas o alumbrado rotos)"
+msgstr "(Riñas, Perros vagos, Consumo de alcohol en la vía pública)"
 
 #: templates/web/base/report/_item.html:21
 msgid "(not sent to council)"
@@ -757,21 +757,21 @@ msgstr "No se pudo consultar la ubicación"
 
 #: templates/web/base/admin/list_updates.html:9
 msgid "Council"
-msgstr "Ayuntamiento"
+msgstr "Gobernación"
 
 #: templates/web/base/admin/body.html:1
 #: templates/web/base/admin/category_edit.html:1
 #: templates/web/zurich/admin/body.html:1
 msgid "Council contacts for %s"
-msgstr "Contactos del ayuntamiento para %s"
+msgstr "Contactos de la Gobernación para %s"
 
 #: templates/web/base/report/_council_sent_info.html:6
 msgid "Council ref:&nbsp;%s"
-msgstr "Referencia del ayuntamiento:&nbsp;%s"
+msgstr "Referencia de la Gobernación:&nbsp;%s"
 
 #: templates/web/base/admin/stats.html:92
 msgid "Council:"
-msgstr "Ayuntamiento:"
+msgstr "Gobernación:"
 
 #: templates/web/base/admin/stats.html:12
 #: templates/web/base/admin/stats.html:32
@@ -1200,7 +1200,7 @@ msgstr "Arreglado"
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:11
 msgid "Fixed - Council"
-msgstr "Arreglado - Ayuntamiento"
+msgstr "Arreglado - Gobernación"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:10
@@ -1334,7 +1334,7 @@ msgstr "¿Ha sido corregido este problema?"
 
 #: templates/web/base/questionnaire/index.html:61
 msgid "Have you ever reported a problem to a council before, or is this your first time?"
-msgstr "¿Alguna vez informó de un problema a un Ayuntamiento antes, o es su primera vez?"
+msgstr "¿Alguna vez informó de un incidente en CooperaNet antes, o es su primera vez?"
 
 #: templates/web/base/footer.html:35
 #: templates/web/zurich/about/faq-de-ch.html:1
@@ -1594,7 +1594,7 @@ msgstr "A menudo es más rápido <a href=\"%s\">consultar nuestro Listado de Pre
 
 #: templates/web/base/tokens/confirm_problem.html:27
 msgid "It’s on its way to the council right now."
-msgstr "De camino al ayuntamiento en este momento."
+msgstr "De camino a CooperaNet en este momento."
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:177
 msgid "Jurisdiction Unknown"
@@ -1662,7 +1662,7 @@ msgstr "Alertas locales"
 
 #: templates/web/base/index-steps.html:5
 msgid "Locate the problem on a map of the area"
-msgstr "Señale en el mapa de la zona la localización del incidente"
+msgstr "Haga click en el mapa para localizar el incidente"
 
 #: templates/web/base/js/translation_strings.html:44
 msgid "MAP"
@@ -1914,11 +1914,11 @@ msgstr "Sin órgano administrativo"
 
 #: templates/web/base/admin/stats.html:93
 msgid "No council"
-msgstr "Sin ayuntamiento"
+msgstr "Sin Actor relacionado"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:429
 msgid "No council selected"
-msgstr "Ningún ayuntamiento seleccionado"
+msgstr "Ningúna Área seleccionada"
 
 #: templates/web/base/admin/edit-league.html:17
 msgid "No edits have yet been made."
@@ -2010,7 +2010,7 @@ msgstr "No notificado anteriormente"
 
 #: templates/web/base/report/_main_sent_info.html:4
 msgid "Not reported to council"
-msgstr "No comunicado al ayuntamiento"
+msgstr "No comunicado a CooperaNet"
 
 #: templates/web/base/admin/body.html:75
 #: templates/web/base/admin/category_edit.html:57
@@ -2118,7 +2118,7 @@ msgstr "O incidentes notificados a:"
 
 #: templates/web/base/alert/_list.html:37
 msgid "Or you can subscribe to an alert based upon what ward or council you&rsquo;re in:"
-msgstr "O puede suscribirse a una alerta basada en el barrio o ayuntamiento en que te encuentras:"
+msgstr "O puede suscribirse a una alerta basada en el sector en que te encuentras:"
 
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:1056
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:650
@@ -2359,7 +2359,7 @@ msgstr "Por favor, indique su nombre"
 #: perllib/FixMyStreet/Cobrand/UK.pm:319
 #: templates/web/base/js/translation_strings.html:7
 msgid "Please enter your full name, councils need this information – if you do not wish your name to be shown on the site, untick the box below"
-msgstr "Por favor escriba su nombre completo, ya que los ayuntamientos necesitan esta información. Si usted NO desea que su nombre aparecerá en la página, desactive la casilla de abajo"
+msgstr "Por favor escriba su nombre completo, ya que CooperaNet y los Actores necesitan esta información. Si usted NO desea que su nombre aparezca en la página, desactive la casilla de abajo"
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:112
 #: perllib/FixMyStreet/DB/Result/Comment.pm:123
@@ -2406,7 +2406,7 @@ msgstr "Por favor, indique si le gustaría recibir algún otro cuestionario"
 
 #: templates/web/base/report/updates-sidebar-notes.html:2
 msgid "Please note that updates are not sent to the council."
-msgstr "Tenga en cuenta que las actualizaciones no son enviadas al ayuntamiento."
+msgstr "Tenga en cuenta que las actualizaciones no son enviadas a CooperaNet."
 
 #: templates/web/base/report/new/oauth_email_form.html:4
 msgid "Please note your report has <strong>not yet been sent</strong>."
@@ -2798,7 +2798,7 @@ msgstr "Notifique su incidencia"
 #: templates/web/base/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1
 msgid "Report, view, or discuss local problems"
-msgstr "Notifique, consulte o discuta incidentes locales"
+msgstr "Registre Incidentes en la plataforma CooperaNet"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:605
 #: templates/web/base/contact/index.html:57
@@ -3033,7 +3033,7 @@ msgstr "Selecciona un órgano administrativo"
 
 #: templates/web/base/reports/index.html:12
 msgid "Select a particular council to see the reports sent there."
-msgstr "Seleccione un ayuntamiento para ver los informes que se le han enviado."
+msgstr "Seleccione un Área para ver los Incidentes que se le han enviado."
 
 #: templates/web/base/admin/body-form.html:77
 #: templates/web/zurich/admin/body-form.html:26
@@ -3410,7 +3410,7 @@ msgstr "La imagen no ha cargado correctamente (%s), por favor inténtelo de nuev
 
 #: perllib/FixMyStreet/App/Controller/Council.pm:102
 msgid "That location does not appear to be covered by a council; perhaps it is offshore or outside the country. Please try again."
-msgstr "Esa localización no parece estar cubierta por un ayuntamiento, tal vez esté en alta mar o fuera del país. Por favor, inténtelo de nuevo."
+msgstr "Esa localización no parece estar cubierta por CooperaNet, tal vez esté fuera de Coyhaique. Por favor, inténtelo de nuevo."
 
 #: perllib/FixMyStreet/App/Controller/Location.pm:129
 msgid "That location does not appear to be in the UK; please try again."
@@ -3483,7 +3483,7 @@ msgid ""
 "The body's <strong>name</strong> identifies the body (for example, <em>Borsetshire District Council</em>)\n"
 "          and may be displayed publically."
 msgstr ""
-"El <strong>nombre</strong> del organismo identifica al propio organismo administrativo (por ejemplo, <em>Ayuntamiento de Elche</em>)\n"
+"El <strong>nombre</strong> del organismo identifica al propio Actor (por ejemplo, <em>Edelaysen</em>)\n"
 "y puede ser mostrado públicamente. "
 
 #: templates/web/base/report/new/fill_in_details_text.html:1
@@ -3669,7 +3669,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/Script/Reports.pm:201
 msgid "This email has been sent to both councils covering the location of the problem, as the user did not categorise it; please ignore it if you're not the correct council to deal with the issue, or let us know what category of problem this is so we can add it to our system."
-msgstr "Este correo electrónico ha sido enviado a los dos ayuntamientos que cubren la ubicación del problema, ya que el usuario no lo categorizó. Por favor, haga caso omiso del mismo si usted no es el organismo administrativo responsable de este problema, o háganos saber qué clase de problema es para que lo podamos añadir a nuestro sistema."
+msgstr "Este correo electrónico ha sido enviado a los los Actores que cubren la ubicación del incidentes, según como se categorizó el incidente en CooperaNet."
 
 #: perllib/FixMyStreet/Script/Reports.pm:204
 msgid "This email has been sent to several councils covering the location of the problem, as the category selected is provided for all of them; please ignore it if you're not the correct council to deal with the issue."
@@ -3994,7 +3994,7 @@ msgstr "Visualizando un problema"
 
 #: templates/web/base/reports/body.html:16
 msgid "Wards of this council"
-msgstr "Barrios de este ayuntamiento"
+msgstr "Áreas cubiertas por CooperaNet"
 
 #: templates/web/base/alert/choose.html:6
 #: templates/web/base/around/_error_multiple.html:6
@@ -4017,7 +4017,7 @@ msgstr "Somos conscientes de este problema podría ser responsabilidad de %s; si
 
 #: templates/web/base/index-steps.html:11
 msgid "We send it to the council on your behalf"
-msgstr "Se lo enviamos al Ayuntamiento en su nombre"
+msgstr "CooperaNet recibe su solicitud y la deriva a los Actores correspondientes"
 
 #: templates/web/base/report/new/notes.html:4
 #: templates/web/zurich/report/new/notes.html:4
@@ -4203,7 +4203,7 @@ msgstr "No ha notificado nada aún. <a href=\"%s\">Notifique un problema ahora</
 
 #: templates/web/base/admin/index.html:19
 msgid "You need to <a href=\"%s\">add some bodies</a> (such as councils or departments) before any reports can be sent."
-msgstr "Necesita <a href=\"%s\">añadir organismos</a> (como ayuntamiento o departamentos) para que el informe pueda ser enviado."
+msgstr "Necesita <a href=\"%s\">añadir organismos</a> (como áreas o departamentos) para que el informe pueda ser enviado."
 
 #: templates/web/base/admin/bodies.html:11
 msgid ""
@@ -4211,7 +4211,7 @@ msgid ""
 "    the categories of problems they can handle (such as potholes or streetlights) and the\n"
 "    contacts (such as an email address) to which reports are sent."
 msgstr ""
-"Es necesario crear organismos (como ayuntamientos o departamentos) para poder añadir\n"
+"Es necesario crear organismos (como áreas o departamentos) para poder añadir\n"
 "categorías de problemas que éstos puedan solucionar (como farolas o baches) y su\n"
 "vía de contacto (como una dirección de correo), para que las notificaciones puedan ser enviadas."
 
@@ -4309,7 +4309,7 @@ msgstr "por %s"
 #: templates/web/base/reports/body.html:6
 #: templates/web/base/reports/body.html:7
 msgid "council"
-msgstr "ayuntamiento"
+msgstr "Gobernación"
 
 #: templates/web/base/admin/report_edit.html:52
 msgid "didn't use map"
@@ -4370,7 +4370,7 @@ msgstr "marcado como en investigación"
 
 #: templates/web/base/report/updates.html:55
 msgid "marked as not the council's responsibility"
-msgstr "marcado como que el ayuntamiento no es responsable"
+msgstr "marcado como que CooperaNet no es responsable"
 
 #: templates/web/base/report/updates.html:43
 msgid "marked as planned"
@@ -4459,7 +4459,7 @@ msgstr "mapa utilizado"
 
 #: templates/web/base/admin/update_edit.html:37
 msgid "user is from same council as problem - %d"
-msgstr "El usuario es del mismo ayuntamiento que el problema - %d"
+msgstr "El usuario es del mismo Organismo que el problema - %d"
 
 #: templates/web/base/admin/update_edit.html:40
 msgid "user is problem owner"
@@ -4509,8 +4509,8 @@ msgstr[1] "<big>%s</big> notificaciones actualizadas"
 #, perl-format
 msgid "We do not yet have details for the council that covers this location."
 msgid_plural "We do not yet have details for the councils that cover this location."
-msgstr[0] "Todavía no tenemos detalles para el Ayuntamiento que cubre esta zona."
-msgstr[1] "Todavía no tenemos información de qué ayuntamientos cubren este área."
+msgstr[0] "Todavía no tenemos detalles para el Actor que cubre esta zona."
+msgstr[1] "Todavía no tenemos información de qué actores cubren este área."
 
 #: perllib/Utils.pm:220
 #, perl-format
@@ -4544,8 +4544,8 @@ msgstr[1] "%d dias"
 #, perl-format
 msgid "We do <strong>not</strong> yet have details for the other council that covers this location."
 msgid_plural "We do <strong>not</strong> yet have details for the other councils that cover this location."
-msgstr[0] "Todavía <strong>no</strong> tenemos detalles para el Ayuntamiento que cubre esta zona."
-msgstr[1] "Todavía <strong>no</strong> tenemos información sobre el ayuntamiento que cubre este área."
+msgstr[0] "Todavía <strong>no</strong> tenemos detalles para el Actor que cubre esta zona."
+msgstr[1] "Todavía <strong>no</strong> tenemos información sobre el Actor que cubre este área."
 
 #~ msgid "(public)"
 #~ msgstr "(público)"
