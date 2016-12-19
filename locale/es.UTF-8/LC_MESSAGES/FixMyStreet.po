@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-19 16:40-0300\n"
+"PO-Revision-Date: 2016-12-19 16:47-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -4474,7 +4474,7 @@ msgstr "barrio"
 #, perl-format
 msgid "<big>%s</big> report recently"
 msgid_plural "<big>%s</big> reports recently"
-msgstr[0] "<big>%s</big> notificadas recientemente"
+msgstr[0] "<big>%s</big> registrados recientemente"
 msgstr[1] "<big>%s</big> notificadas recientemente"
 
 #: perllib/Utils.pm:224
@@ -4523,14 +4523,14 @@ msgstr[1] "%d semanas"
 #, perl-format
 msgid "<big>%s</big> report in past week"
 msgid_plural "<big>%s</big> reports in past week"
-msgstr[0] "<big>%s</big> notificadas la semana pasada"
+msgstr[0] "<big>%s</big> registrados la última semana"
 msgstr[1] "<big>%s</big> notificaciones la semana pasada"
 
 #: templates/web/base/front/stats.html:19
 #, perl-format
 msgid "<big>%s</big> fixed in past month"
 msgid_plural "<big>%s</big> fixed in past month"
-msgstr[0] "<big>%s</big> arregladas la semana pasada"
+msgstr[0] "<big>%s</big> cerrados desde la última semana"
 msgstr[1] "<big>%s</big> arregladas el mes pasado"
 
 #: perllib/Utils.pm:222
