@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-19 17:07-0300\n"
+"PO-Revision-Date: 2016-12-19 17:45-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -2793,7 +2793,7 @@ msgstr "Notificar sobre %s"
 #: templates/web/base/report/new/login_success_form.html:1
 #: templates/web/base/report/new/oauth_email_form.html:1
 msgid "Report your problem"
-msgstr "Notifique su incidencia"
+msgstr "Registre su Incidente"
 
 #: templates/web/base/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1
