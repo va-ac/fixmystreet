@@ -180,3 +180,6 @@ requires 'Web::Simple';
 # fails. The easiest solution here is to include MooseX::NonMoose in
 # cpanfile.snapshot so it can be found, though I guess it shouldn't be trying
 # to install it if it's already thought that 0.22 was installed...
+
+# VerticalAdvise adding HTTPS Support
+requires 'LWP::Protocol::https';
