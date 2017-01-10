@@ -62,13 +62,13 @@
             <option value='SITIO ERIAZO'>Sitio eriazo</option>
         </optgroup>
     </select>
-    <script type="text/javascript">
-function SelectElement()
-{    
-    var myParam = location.search.split('cat=')[1]
-    var myParam2 = myParam.replace('%20',' ');
-    var element = document.getElementById('form_category');
-    element.value = myParam;
-}
-</script>
+           <script type="text/javascript">
+        function SelectElement()
+        {    
+            var myParam = location.search.split('cat=')[1]
+            var myParam2 = myParam.replace('%20',' ');
+            var element = document.getElementById('form_category');
+            element.value = myParam2;
+        }
+        </script>
 [%~ END ~%]
