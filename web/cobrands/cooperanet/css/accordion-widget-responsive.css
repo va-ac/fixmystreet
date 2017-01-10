@@ -30,7 +30,7 @@
 
     @media only screen and (min-width:480px) and (max-width:767px) {
 		
-        .accordion-widget-container { max-width:420px; }
+        .accordion-widget-container { max-width:90%; }
 		
     }
 
@@ -40,6 +40,6 @@
 
     @media only screen and (max-width:479px) {
 		
-        .accordion-widget-container { max-width:300px; }
+        .accordion-widget-container { max-width:90%; }
 		
     }
