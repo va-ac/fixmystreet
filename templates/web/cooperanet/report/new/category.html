@@ -62,8 +62,23 @@
             <option value='SITIO ERIAZO'>Sitio eriazo</option>
         </optgroup>
     </select>
-           <script type="text/javascript">
-        function SelectElement()
+          <script type="text/javascript">
+if(window.attachEvent) {
+    window.attachEvent('onload', SelectElement());
+} else {
+    if(window.onload) {
+        var curronload = window.onload;
+        var newonload = function(evt) {
+            curronload(evt);
+            SelectElement()(evt);
+        };
+        window.onload = newonload;
+    } else {
+        window.onload = SelectElement();
+    }
+}
+
+function SelectElement()
 {    
     var DirURL = decodeURI(location.search);
     //alert(DirURL);
@@ -71,5 +86,5 @@
     var element = document.getElementById('form_category');
     element.value = myParam;
 }
-        </script>
+</script>
 [%~ END ~%]
