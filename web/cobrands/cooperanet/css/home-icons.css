@@ -1,5 +1,3 @@
 .icon-emergencia {
-	background-image: url("../../cooperanet/images/www.cooperanet.cl_icono_01.png");
-    background-repeat: no-repeat;
-    background-position: left top;
+	content:url("../images/www.cooperanet.cl_icono_01.png");
 }
