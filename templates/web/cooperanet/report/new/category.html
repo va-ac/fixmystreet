@@ -66,7 +66,7 @@
 function SelectElement()
 {    
     var myParam = location.search.split('cat=')[1]
-    alert(myParam);
+    var myParam2 = myParam.replace('%20',' ');
     var element = document.getElementById('form_category');
     element.value = myParam;
 }
