@@ -1,81 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-	
-		<meta charset="utf-8">
-	    <meta name="author" content="Insidelabdev - Designer Studio and Front-end Web Developer">
-		<meta name="description" content="Accordion Framework is a beautiful Lightweight Accordions for your Website">
-		<meta name="keywords" content="Accordion Framework, Multi Accordion, Colors, Multi Themes, Toggle, Responsive, Mobile">
-        <title>Accordion Framework</title>
-		
-		<!-- VIEWPORT -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+[% map_js = PROCESS 'front/javascript.html' %]
 
-		<!-- FAVICON -->
-        <link rel="shortcut icon" type="image/ico" href="cobrands/cooperanet/images/favicon.ico">
-		
-		<!-- REQUIRED STYLES -->
-		<link rel="stylesheet" type="text/css" href="cobrands/cooperanet/css/accordion-widget-structure.css">
-		<link rel="stylesheet" type="text/css" href="cobrands/cooperanet/css/themes/default/accordion-widget-settings.css">
-		<link rel="stylesheet" type="text/css" href="cobrands/cooperanet/css/themes/default/accordion-widget-theme.css">
-		<link rel="stylesheet" type="text/css" href="cobrands/cooperanet/css/themes/default/accordion-widget-animations.css">
-		<link rel="stylesheet" type="text/css" href="cobrands/cooperanet/css/accordion-widget-responsive.css">
-		
-		<!-- FONT LINK -->
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic|Alegreya+Sans:400,300,300italic,400italic,500,500italic,700,700italic,800,800italic,900,900italic|Poiret+One|Dosis:400,500,300,600,700,800|Lobster+Two:400,400italic,700,700italic|Raleway:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Roboto+Condensed:400,300italic,300,400italic,700,700italic|Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Courgette">
-		
-    </head>
+[% pre_container_extra = PROCESS 'around/postcode_form.html' %]
 
-    <body> 
+[% INCLUDE 'header.html', title = '', bodyclass = 'frontpage fullwidthpage' %]
 
-        <div class="accordion-widget-container">
-			<div class="accordion-widget accordion-widget-default accordion-widget-blue accordion-widget-light accordion-widget-fade">
-				<div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
-					<input type="checkbox" id="accordion-widget-one" name="accordion-widget" checked="checked" class="accordion-widget-input">
-					<label for="accordion-widget-one" class="accordion-widget-label"><i class="icon-home2"></i>Welcome<span>16</span></label>
-					<div class="accordion-widget-section">
-						<ul class="accordion-widget-section-content">
-							<li><a href="#"><i class="icon-user3"></i>Profile</a></li>
-							<li><a href="#"><i class="icon-location"></i>Location</a></li>
-							<li><a href="#"><i class="icon-lifebuoy"></i>Support</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
-					<input type="checkbox" id="accordion-widget-two" name="accordion-widget" class="accordion-widget-input">
-					<label for="accordion-widget-two" class="accordion-widget-label"><i class="icon-briefcase3"></i>Services<span>92</span></label>
-					<div class="accordion-widget-section">
-						<ul class="accordion-widget-section-content">
-							<li><a href="#"><i class="icon-pencil2"></i>Design</a></li>
-							<li><a href="#"><i class="icon-html-five"></i>Development</a></li>
-							<li><a href="#"><i class="icon-server"></i>Hosting</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
-					<input type="checkbox" id="accordion-widget-three" name="accordion-widget" class="accordion-widget-input">
-					<label for="accordion-widget-three" class="accordion-widget-label"><i class="icon-cart5"></i>Products<span>86</span></label>
-					<div class="accordion-widget-section">
-						<ul class="accordion-widget-section-content">
-							<li><a href="#"><i class="icon-box-add"></i>Contact Framework</a></li>
-							<li><a href="#"><i class="icon-box-add"></i>Contact Framework Pro</a></li>
-							<li><a href="#"><i class="icon-box-add"></i>Accordion Framework</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
-					<input type="checkbox" id="accordion-widget-four" name="accordion-widget" class="accordion-widget-input">
-					<label for="accordion-widget-four" class="accordion-widget-label"><i class="icon-lock2"></i>Customer Account<span>120</span></label>
-					<div class="accordion-widget-section">
-						<ul class="accordion-widget-section-content">
-							<li><a href="#"><i class="icon-unlocked"></i>Log In</a></li>
-							<li><a href="#"><i class="icon-key"></i>Forgot Password</a></li>
-							<li><a href="#"><i class="icon-cross2"></i>Delete Account</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-    </body>
-</html>
+[% IF error %]
+    <p class="form-error">[% error %]</p>
+[% END %]
+
+[% TRY %][% PROCESS 'front/pre-steps.html' %][% CATCH file %][% END %]
+
+<div class="tablewrapper">
+    <div id="front-howto">
+        [% INCLUDE 'index-steps.html' %]
+    </div>
+
+    [% INCLUDE 'front/recent.html' %]
+</div>
+
+[% INCLUDE 'footer.html' pagefooter = 'yes' %]
