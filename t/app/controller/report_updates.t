@@ -685,6 +685,8 @@ for my $test (
         my $meta_state = $test->{meta} || $test->{fields}->{state};
         if ( $test->{reopened} ) {
             like $update_meta->[0], qr/reopened$/, 'update meta says reopened';
+        } elsif ( $test->{state} eq 'duplicate' ) {
+            like $update_meta->[0], qr/closed as $meta_state$/, 'update meta includes state change';
         } else {
             like $update_meta->[0], qr/marked as $meta_state$/, 'update meta includes state change';
         }
@@ -1827,7 +1829,8 @@ for my $test (
 subtest 'check have to be logged in for creator fixed questionnaire' => sub {
     $mech->log_out_ok();
 
-    $mech->get_ok( "/questionnaire/submit?problem=$report_id&reported=Yes" );
+    $mech->get( "/questionnaire/submit?problem=$report_id&reported=Yes" );
+    is $mech->res->code, 400, "got 400";
 
     $mech->content_contains( "I'm afraid we couldn't locate your problem in the database." )
 };
@@ -1836,7 +1839,8 @@ subtest 'check cannot answer other user\'s creator fixed questionnaire' => sub {
     $mech->log_out_ok();
     $mech->log_in_ok( $user2->email );
 
-    $mech->get_ok( "/questionnaire/submit?problem=$report_id&reported=Yes" );
+    $mech->get( "/questionnaire/submit?problem=$report_id&reported=Yes" );
+    is $mech->res->code, 400, "got 400";
 
     $mech->content_contains( "I'm afraid we couldn't locate your problem in the database." )
 };

@@ -978,6 +978,7 @@ sub template_edit : Path('templates') : Args(2) {
         } else {
             $template->title( $c->get_param('title') );
             $template->text( $c->get_param('text') );
+            $template->state( $c->get_param('state') );
             $template->auto_response( $c->get_param('auto_response') ? 1 : 0 );
             $template->update_or_insert;
 
@@ -1377,7 +1378,7 @@ sub user_edit : Path('user_edit') : Args(1) {
     }
 
     if ( $user->from_body ) {
-        unless ( $c->stash->{body} && $user->from_body->id eq $c->stash->{body}->id ) {
+        unless ( $c->stash->{live_contacts} ) {
             $c->stash->{body} = $user->from_body;
             $c->forward('fetch_contacts');
         }
