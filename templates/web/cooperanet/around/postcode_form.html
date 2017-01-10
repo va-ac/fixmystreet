@@ -6,12 +6,33 @@
             question = c.cobrand.enter_postcode_text || loc('Enter a nearby street name and area');
         %]
 
-        <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_01.png">
-        <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_02.png">
-        <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_03.png">
-        <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_04.png">
-        <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_05.png">
-        <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_06.png">
+
+        <div class="row-2 clearfix">
+            <div class="col-1-2">
+                <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_01.png">
+            </div>
+            <div class="col-1-2">
+                <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_02.png">
+            </div>
+        </div>
+
+        <div class="row-2 clearfix">
+            <div class="col-1-2">
+                <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_03.png">
+            </div>
+            <div class="col-1-2">
+                <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_04.png">
+            </div>
+        </div>
+
+        <div class="row-2 clearfix">
+            <div class="col-1-2">
+                <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_05.png">
+            </div>
+            <div class="col-1-2">
+                <img src="cobrands/cooperanet/images/www.cooperanet.cl_icono_06.png">
+            </div>
+        </div>        
 
         <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm" id="postcodeForm">
             <label for="pc">[% question %]:</label>
