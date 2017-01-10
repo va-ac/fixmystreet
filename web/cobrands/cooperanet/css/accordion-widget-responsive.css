@@ -1,0 +1,45 @@
+/*
+    Description: 	Accordion Framework
+    Author: 		Insidelabdev
+    Version: 		1.0
+*/
+
+/*	--------------------------------------------------
+	:: TABLET PORTRAIT DESIGN WIDTH 1200PX
+	-------------------------------------------------- */
+
+    @media only screen and (min-width:960px) and (max-width:1199px) {
+		
+        .accordion-widget-container { max-width:768px; }
+       
+    }
+
+/*	--------------------------------------------------
+	:: TABLET PORTRAIT DESIGN WIDTH 960PX
+	-------------------------------------------------- */
+
+    @media only screen and (min-width:768px) and (max-width:959px) {
+		
+        .accordion-widget-container { max-width:768px; }
+		       
+    }
+
+/*	--------------------------------------------------
+	:: TABLET LANDSCAPE DESIGN WIDTH 420PX
+	-------------------------------------------------- */
+
+    @media only screen and (min-width:480px) and (max-width:767px) {
+		
+        .accordion-widget-container { max-width:420px; }
+		
+    }
+
+/*	--------------------------------------------------
+	:: TABLET PORTRAIT DESIGN WIDTH 300PX
+	-------------------------------------------------- */
+
+    @media only screen and (max-width:479px) {
+		
+        .accordion-widget-container { max-width:300px; }
+		
+    }

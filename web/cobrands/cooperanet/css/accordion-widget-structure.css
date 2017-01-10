@@ -1,0 +1,1372 @@
+/*
+    Description: 	Accordion Framework
+    Author: 		Insidelabdev
+    Version: 		1.0
+*/
+
+/*	--------------------------------------------------
+	:: GRID CONTAINER
+	-------------------------------------------------- */
+
+    .grid-holder {
+	    position:relative;
+		margin:0 auto;
+	    width:100%;
+		padding:0;
+		font-size:0;
+		-webkit-box-sizing:border-box;
+	       -moz-box-sizing:border-box; 
+	            box-sizing:border-box;
+    }
+	
+	.grid-holder:after { 
+	    content:""; 
+	    display:block; 
+	    height:0; 
+	    clear:both; 
+	    visibility:hidden; 
+	}
+
+/*	--------------------------------------------------
+	:: COLUMNS FLOAT
+	-------------------------------------------------- */
+
+    .grid-holder .column {
+	    display:inline-block;
+		float:left;
+	    padding:0 1%;
+    }
+
+/*	-------------------------------------------------------
+	:: COLUMNS WIDTH IN %
+	------------------------------------------------------- */
+    
+    .grid-holder .column.one { width:6.333333333333333%; }
+    .grid-holder .column.two { width:14.666666666666667%; }
+    .grid-holder .column.three { width:23%; }
+    .grid-holder .column.four { width:31.33333333333334%; }
+    .grid-holder .column.five { width:39.66666666666667%; }
+    .grid-holder .column.six { width:48%; }
+    .grid-holder .column.seven { width:56.33333333333334%; }
+    .grid-holder .column.eight { width:64.66666666666667%; }
+    .grid-holder .column.nine { width:73%; }
+    .grid-holder .column.ten { width:81.33333333333334%; }
+    .grid-holder .column.eleven { width:89.66666666666667%; }
+    .grid-holder .column.twelve { width:98%; }
+    
+/*	--------------------------------------------------
+	:: COLUMNS WIDTH WITH NOSPACE LEFT DESKTOP
+	-------------------------------------------------- */
+	
+	.grid-holder .column.one.nospacedesl { width:7.333333333333333%; padding-left:0; }
+    .grid-holder .column.two.nospacedesl { width:15.66666666666667%; padding-left:0; }
+    .grid-holder .column.three.nospacedesl { width:24%; padding-left:0; }
+    .grid-holder .column.four.nospacedesl { width:32.33333333333334%; padding-left:0; }
+    .grid-holder .column.five.nospacedesl { width:40.66666666666667%; padding-left:0; }
+    .grid-holder .column.six.nospacedesl { width:49%; padding-left:0; }
+    .grid-holder .column.seven.nospacedesl { width:57.33333333333334%; padding-left:0; }
+    .grid-holder .column.eight.nospacedesl { width:65.66666666666667%; padding-left:0; }
+    .grid-holder .column.nine.nospacedesl { width:74%; padding-left:0; }
+    .grid-holder .column.ten.nospacedesl { width:82.33333333333334%; padding-left:0; }
+    .grid-holder .column.eleven.nospacedesl { width:90.66666666666667%; padding-left:0; }
+    .grid-holder .column.twelve.nospacedesl { width:99%; padding-left:0; }
+
+/*	--------------------------------------------------
+	:: COLUMNS WIDTH WITH NOSPACE RIGHT DESKTOP
+	-------------------------------------------------- */
+	
+	.grid-holder .column.one.nospacedesr { width:7.333333333333333%; padding-right:0; }
+    .grid-holder .column.two.nospacedesr { width:15.66666666666667%; padding-right:0; }
+    .grid-holder .column.three.nospacedesr { width:24%; padding-right:0; }
+    .grid-holder .column.four.nospacedesr { width:32.33333333333334%; padding-right:0; }
+    .grid-holder .column.five.nospacedesr { width:40.66666666666667%; padding-right:0; }
+    .grid-holder .column.six.nospacedesr { width:49%; padding-right:0; }
+    .grid-holder .column.seven.nospacedesr { width:57.33333333333334%; padding-right:0; }
+    .grid-holder .column.eight.nospacedesr { width:65.66666666666667%; padding-right:0; }
+    .grid-holder .column.nine.nospacedesr { width:74%; padding-right:0; }
+    .grid-holder .column.ten.nospacedesr { width:82.33333333333334%; padding-right:0; }
+    .grid-holder .column.eleven.nospacedesr { width:90.66666666666667%; padding-right:0; }
+    .grid-holder .column.twelve.nospacedesr { width:99%; padding-right:0; }
+    
+/*	--------------------------------------------------
+	:: COLUMNS WIDTH WITH NOSPACE DESKTOP
+	-------------------------------------------------- */
+	
+	.grid-holder .column.one.nospacedes { width:8.333333333333333%; padding:0; }
+    .grid-holder .column.two.nospacedes { width:16.66666666666667%; padding:0; }
+    .grid-holder .column.three.nospacedes { width:25%; padding:0; }
+    .grid-holder .column.four.nospacedes { width:33.33333333333334%; padding:0; }
+    .grid-holder .column.five.nospacedes { width:41.66666666666667%; padding:0; }
+    .grid-holder .column.six.nospacedes { width:50%; padding:0; }
+    .grid-holder .column.seven.nospacedes { width:58.33333333333334%; padding:0; }
+    .grid-holder .column.eight.nospacedes { width:66.66666666666667%; padding:0; }
+    .grid-holder .column.nine.nospacedes { width:75%; padding:0; }
+    .grid-holder .column.ten.nospacedes { width:83.33333333333334%; padding:0; }
+    .grid-holder .column.eleven.nospacedes { width:91.66666666666667%; padding:0; }
+    .grid-holder .column.twelve.nospacedes { width:100%; padding:0; }
+	
+/*	-------------------------------------------------------
+	:: COLUMNS OFFSETS DESKTOP
+	------------------------------------------------------- */
+
+    .grid-holder .column.offsetdes-one { margin-left:8.333333333333333%; }
+    .grid-holder .column.offsetdes-two { margin-left:16.666666666666667%; }
+    .grid-holder .column.offsetdes-three { margin-left:25%; }
+    .grid-holder .column.offsetdes-four { margin-left:33.33333333333334%; }
+    .grid-holder .column.offsetdes-five { margin-left:41.66666666666667%; }
+    .grid-holder .column.offsetdes-six { margin-left:50%; }
+    .grid-holder .column.offsetdes-seven { margin-left:58.33333333333334%; }
+    .grid-holder .column.offsetdes-eight { margin-left:66.66666666666667%; }
+    .grid-holder .column.offsetdes-nine { margin-left:75%; }
+    .grid-holder .column.offsetdes-ten { margin-left:83.33333333333334%; }
+    .grid-holder .column.offsetdes-eleven { margin-left:91.66666666666667%; }
+    .grid-holder .column.offsetdes-twelve { margin-left:100%; }
+
+/*	--------------------------------------------------
+	:: GRID COLUMNS 1199PX AND BELOW
+	-------------------------------------------------- */
+    
+    @media only screen and (min-width:960px) and (max-width:1199px) {
+		
+	    .grid-holder .column.one,
+		.grid-holder .column.two,
+		.grid-holder .column.three,
+		.grid-holder .column.four,
+		.grid-holder .column.five,
+		.grid-holder .column.six,
+		.grid-holder .column.seven,
+		.grid-holder .column.eight,
+		.grid-holder .column.nine,
+		.grid-holder .column.ten,
+		.grid-holder .column.eleven,
+		.grid-holder .column.twelve { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE LEFT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl,
+		.grid-holder .column.two.nospaceresl,
+		.grid-holder .column.three.nospaceresl,
+		.grid-holder .column.four.nospaceresl,
+		.grid-holder .column.five.nospaceresl,
+		.grid-holder .column.six.nospaceresl,
+		.grid-holder .column.seven.nospaceresl,
+		.grid-holder .column.eight.nospaceresl,
+		.grid-holder .column.nine.nospaceresl,
+		.grid-holder .column.ten.nospaceresl,
+		.grid-holder .column.eleven.nospaceresl,
+		.grid-holder .column.twelve.nospaceresl { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RIGHT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr,
+		.grid-holder .column.two.nospaceresr,
+		.grid-holder .column.three.nospaceresr,
+		.grid-holder .column.four.nospaceresr,
+		.grid-holder .column.five.nospaceresr,
+		.grid-holder .column.six.nospaceresr,
+		.grid-holder .column.seven.nospaceresr,
+		.grid-holder .column.eight.nospaceresr,
+		.grid-holder .column.nine.nospaceresr,
+		.grid-holder .column.ten.nospaceresr,
+		.grid-holder .column.eleven.nospaceresr,
+		.grid-holder .column.twelve.nospaceresr { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RESPONSIVE
+		-------------------------------------------------- */
+        
+		.grid-holder .column.one.nospaceres,
+		.grid-holder .column.two.nospaceres,
+		.grid-holder .column.three.nospaceres,
+		.grid-holder .column.four.nospaceres,
+		.grid-holder .column.five.nospaceres,
+		.grid-holder .column.six.nospaceres,
+		.grid-holder .column.seven.nospaceres,
+		.grid-holder .column.eight.nospaceres,
+		.grid-holder .column.nine.nospaceres,
+		.grid-holder .column.ten.nospaceres,
+		.grid-holder .column.eleven.nospaceres,
+		.grid-holder .column.twelve.nospaceres { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one,
+		.grid-holder .column.offsetres-two,
+		.grid-holder .column.offsetres-three,
+		.grid-holder .column.offsetres-four,
+		.grid-holder .column.offsetres-five,
+		.grid-holder .column.offsetres-six,
+		.grid-holder .column.offsetres-seven,
+		.grid-holder .column.offsetres-eight,
+		.grid-holder .column.offsetres-nine,
+		.grid-holder .column.offsetres-ten,
+		.grid-holder .column.offsetres-eleven,
+		.grid-holder .column.offsetres-twelve { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockresall { width:6.333333333333333%; padding:0 1%; }
+		.grid-holder .column.two.noblockresall { width:14.666666666666667%; padding:0 1%; }
+		.grid-holder .column.three.noblockresall { width:23%; padding:0 1%; }
+		.grid-holder .column.four.noblockresall { width:31.33333333333334%; padding:0 1%; }
+		.grid-holder .column.five.noblockresall { width:39.66666666666667%; padding:0 1%; }
+		.grid-holder .column.six.noblockresall { width:48%; padding:0 1%; }
+		.grid-holder .column.seven.noblockresall { width:56.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eight.noblockresall { width:64.66666666666667%; padding:0 1%; }
+		.grid-holder .column.nine.noblockresall { width:73%; padding:0 1%; }
+		.grid-holder .column.ten.noblockresall { width:81.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eleven.noblockresall { width:89.66666666666667%; padding:0 1%; }
+		.grid-holder .column.twelve.noblockresall { width:98%; padding:0 1%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE LEFT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl.noblockresall { width:7.333333333333333%; padding-left:0; }
+		.grid-holder .column.two.nospaceresl.noblockresall { width:15.666666666666667%; padding-left:0; }
+		.grid-holder .column.three.nospaceresl.noblockresall { width:24%; padding-left:0; }
+		.grid-holder .column.four.nospaceresl.noblockresall { width:32.33333333333334%; padding-left:0; }
+		.grid-holder .column.five.nospaceresl.noblockresall { width:40.66666666666667%; padding-left:0; }
+		.grid-holder .column.six.nospaceresl.noblockresall { width:49%; padding-left:0; }
+		.grid-holder .column.seven.nospaceresl.noblockresall { width:57.33333333333334%; padding-left:0; }
+		.grid-holder .column.eight.nospaceresl.noblockresall { width:65.66666666666667%; padding-left:0; }
+		.grid-holder .column.nine.nospaceresl.noblockresall { width:74%; padding-left:0; }
+		.grid-holder .column.ten.nospaceresl.noblockresall { width:82.33333333333334%; padding-left:0; }
+		.grid-holder .column.eleven.nospaceresl.noblockresall { width:90.66666666666667%; padding-left:0; }
+		.grid-holder .column.twelve.nospaceresl.noblockresall { width:99%; padding-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr.noblockresall { width:7.333333333333333%; padding-right:0; }
+		.grid-holder .column.two.nospaceresr.noblockresall { width:15.666666666666667%; padding-right:0; }
+		.grid-holder .column.three.nospaceresr.noblockresall { width:24%; padding-right:0; }
+		.grid-holder .column.four.nospaceresr.noblockresall { width:32.33333333333334%; padding-right:0; }
+		.grid-holder .column.five.nospaceresr.noblockresall { width:40.66666666666667%; padding-right:0; }
+		.grid-holder .column.six.nospaceresr.noblockresall { width:49%; padding-right:0; }
+		.grid-holder .column.seven.nospaceresr.noblockresall { width:57.33333333333334%; padding-right:0; }
+		.grid-holder .column.eight.nospaceresr.noblockresall { width:65.66666666666667%; padding-right:0; }
+		.grid-holder .column.nine.nospaceresr.noblockresall { width:74%; padding-right:0; }
+		.grid-holder .column.ten.nospaceresr.noblockresall { width:82.33333333333334%; padding-right:0; }
+		.grid-holder .column.eleven.nospaceresr.noblockresall { width:90.66666666666667%; padding-right:0; }
+		.grid-holder .column.twelve.nospaceresr.noblockresall { width:99%; padding-right:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceres.noblockresall { width:8.333333333333333%; padding:0; }
+		.grid-holder .column.two.nospaceres.noblockresall { width:16.666666666666667%; padding:0; }
+		.grid-holder .column.three.nospaceres.noblockresall { width:25%; padding:0; }
+		.grid-holder .column.four.nospaceres.noblockresall { width:33.33333333333334%; padding:0; }
+		.grid-holder .column.five.nospaceres.noblockresall { width:41.66666666666667%; padding:0; }
+		.grid-holder .column.six.nospaceres.noblockresall { width:50%; padding:0; }
+		.grid-holder .column.seven.nospaceres.noblockresall { width:58.33333333333334%; padding:0; }
+		.grid-holder .column.eight.nospaceres.noblockresall { width:66.66666666666667%; padding:0; }
+		.grid-holder .column.nine.nospaceres.noblockresall { width:75%; padding:0; }
+		.grid-holder .column.ten.nospaceres.noblockresall { width:83.33333333333334%; padding:0; }
+		.grid-holder .column.eleven.nospaceres.noblockresall { width:91.66666666666667%; padding:0; }
+		.grid-holder .column.twelve.nospaceres.noblockresall { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE WITHOUT BLOCK
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one.noblockresall { margin-left:8.333333333333333%; }
+		.grid-holder .column.offsetres-two.noblockresall { margin-left:16.666666666666667%; }
+		.grid-holder .column.offsetres-three.noblockresall { margin-left:25%; }
+		.grid-holder .column.offsetres-four.noblockresall { margin-left:33.33333333333334%; }
+		.grid-holder .column.offsetres-five.noblockresall { margin-left:41.66666666666667%; }
+		.grid-holder .column.offsetres-six.noblockresall { margin-left:50%; }
+		.grid-holder .column.offsetres-seven.noblockresall { margin-left:58.33333333333334%; }
+		.grid-holder .column.offsetres-eight.noblockresall { margin-left:66.66666666666667%; }
+		.grid-holder .column.offsetres-nine.noblockresall { margin-left:75%; }
+		.grid-holder .column.offsetres-ten.noblockresall { margin-left:83.33333333333334%; }
+		.grid-holder .column.offsetres-eleven.noblockresall { margin-left:91.66666666666667%; }
+		.grid-holder .column.offsetres-twelve.noblockresall { margin-left:100%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockres1199,
+		.grid-holder .column.two.noblockres1199,
+		.grid-holder .column.three.noblockres1199,
+		.grid-holder .column.four.noblockres1199,
+		.grid-holder .column.five.noblockres1199,
+		.grid-holder .column.six.noblockres1199,
+		.grid-holder .column.seven.noblockres1199,
+		.grid-holder .column.eight.noblockres1199,
+		.grid-holder .column.nine.noblockres1199,
+		.grid-holder .column.ten.noblockres1199,
+		.grid-holder .column.eleven.noblockres1199,
+		.grid-holder .column.twelve.noblockres1199 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresl.noblockres1199,
+		.grid-holder .column.two.nospaceresl.noblockres1199,
+		.grid-holder .column.three.nospaceresl.noblockres1199,
+		.grid-holder .column.four.nospaceresl.noblockres1199,
+		.grid-holder .column.five.nospaceresl.noblockres1199,
+		.grid-holder .column.six.nospaceresl.noblockres1199,
+		.grid-holder .column.seven.nospaceresl.noblockres1199,
+		.grid-holder .column.eight.nospaceresl.noblockres1199,
+		.grid-holder .column.nine.nospaceresl.noblockres1199,
+		.grid-holder .column.ten.nospaceresl.noblockres1199,
+		.grid-holder .column.eleven.nospaceresl.noblockres1199,
+		.grid-holder .column.twelve.nospaceresl.noblockres1199 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresr.noblockres1199,
+		.grid-holder .column.two.nospaceresr.noblockres1199,
+		.grid-holder .column.three.nospaceresr.noblockres1199,
+		.grid-holder .column.four.nospaceresr.noblockres1199,
+		.grid-holder .column.five.nospaceresr.noblockres1199,
+		.grid-holder .column.six.nospaceresr.noblockres1199,
+		.grid-holder .column.seven.nospaceresr.noblockres1199,
+		.grid-holder .column.eight.nospaceresr.noblockres1199,
+		.grid-holder .column.nine.nospaceresr.noblockres1199,
+		.grid-holder .column.ten.nospaceresr.noblockres1199,
+		.grid-holder .column.eleven.nospaceresr.noblockres1199,
+		.grid-holder .column.twelve.nospaceresr.noblockres1199 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceres.noblockres1199,
+		.grid-holder .column.two.nospaceres.noblockres1199,
+		.grid-holder .column.three.nospaceres.noblockres1199,
+		.grid-holder .column.four.nospaceres.noblockres1199,
+		.grid-holder .column.five.nospaceres.noblockres1199,
+		.grid-holder .column.six.nospaceres.noblockres1199,
+		.grid-holder .column.seven.nospaceres.noblockres1199,
+		.grid-holder .column.eight.nospaceres.noblockres1199,
+		.grid-holder .column.nine.nospaceres.noblockres1199,
+		.grid-holder .column.ten.nospaceres.noblockres1199,
+		.grid-holder .column.eleven.nospaceres.noblockres1199,
+		.grid-holder .column.twelve.nospaceres.noblockres1199 { width:100%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.noblockres1199,
+		.grid-holder .column.offsetres-two.noblockres1199,
+		.grid-holder .column.offsetres-three.noblockres1199,
+		.grid-holder .column.offsetres-four.noblockres1199,
+		.grid-holder .column.offsetres-five.noblockres1199,
+		.grid-holder .column.offsetres-six.noblockres1199,
+		.grid-holder .column.offsetres-seven.noblockres1199,
+		.grid-holder .column.offsetres-eight.noblockres1199,
+		.grid-holder .column.offsetres-nine.noblockres1199,
+		.grid-holder .column.offsetres-ten.noblockres1199,
+		.grid-holder .column.offsetres-eleven.noblockres1199,
+		.grid-holder .column.offsetres-twelve.noblockres1199 { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH HALF DIVISION COLUMN
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.halfdivision1199,
+		.grid-holder .column.two.halfdivision1199,
+		.grid-holder .column.three.halfdivision1199,
+		.grid-holder .column.four.halfdivision1199,
+		.grid-holder .column.five.halfdivision1199,
+		.grid-holder .column.six.halfdivision1199,
+		.grid-holder .column.seven.halfdivision1199,
+		.grid-holder .column.eight.halfdivision1199,
+		.grid-holder .column.nine.halfdivision1199,
+		.grid-holder .column.ten.halfdivision1199,
+		.grid-holder .column.eleven.halfdivision1199,
+		.grid-holder .column.twelve.halfdivision1199 { width:48%; padding:0 1%; }
+		
+		.grid-holder .column.one.nospaceresl.halfdivision1199,
+		.grid-holder .column.two.nospaceresl.halfdivision1199,
+		.grid-holder .column.three.nospaceresl.halfdivision1199,
+		.grid-holder .column.four.nospaceresl.halfdivision1199,
+		.grid-holder .column.five.nospaceresl.halfdivision1199,
+		.grid-holder .column.six.nospaceresl.halfdivision1199,
+		.grid-holder .column.seven.nospaceresl.halfdivision1199,
+		.grid-holder .column.eight.nospaceresl.halfdivision1199,
+		.grid-holder .column.nine.nospaceresl.halfdivision1199,
+		.grid-holder .column.ten.nospaceresl.halfdivision1199,
+		.grid-holder .column.eleven.nospaceresl.halfdivision1199,
+		.grid-holder .column.twelve.nospaceresl.halfdivision1199 { width:49%; padding:0 1% 0 0; }
+		
+		.grid-holder .column.one.nospaceresr.halfdivision1199,
+		.grid-holder .column.two.nospaceresr.halfdivision1199,
+		.grid-holder .column.three.nospaceresr.halfdivision1199,
+		.grid-holder .column.four.nospaceresr.halfdivision1199,
+		.grid-holder .column.five.nospaceresr.halfdivision1199,
+		.grid-holder .column.six.nospaceresr.halfdivision1199,
+		.grid-holder .column.seven.nospaceresr.halfdivision1199,
+		.grid-holder .column.eight.nospaceresr.halfdivision1199,
+		.grid-holder .column.nine.nospaceresr.halfdivision1199,
+		.grid-holder .column.ten.nospaceresr.halfdivision1199,
+		.grid-holder .column.eleven.nospaceresr.halfdivision1199,
+		.grid-holder .column.twelve.nospaceresr.halfdivision1199 { width:49%; padding:0 0 0 1%; }
+		
+		.grid-holder .column.one.nospaceres.halfdivision1199,
+		.grid-holder .column.two.nospaceres.halfdivision1199,
+		.grid-holder .column.three.nospaceres.halfdivision1199,
+		.grid-holder .column.four.nospaceres.halfdivision1199,
+		.grid-holder .column.five.nospaceres.halfdivision1199,
+		.grid-holder .column.six.nospaceres.halfdivision1199,
+		.grid-holder .column.seven.nospaceres.halfdivision1199,
+		.grid-holder .column.eight.nospaceres.halfdivision1199,
+		.grid-holder .column.nine.nospaceres.halfdivision1199,
+		.grid-holder .column.ten.nospaceres.halfdivision1199,
+		.grid-holder .column.eleven.nospaceres.halfdivision1199,
+		.grid-holder .column.twelve.nospaceres.halfdivision1199 { width:50%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.halfdivision1199,
+		.grid-holder .column.offsetres-two.halfdivision1199,
+		.grid-holder .column.offsetres-three.halfdivision1199,
+		.grid-holder .column.offsetres-four.halfdivision1199,
+		.grid-holder .column.offsetres-five.halfdivision1199,
+		.grid-holder .column.offsetres-six.halfdivision1199,
+		.grid-holder .column.offsetres-seven.halfdivision1199,
+		.grid-holder .column.offsetres-eight.halfdivision1199,
+		.grid-holder .column.offsetres-nine.halfdivision1199,
+		.grid-holder .column.offsetres-ten.halfdivision1199,
+		.grid-holder .column.offsetres-eleven.halfdivision1199,
+		.grid-holder .column.offsetres-twelve.halfdivision1199 { width:50%; margin-left:0; }
+	
+	}
+	
+/*	--------------------------------------------------
+	:: GRID COLUMNS 959PX AND BELOW
+	-------------------------------------------------- */
+
+    @media only screen and (min-width:768px) and (max-width:959px) {
+		
+	    .grid-holder .column.one,
+		.grid-holder .column.two,
+		.grid-holder .column.three,
+		.grid-holder .column.four,
+		.grid-holder .column.five,
+		.grid-holder .column.six,
+		.grid-holder .column.seven,
+		.grid-holder .column.eight,
+		.grid-holder .column.nine,
+		.grid-holder .column.ten,
+		.grid-holder .column.eleven,
+		.grid-holder .column.twelve { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE LEFT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl,
+		.grid-holder .column.two.nospaceresl,
+		.grid-holder .column.three.nospaceresl,
+		.grid-holder .column.four.nospaceresl,
+		.grid-holder .column.five.nospaceresl,
+		.grid-holder .column.six.nospaceresl,
+		.grid-holder .column.seven.nospaceresl,
+		.grid-holder .column.eight.nospaceresl,
+		.grid-holder .column.nine.nospaceresl,
+		.grid-holder .column.ten.nospaceresl,
+		.grid-holder .column.eleven.nospaceresl,
+		.grid-holder .column.twelve.nospaceresl { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RIGHT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr,
+		.grid-holder .column.two.nospaceresr,
+		.grid-holder .column.three.nospaceresr,
+		.grid-holder .column.four.nospaceresr,
+		.grid-holder .column.five.nospaceresr,
+		.grid-holder .column.six.nospaceresr,
+		.grid-holder .column.seven.nospaceresr,
+		.grid-holder .column.eight.nospaceresr,
+		.grid-holder .column.nine.nospaceresr,
+		.grid-holder .column.ten.nospaceresr,
+		.grid-holder .column.eleven.nospaceresr,
+		.grid-holder .column.twelve.nospaceresr { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RESPONSIVE
+		-------------------------------------------------- */
+        
+		.grid-holder .column.one.nospaceres,
+		.grid-holder .column.two.nospaceres,
+		.grid-holder .column.three.nospaceres,
+		.grid-holder .column.four.nospaceres,
+		.grid-holder .column.five.nospaceres,
+		.grid-holder .column.six.nospaceres,
+		.grid-holder .column.seven.nospaceres,
+		.grid-holder .column.eight.nospaceres,
+		.grid-holder .column.nine.nospaceres,
+		.grid-holder .column.ten.nospaceres,
+		.grid-holder .column.eleven.nospaceres,
+		.grid-holder .column.twelve.nospaceres { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one,
+		.grid-holder .column.offsetres-two,
+		.grid-holder .column.offsetres-three,
+		.grid-holder .column.offsetres-four,
+		.grid-holder .column.offsetres-five,
+		.grid-holder .column.offsetres-six,
+		.grid-holder .column.offsetres-seven,
+		.grid-holder .column.offsetres-eight,
+		.grid-holder .column.offsetres-nine,
+		.grid-holder .column.offsetres-ten,
+		.grid-holder .column.offsetres-eleven,
+		.grid-holder .column.offsetres-twelve { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockresall { width:6.333333333333333%; padding:0 1%; }
+		.grid-holder .column.two.noblockresall { width:14.666666666666667%; padding:0 1%; }
+		.grid-holder .column.three.noblockresall { width:23%; padding:0 1%; }
+		.grid-holder .column.four.noblockresall { width:31.33333333333334%; padding:0 1%; }
+		.grid-holder .column.five.noblockresall { width:39.66666666666667%; padding:0 1%; }
+		.grid-holder .column.six.noblockresall { width:48%; padding:0 1%; }
+		.grid-holder .column.seven.noblockresall { width:56.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eight.noblockresall { width:64.66666666666667%; padding:0 1%; }
+		.grid-holder .column.nine.noblockresall { width:73%; padding:0 1%; }
+		.grid-holder .column.ten.noblockresall { width:81.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eleven.noblockresall { width:89.66666666666667%; padding:0 1%; }
+		.grid-holder .column.twelve.noblockresall { width:98%; padding:0 1%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE LEFT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl.noblockresall { width:7.333333333333333%; padding-left:0; }
+		.grid-holder .column.two.nospaceresl.noblockresall { width:15.666666666666667%; padding-left:0; }
+		.grid-holder .column.three.nospaceresl.noblockresall { width:24%; padding-left:0; }
+		.grid-holder .column.four.nospaceresl.noblockresall { width:32.33333333333334%; padding-left:0; }
+		.grid-holder .column.five.nospaceresl.noblockresall { width:40.66666666666667%; padding-left:0; }
+		.grid-holder .column.six.nospaceresl.noblockresall { width:49%; padding-left:0; }
+		.grid-holder .column.seven.nospaceresl.noblockresall { width:57.33333333333334%; padding-left:0; }
+		.grid-holder .column.eight.nospaceresl.noblockresall { width:65.66666666666667%; padding-left:0; }
+		.grid-holder .column.nine.nospaceresl.noblockresall { width:74%; padding-left:0; }
+		.grid-holder .column.ten.nospaceresl.noblockresall { width:82.33333333333334%; padding-left:0; }
+		.grid-holder .column.eleven.nospaceresl.noblockresall { width:90.66666666666667%; padding-left:0; }
+		.grid-holder .column.twelve.nospaceresl.noblockresall { width:99%; padding-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr.noblockresall { width:7.333333333333333%; padding-right:0; }
+		.grid-holder .column.two.nospaceresr.noblockresall { width:15.666666666666667%; padding-right:0; }
+		.grid-holder .column.three.nospaceresr.noblockresall { width:24%; padding-right:0; }
+		.grid-holder .column.four.nospaceresr.noblockresall { width:32.33333333333334%; padding-right:0; }
+		.grid-holder .column.five.nospaceresr.noblockresall { width:40.66666666666667%; padding-right:0; }
+		.grid-holder .column.six.nospaceresr.noblockresall { width:49%; padding-right:0; }
+		.grid-holder .column.seven.nospaceresr.noblockresall { width:57.33333333333334%; padding-right:0; }
+		.grid-holder .column.eight.nospaceresr.noblockresall { width:65.66666666666667%; padding-right:0; }
+		.grid-holder .column.nine.nospaceresr.noblockresall { width:74%; padding-right:0; }
+		.grid-holder .column.ten.nospaceresr.noblockresall { width:82.33333333333334%; padding-right:0; }
+		.grid-holder .column.eleven.nospaceresr.noblockresall { width:90.66666666666667%; padding-right:0; }
+		.grid-holder .column.twelve.nospaceresr.noblockresall { width:99%; padding-right:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceres.noblockresall { width:8.333333333333333%; padding:0; }
+		.grid-holder .column.two.nospaceres.noblockresall { width:16.666666666666667%; padding:0; }
+		.grid-holder .column.three.nospaceres.noblockresall { width:25%; padding:0; }
+		.grid-holder .column.four.nospaceres.noblockresall { width:33.33333333333334%; padding:0; }
+		.grid-holder .column.five.nospaceres.noblockresall { width:41.66666666666667%; padding:0; }
+		.grid-holder .column.six.nospaceres.noblockresall { width:50%; padding:0; }
+		.grid-holder .column.seven.nospaceres.noblockresall { width:58.33333333333334%; padding:0; }
+		.grid-holder .column.eight.nospaceres.noblockresall { width:66.66666666666667%; padding:0; }
+		.grid-holder .column.nine.nospaceres.noblockresall { width:75%; padding:0; }
+		.grid-holder .column.ten.nospaceres.noblockresall { width:83.33333333333334%; padding:0; }
+		.grid-holder .column.eleven.nospaceres.noblockresall { width:91.66666666666667%; padding:0; }
+		.grid-holder .column.twelve.nospaceres.noblockresall { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE WITHOUT BLOCK
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one.noblockresall { margin-left:8.333333333333333%; }
+		.grid-holder .column.offsetres-two.noblockresall { margin-left:16.666666666666667%; }
+		.grid-holder .column.offsetres-three.noblockresall { margin-left:25%; }
+		.grid-holder .column.offsetres-four.noblockresall { margin-left:33.33333333333334%; }
+		.grid-holder .column.offsetres-five.noblockresall { margin-left:41.66666666666667%; }
+		.grid-holder .column.offsetres-six.noblockresall { margin-left:50%; }
+		.grid-holder .column.offsetres-seven.noblockresall { margin-left:58.33333333333334%; }
+		.grid-holder .column.offsetres-eight.noblockresall { margin-left:66.66666666666667%; }
+		.grid-holder .column.offsetres-nine.noblockresall { margin-left:75%; }
+		.grid-holder .column.offsetres-ten.noblockresall { margin-left:83.33333333333334%; }
+		.grid-holder .column.offsetres-eleven.noblockresall { margin-left:91.66666666666667%; }
+		.grid-holder .column.offsetres-twelve.noblockresall { margin-left:100%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockres959,
+		.grid-holder .column.two.noblockres959,
+		.grid-holder .column.three.noblockres959,
+		.grid-holder .column.four.noblockres959,
+		.grid-holder .column.five.noblockres959,
+		.grid-holder .column.six.noblockres959,
+		.grid-holder .column.seven.noblockres959,
+		.grid-holder .column.eight.noblockres959,
+		.grid-holder .column.nine.noblockres959,
+		.grid-holder .column.ten.noblockres959,
+		.grid-holder .column.eleven.noblockres959,
+		.grid-holder .column.twelve.noblockres959 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresl.noblockres959,
+		.grid-holder .column.two.nospaceresl.noblockres959,
+		.grid-holder .column.three.nospaceresl.noblockres959,
+		.grid-holder .column.four.nospaceresl.noblockres959,
+		.grid-holder .column.five.nospaceresl.noblockres959,
+		.grid-holder .column.six.nospaceresl.noblockres959,
+		.grid-holder .column.seven.nospaceresl.noblockres959,
+		.grid-holder .column.eight.nospaceresl.noblockres959,
+		.grid-holder .column.nine.nospaceresl.noblockres959,
+		.grid-holder .column.ten.nospaceresl.noblockres959,
+		.grid-holder .column.eleven.nospaceresl.noblockres959,
+		.grid-holder .column.twelve.nospaceresl.noblockres959 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresr.noblockres959,
+		.grid-holder .column.two.nospaceresr.noblockres959,
+		.grid-holder .column.three.nospaceresr.noblockres959,
+		.grid-holder .column.four.nospaceresr.noblockres959,
+		.grid-holder .column.five.nospaceresr.noblockres959,
+		.grid-holder .column.six.nospaceresr.noblockres959,
+		.grid-holder .column.seven.nospaceresr.noblockres959,
+		.grid-holder .column.eight.nospaceresr.noblockres959,
+		.grid-holder .column.nine.nospaceresr.noblockres959,
+		.grid-holder .column.ten.nospaceresr.noblockres959,
+		.grid-holder .column.eleven.nospaceresr.noblockres959,
+		.grid-holder .column.twelve.nospaceresr.noblockres959 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceres.noblockres959,
+		.grid-holder .column.two.nospaceres.noblockres959,
+		.grid-holder .column.three.nospaceres.noblockres959,
+		.grid-holder .column.four.nospaceres.noblockres959,
+		.grid-holder .column.five.nospaceres.noblockres959,
+		.grid-holder .column.six.nospaceres.noblockres959,
+		.grid-holder .column.seven.nospaceres.noblockres959,
+		.grid-holder .column.eight.nospaceres.noblockres959,
+		.grid-holder .column.nine.nospaceres.noblockres959,
+		.grid-holder .column.ten.nospaceres.noblockres959,
+		.grid-holder .column.eleven.nospaceres.noblockres959,
+		.grid-holder .column.twelve.nospaceres.noblockres959 { width:100%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.noblockres959,
+		.grid-holder .column.offsetres-two.noblockres959,
+		.grid-holder .column.offsetres-three.noblockres959,
+		.grid-holder .column.offsetres-four.noblockres959,
+		.grid-holder .column.offsetres-five.noblockres959,
+		.grid-holder .column.offsetres-six.noblockres959,
+		.grid-holder .column.offsetres-seven.noblockres959,
+		.grid-holder .column.offsetres-eight.noblockres959,
+		.grid-holder .column.offsetres-nine.noblockres959,
+		.grid-holder .column.offsetres-ten.noblockres959,
+		.grid-holder .column.offsetres-eleven.noblockres959,
+		.grid-holder .column.offsetres-twelve.noblockres959 { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH HALF DIVISION COLUMN
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.halfdivision959,
+		.grid-holder .column.two.halfdivision959,
+		.grid-holder .column.three.halfdivision959,
+		.grid-holder .column.four.halfdivision959,
+		.grid-holder .column.five.halfdivision959,
+		.grid-holder .column.six.halfdivision959,
+		.grid-holder .column.seven.halfdivision959,
+		.grid-holder .column.eight.halfdivision959,
+		.grid-holder .column.nine.halfdivision959,
+		.grid-holder .column.ten.halfdivision959,
+		.grid-holder .column.eleven.halfdivision959,
+		.grid-holder .column.twelve.halfdivision959 { width:48%; padding:0 1%; }
+		
+		.grid-holder .column.one.nospaceresl.halfdivision959,
+		.grid-holder .column.two.nospaceresl.halfdivision959,
+		.grid-holder .column.three.nospaceresl.halfdivision959,
+		.grid-holder .column.four.nospaceresl.halfdivision959,
+		.grid-holder .column.five.nospaceresl.halfdivision959,
+		.grid-holder .column.six.nospaceresl.halfdivision959,
+		.grid-holder .column.seven.nospaceresl.halfdivision959,
+		.grid-holder .column.eight.nospaceresl.halfdivision959,
+		.grid-holder .column.nine.nospaceresl.halfdivision959,
+		.grid-holder .column.ten.nospaceresl.halfdivision959,
+		.grid-holder .column.eleven.nospaceresl.halfdivision959,
+		.grid-holder .column.twelve.nospaceresl.halfdivision959 { width:49%; padding:0 1% 0 0; }
+		
+		.grid-holder .column.one.nospaceresr.halfdivision959,
+		.grid-holder .column.two.nospaceresr.halfdivision959,
+		.grid-holder .column.three.nospaceresr.halfdivision959,
+		.grid-holder .column.four.nospaceresr.halfdivision959,
+		.grid-holder .column.five.nospaceresr.halfdivision959,
+		.grid-holder .column.six.nospaceresr.halfdivision959,
+		.grid-holder .column.seven.nospaceresr.halfdivision959,
+		.grid-holder .column.eight.nospaceresr.halfdivision959,
+		.grid-holder .column.nine.nospaceresr.halfdivision959,
+		.grid-holder .column.ten.nospaceresr.halfdivision959,
+		.grid-holder .column.eleven.nospaceresr.halfdivision959,
+		.grid-holder .column.twelve.nospaceresr.halfdivision959 { width:49%; padding:0 0 0 1%; }
+		
+		.grid-holder .column.one.nospaceres.halfdivision959,
+		.grid-holder .column.two.nospaceres.halfdivision959,
+		.grid-holder .column.three.nospaceres.halfdivision959,
+		.grid-holder .column.four.nospaceres.halfdivision959,
+		.grid-holder .column.five.nospaceres.halfdivision959,
+		.grid-holder .column.six.nospaceres.halfdivision959,
+		.grid-holder .column.seven.nospaceres.halfdivision959,
+		.grid-holder .column.eight.nospaceres.halfdivision959,
+		.grid-holder .column.nine.nospaceres.halfdivision959,
+		.grid-holder .column.ten.nospaceres.halfdivision959,
+		.grid-holder .column.eleven.nospaceres.halfdivision959,
+		.grid-holder .column.twelve.nospaceres.halfdivision959 { width:50%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.halfdivision959,
+		.grid-holder .column.offsetres-two.halfdivision959,
+		.grid-holder .column.offsetres-three.halfdivision959,
+		.grid-holder .column.offsetres-four.halfdivision959,
+		.grid-holder .column.offsetres-five.halfdivision959,
+		.grid-holder .column.offsetres-six.halfdivision959,
+		.grid-holder .column.offsetres-seven.halfdivision959,
+		.grid-holder .column.offsetres-eight.halfdivision959,
+		.grid-holder .column.offsetres-nine.halfdivision959,
+		.grid-holder .column.offsetres-ten.halfdivision959,
+		.grid-holder .column.offsetres-eleven.halfdivision959,
+		.grid-holder .column.offsetres-twelve.halfdivision959 { width:50%; margin-left:0; }
+		
+	}
+	
+/*	--------------------------------------------------
+	:: GRID COLUMNS 767PX AND BELOW
+	-------------------------------------------------- */
+
+    @media only screen and (min-width:480px) and (max-width:767px) {
+		
+	    .grid-holder .column.one,
+		.grid-holder .column.two,
+		.grid-holder .column.three,
+		.grid-holder .column.four,
+		.grid-holder .column.five,
+		.grid-holder .column.six,
+		.grid-holder .column.seven,
+		.grid-holder .column.eight,
+		.grid-holder .column.nine,
+		.grid-holder .column.ten,
+		.grid-holder .column.eleven,
+		.grid-holder .column.twelve { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE LEFT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl,
+		.grid-holder .column.two.nospaceresl,
+		.grid-holder .column.three.nospaceresl,
+		.grid-holder .column.four.nospaceresl,
+		.grid-holder .column.five.nospaceresl,
+		.grid-holder .column.six.nospaceresl,
+		.grid-holder .column.seven.nospaceresl,
+		.grid-holder .column.eight.nospaceresl,
+		.grid-holder .column.nine.nospaceresl,
+		.grid-holder .column.ten.nospaceresl,
+		.grid-holder .column.eleven.nospaceresl,
+		.grid-holder .column.twelve.nospaceresl { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RIGHT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr,
+		.grid-holder .column.two.nospaceresr,
+		.grid-holder .column.three.nospaceresr,
+		.grid-holder .column.four.nospaceresr,
+		.grid-holder .column.five.nospaceresr,
+		.grid-holder .column.six.nospaceresr,
+		.grid-holder .column.seven.nospaceresr,
+		.grid-holder .column.eight.nospaceresr,
+		.grid-holder .column.nine.nospaceresr,
+		.grid-holder .column.ten.nospaceresr,
+		.grid-holder .column.eleven.nospaceresr,
+		.grid-holder .column.twelve.nospaceresr { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RESPONSIVE
+		-------------------------------------------------- */
+        
+		.grid-holder .column.one.nospaceres,
+		.grid-holder .column.two.nospaceres,
+		.grid-holder .column.three.nospaceres,
+		.grid-holder .column.four.nospaceres,
+		.grid-holder .column.five.nospaceres,
+		.grid-holder .column.six.nospaceres,
+		.grid-holder .column.seven.nospaceres,
+		.grid-holder .column.eight.nospaceres,
+		.grid-holder .column.nine.nospaceres,
+		.grid-holder .column.ten.nospaceres,
+		.grid-holder .column.eleven.nospaceres,
+		.grid-holder .column.twelve.nospaceres { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one,
+		.grid-holder .column.offsetres-two,
+		.grid-holder .column.offsetres-three,
+		.grid-holder .column.offsetres-four,
+		.grid-holder .column.offsetres-five,
+		.grid-holder .column.offsetres-six,
+		.grid-holder .column.offsetres-seven,
+		.grid-holder .column.offsetres-eight,
+		.grid-holder .column.offsetres-nine,
+		.grid-holder .column.offsetres-ten,
+		.grid-holder .column.offsetres-eleven,
+		.grid-holder .column.offsetres-twelve { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockresall { width:6.333333333333333%; padding:0 1%; }
+		.grid-holder .column.two.noblockresall { width:14.666666666666667%; padding:0 1%; }
+		.grid-holder .column.three.noblockresall { width:23%; padding:0 1%; }
+		.grid-holder .column.four.noblockresall { width:31.33333333333334%; padding:0 1%; }
+		.grid-holder .column.five.noblockresall { width:39.66666666666667%; padding:0 1%; }
+		.grid-holder .column.six.noblockresall { width:48%; padding:0 1%; }
+		.grid-holder .column.seven.noblockresall { width:56.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eight.noblockresall { width:64.66666666666667%; padding:0 1%; }
+		.grid-holder .column.nine.noblockresall { width:73%; padding:0 1%; }
+		.grid-holder .column.ten.noblockresall { width:81.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eleven.noblockresall { width:89.66666666666667%; padding:0 1%; }
+		.grid-holder .column.twelve.noblockresall { width:98%; padding:0 1%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE LEFT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl.noblockresall { width:7.333333333333333%; padding-left:0; }
+		.grid-holder .column.two.nospaceresl.noblockresall { width:15.666666666666667%; padding-left:0; }
+		.grid-holder .column.three.nospaceresl.noblockresall { width:24%; padding-left:0; }
+		.grid-holder .column.four.nospaceresl.noblockresall { width:32.33333333333334%; padding-left:0; }
+		.grid-holder .column.five.nospaceresl.noblockresall { width:40.66666666666667%; padding-left:0; }
+		.grid-holder .column.six.nospaceresl.noblockresall { width:49%; padding-left:0; }
+		.grid-holder .column.seven.nospaceresl.noblockresall { width:57.33333333333334%; padding-left:0; }
+		.grid-holder .column.eight.nospaceresl.noblockresall { width:65.66666666666667%; padding-left:0; }
+		.grid-holder .column.nine.nospaceresl.noblockresall { width:74%; padding-left:0; }
+		.grid-holder .column.ten.nospaceresl.noblockresall { width:82.33333333333334%; padding-left:0; }
+		.grid-holder .column.eleven.nospaceresl.noblockresall { width:90.66666666666667%; padding-left:0; }
+		.grid-holder .column.twelve.nospaceresl.noblockresall { width:99%; padding-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr.noblockresall { width:7.333333333333333%; padding-right:0; }
+		.grid-holder .column.two.nospaceresr.noblockresall { width:15.666666666666667%; padding-right:0; }
+		.grid-holder .column.three.nospaceresr.noblockresall { width:24%; padding-right:0; }
+		.grid-holder .column.four.nospaceresr.noblockresall { width:32.33333333333334%; padding-right:0; }
+		.grid-holder .column.five.nospaceresr.noblockresall { width:40.66666666666667%; padding-right:0; }
+		.grid-holder .column.six.nospaceresr.noblockresall { width:49%; padding-right:0; }
+		.grid-holder .column.seven.nospaceresr.noblockresall { width:57.33333333333334%; padding-right:0; }
+		.grid-holder .column.eight.nospaceresr.noblockresall { width:65.66666666666667%; padding-right:0; }
+		.grid-holder .column.nine.nospaceresr.noblockresall { width:74%; padding-right:0; }
+		.grid-holder .column.ten.nospaceresr.noblockresall { width:82.33333333333334%; padding-right:0; }
+		.grid-holder .column.eleven.nospaceresr.noblockresall { width:90.66666666666667%; padding-right:0; }
+		.grid-holder .column.twelve.nospaceresr.noblockresall { width:99%; padding-right:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceres.noblockresall { width:8.333333333333333%; padding:0; }
+		.grid-holder .column.two.nospaceres.noblockresall { width:16.666666666666667%; padding:0; }
+		.grid-holder .column.three.nospaceres.noblockresall { width:25%; padding:0; }
+		.grid-holder .column.four.nospaceres.noblockresall { width:33.33333333333334%; padding:0; }
+		.grid-holder .column.five.nospaceres.noblockresall { width:41.66666666666667%; padding:0; }
+		.grid-holder .column.six.nospaceres.noblockresall { width:50%; padding:0; }
+		.grid-holder .column.seven.nospaceres.noblockresall { width:58.33333333333334%; padding:0; }
+		.grid-holder .column.eight.nospaceres.noblockresall { width:66.66666666666667%; padding:0; }
+		.grid-holder .column.nine.nospaceres.noblockresall { width:75%; padding:0; }
+		.grid-holder .column.ten.nospaceres.noblockresall { width:83.33333333333334%; padding:0; }
+		.grid-holder .column.eleven.nospaceres.noblockresall { width:91.66666666666667%; padding:0; }
+		.grid-holder .column.twelve.nospaceres.noblockresall { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE WITHOUT BLOCK
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one.noblockresall { margin-left:8.333333333333333%; }
+		.grid-holder .column.offsetres-two.noblockresall { margin-left:16.666666666666667%; }
+		.grid-holder .column.offsetres-three.noblockresall { margin-left:25%; }
+		.grid-holder .column.offsetres-four.noblockresall { margin-left:33.33333333333334%; }
+		.grid-holder .column.offsetres-five.noblockresall { margin-left:41.66666666666667%; }
+		.grid-holder .column.offsetres-six.noblockresall { margin-left:50%; }
+		.grid-holder .column.offsetres-seven.noblockresall { margin-left:58.33333333333334%; }
+		.grid-holder .column.offsetres-eight.noblockresall { margin-left:66.66666666666667%; }
+		.grid-holder .column.offsetres-nine.noblockresall { margin-left:75%; }
+		.grid-holder .column.offsetres-ten.noblockresall { margin-left:83.33333333333334%; }
+		.grid-holder .column.offsetres-eleven.noblockresall { margin-left:91.66666666666667%; }
+		.grid-holder .column.offsetres-twelve.noblockresall { margin-left:100%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockres767,
+		.grid-holder .column.two.noblockres767,
+		.grid-holder .column.three.noblockres767,
+		.grid-holder .column.four.noblockres767,
+		.grid-holder .column.five.noblockres767,
+		.grid-holder .column.six.noblockres767,
+		.grid-holder .column.seven.noblockres767,
+		.grid-holder .column.eight.noblockres767,
+		.grid-holder .column.nine.noblockres767,
+		.grid-holder .column.ten.noblockres767,
+		.grid-holder .column.eleven.noblockres767,
+		.grid-holder .column.twelve.noblockres767 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresl.noblockres767,
+		.grid-holder .column.two.nospaceresl.noblockres767,
+		.grid-holder .column.three.nospaceresl.noblockres767,
+		.grid-holder .column.four.nospaceresl.noblockres767,
+		.grid-holder .column.five.nospaceresl.noblockres767,
+		.grid-holder .column.six.nospaceresl.noblockres767,
+		.grid-holder .column.seven.nospaceresl.noblockres767,
+		.grid-holder .column.eight.nospaceresl.noblockres767,
+		.grid-holder .column.nine.nospaceresl.noblockres767,
+		.grid-holder .column.ten.nospaceresl.noblockres767,
+		.grid-holder .column.eleven.nospaceresl.noblockres767,
+		.grid-holder .column.twelve.nospaceresl.noblockres767 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresr.noblockres767,
+		.grid-holder .column.two.nospaceresr.noblockres767,
+		.grid-holder .column.three.nospaceresr.noblockres767,
+		.grid-holder .column.four.nospaceresr.noblockres767,
+		.grid-holder .column.five.nospaceresr.noblockres767,
+		.grid-holder .column.six.nospaceresr.noblockres767,
+		.grid-holder .column.seven.nospaceresr.noblockres767,
+		.grid-holder .column.eight.nospaceresr.noblockres767,
+		.grid-holder .column.nine.nospaceresr.noblockres767,
+		.grid-holder .column.ten.nospaceresr.noblockres767,
+		.grid-holder .column.eleven.nospaceresr.noblockres767,
+		.grid-holder .column.twelve.nospaceresr.noblockres767 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceres.noblockres767,
+		.grid-holder .column.two.nospaceres.noblockres767,
+		.grid-holder .column.three.nospaceres.noblockres767,
+		.grid-holder .column.four.nospaceres.noblockres767,
+		.grid-holder .column.five.nospaceres.noblockres767,
+		.grid-holder .column.six.nospaceres.noblockres767,
+		.grid-holder .column.seven.nospaceres.noblockres767,
+		.grid-holder .column.eight.nospaceres.noblockres767,
+		.grid-holder .column.nine.nospaceres.noblockres767,
+		.grid-holder .column.ten.nospaceres.noblockres767,
+		.grid-holder .column.eleven.nospaceres.noblockres767,
+		.grid-holder .column.twelve.nospaceres.noblockres767 { width:100%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.noblockres767,
+		.grid-holder .column.offsetres-two.noblockres767,
+		.grid-holder .column.offsetres-three.noblockres767,
+		.grid-holder .column.offsetres-four.noblockres767,
+		.grid-holder .column.offsetres-five.noblockres767,
+		.grid-holder .column.offsetres-six.noblockres767,
+		.grid-holder .column.offsetres-seven.noblockres767,
+		.grid-holder .column.offsetres-eight.noblockres767,
+		.grid-holder .column.offsetres-nine.noblockres767,
+		.grid-holder .column.offsetres-ten.noblockres767,
+		.grid-holder .column.offsetres-eleven.noblockres767,
+		.grid-holder .column.offsetres-twelve.noblockres767 { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH HALF DIVISION COLUMN
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.halfdivision767,
+		.grid-holder .column.two.halfdivision767,
+		.grid-holder .column.three.halfdivision767,
+		.grid-holder .column.four.halfdivision767,
+		.grid-holder .column.five.halfdivision767,
+		.grid-holder .column.six.halfdivision767,
+		.grid-holder .column.seven.halfdivision767,
+		.grid-holder .column.eight.halfdivision767,
+		.grid-holder .column.nine.halfdivision767,
+		.grid-holder .column.ten.halfdivision767,
+		.grid-holder .column.eleven.halfdivision767,
+		.grid-holder .column.twelve.halfdivision767 { width:48%; padding:0 1%; }
+		
+		.grid-holder .column.one.nospaceresl.halfdivision767,
+		.grid-holder .column.two.nospaceresl.halfdivision767,
+		.grid-holder .column.three.nospaceresl.halfdivision767,
+		.grid-holder .column.four.nospaceresl.halfdivision767,
+		.grid-holder .column.five.nospaceresl.halfdivision767,
+		.grid-holder .column.six.nospaceresl.halfdivision767,
+		.grid-holder .column.seven.nospaceresl.halfdivision767,
+		.grid-holder .column.eight.nospaceresl.halfdivision767,
+		.grid-holder .column.nine.nospaceresl.halfdivision767,
+		.grid-holder .column.ten.nospaceresl.halfdivision767,
+		.grid-holder .column.eleven.nospaceresl.halfdivision767,
+		.grid-holder .column.twelve.nospaceresl.halfdivision767 { width:49%; padding:0 1% 0 0; }
+		
+		.grid-holder .column.one.nospaceresr.halfdivision767,
+		.grid-holder .column.two.nospaceresr.halfdivision767,
+		.grid-holder .column.three.nospaceresr.halfdivision767,
+		.grid-holder .column.four.nospaceresr.halfdivision767,
+		.grid-holder .column.five.nospaceresr.halfdivision767,
+		.grid-holder .column.six.nospaceresr.halfdivision767,
+		.grid-holder .column.seven.nospaceresr.halfdivision767,
+		.grid-holder .column.eight.nospaceresr.halfdivision767,
+		.grid-holder .column.nine.nospaceresr.halfdivision767,
+		.grid-holder .column.ten.nospaceresr.halfdivision767,
+		.grid-holder .column.eleven.nospaceresr.halfdivision767,
+		.grid-holder .column.twelve.nospaceresr.halfdivision767 { width:49%; padding:0 0 0 1%; }
+		
+		.grid-holder .column.one.nospaceres.halfdivision767,
+		.grid-holder .column.two.nospaceres.halfdivision767,
+		.grid-holder .column.three.nospaceres.halfdivision767,
+		.grid-holder .column.four.nospaceres.halfdivision767,
+		.grid-holder .column.five.nospaceres.halfdivision767,
+		.grid-holder .column.six.nospaceres.halfdivision767,
+		.grid-holder .column.seven.nospaceres.halfdivision767,
+		.grid-holder .column.eight.nospaceres.halfdivision767,
+		.grid-holder .column.nine.nospaceres.halfdivision767,
+		.grid-holder .column.ten.nospaceres.halfdivision767,
+		.grid-holder .column.eleven.nospaceres.halfdivision767,
+		.grid-holder .column.twelve.nospaceres.halfdivision767 { width:50%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.halfdivision767,
+		.grid-holder .column.offsetres-two.halfdivision767,
+		.grid-holder .column.offsetres-three.halfdivision767,
+		.grid-holder .column.offsetres-four.halfdivision767,
+		.grid-holder .column.offsetres-five.halfdivision767,
+		.grid-holder .column.offsetres-six.halfdivision767,
+		.grid-holder .column.offsetres-seven.halfdivision767,
+		.grid-holder .column.offsetres-eight.halfdivision767,
+		.grid-holder .column.offsetres-nine.halfdivision767,
+		.grid-holder .column.offsetres-ten.halfdivision767,
+		.grid-holder .column.offsetres-eleven.halfdivision767,
+		.grid-holder .column.offsetres-twelve.halfdivision767 { width:50%; margin-left:0; }
+		
+	}
+	
+/*	--------------------------------------------------
+	:: GRID COLUMNS 479PX AND BELOW
+	-------------------------------------------------- */
+
+    @media only screen and (max-width:479px) {
+		
+	    .grid-holder .column.one,
+		.grid-holder .column.two,
+		.grid-holder .column.three,
+		.grid-holder .column.four,
+		.grid-holder .column.five,
+		.grid-holder .column.six,
+		.grid-holder .column.seven,
+		.grid-holder .column.eight,
+		.grid-holder .column.nine,
+		.grid-holder .column.ten,
+		.grid-holder .column.eleven,
+		.grid-holder .column.twelve { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE LEFT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl,
+		.grid-holder .column.two.nospaceresl,
+		.grid-holder .column.three.nospaceresl,
+		.grid-holder .column.four.nospaceresl,
+		.grid-holder .column.five.nospaceresl,
+		.grid-holder .column.six.nospaceresl,
+		.grid-holder .column.seven.nospaceresl,
+		.grid-holder .column.eight.nospaceresl,
+		.grid-holder .column.nine.nospaceresl,
+		.grid-holder .column.ten.nospaceresl,
+		.grid-holder .column.eleven.nospaceresl,
+		.grid-holder .column.twelve.nospaceresl { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RIGHT RESPONSIVE
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr,
+		.grid-holder .column.two.nospaceresr,
+		.grid-holder .column.three.nospaceresr,
+		.grid-holder .column.four.nospaceresr,
+		.grid-holder .column.five.nospaceresr,
+		.grid-holder .column.six.nospaceresr,
+		.grid-holder .column.seven.nospaceresr,
+		.grid-holder .column.eight.nospaceresr,
+		.grid-holder .column.nine.nospaceresr,
+		.grid-holder .column.ten.nospaceresr,
+		.grid-holder .column.eleven.nospaceresr,
+		.grid-holder .column.twelve.nospaceresr { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WIDTH WITH NOSPACE RESPONSIVE
+		-------------------------------------------------- */
+        
+		.grid-holder .column.one.nospaceres,
+		.grid-holder .column.two.nospaceres,
+		.grid-holder .column.three.nospaceres,
+		.grid-holder .column.four.nospaceres,
+		.grid-holder .column.five.nospaceres,
+		.grid-holder .column.six.nospaceres,
+		.grid-holder .column.seven.nospaceres,
+		.grid-holder .column.eight.nospaceres,
+		.grid-holder .column.nine.nospaceres,
+		.grid-holder .column.ten.nospaceres,
+		.grid-holder .column.eleven.nospaceres,
+		.grid-holder .column.twelve.nospaceres { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one,
+		.grid-holder .column.offsetres-two,
+		.grid-holder .column.offsetres-three,
+		.grid-holder .column.offsetres-four,
+		.grid-holder .column.offsetres-five,
+		.grid-holder .column.offsetres-six,
+		.grid-holder .column.offsetres-seven,
+		.grid-holder .column.offsetres-eight,
+		.grid-holder .column.offsetres-nine,
+		.grid-holder .column.offsetres-ten,
+		.grid-holder .column.offsetres-eleven,
+		.grid-holder .column.offsetres-twelve { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockresall { width:6.333333333333333%; padding:0 1%; }
+		.grid-holder .column.two.noblockresall { width:14.666666666666667%; padding:0 1%; }
+		.grid-holder .column.three.noblockresall { width:23%; padding:0 1%; }
+		.grid-holder .column.four.noblockresall { width:31.33333333333334%; padding:0 1%; }
+		.grid-holder .column.five.noblockresall { width:39.66666666666667%; padding:0 1%; }
+		.grid-holder .column.six.noblockresall { width:48%; padding:0 1%; }
+		.grid-holder .column.seven.noblockresall { width:56.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eight.noblockresall { width:64.66666666666667%; padding:0 1%; }
+		.grid-holder .column.nine.noblockresall { width:73%; padding:0 1%; }
+		.grid-holder .column.ten.noblockresall { width:81.33333333333334%; padding:0 1%; }
+		.grid-holder .column.eleven.noblockresall { width:89.66666666666667%; padding:0 1%; }
+		.grid-holder .column.twelve.noblockresall { width:98%; padding:0 1%; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE LEFT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresl.noblockresall { width:7.333333333333333%; padding-left:0; }
+		.grid-holder .column.two.nospaceresl.noblockresall { width:15.666666666666667%; padding-left:0; }
+		.grid-holder .column.three.nospaceresl.noblockresall { width:24%; padding-left:0; }
+		.grid-holder .column.four.nospaceresl.noblockresall { width:32.33333333333334%; padding-left:0; }
+		.grid-holder .column.five.nospaceresl.noblockresall { width:40.66666666666667%; padding-left:0; }
+		.grid-holder .column.six.nospaceresl.noblockresall { width:49%; padding-left:0; }
+		.grid-holder .column.seven.nospaceresl.noblockresall { width:57.33333333333334%; padding-left:0; }
+		.grid-holder .column.eight.nospaceresl.noblockresall { width:65.66666666666667%; padding-left:0; }
+		.grid-holder .column.nine.nospaceresl.noblockresall { width:74%; padding-left:0; }
+		.grid-holder .column.ten.nospaceresl.noblockresall { width:82.33333333333334%; padding-left:0; }
+		.grid-holder .column.eleven.nospaceresl.noblockresall { width:90.66666666666667%; padding-left:0; }
+		.grid-holder .column.twelve.nospaceresl.noblockresall { width:99%; padding-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceresr.noblockresall { width:7.333333333333333%; padding-right:0; }
+		.grid-holder .column.two.nospaceresr.noblockresall { width:15.666666666666667%; padding-right:0; }
+		.grid-holder .column.three.nospaceresr.noblockresall { width:24%; padding-right:0; }
+		.grid-holder .column.four.nospaceresr.noblockresall { width:32.33333333333334%; padding-right:0; }
+		.grid-holder .column.five.nospaceresr.noblockresall { width:40.66666666666667%; padding-right:0; }
+		.grid-holder .column.six.nospaceresr.noblockresall { width:49%; padding-right:0; }
+		.grid-holder .column.seven.nospaceresr.noblockresall { width:57.33333333333334%; padding-right:0; }
+		.grid-holder .column.eight.nospaceresr.noblockresall { width:65.66666666666667%; padding-right:0; }
+		.grid-holder .column.nine.nospaceresr.noblockresall { width:74%; padding-right:0; }
+		.grid-holder .column.ten.nospaceresr.noblockresall { width:82.33333333333334%; padding-right:0; }
+		.grid-holder .column.eleven.nospaceresr.noblockresall { width:90.66666666666667%; padding-right:0; }
+		.grid-holder .column.twelve.nospaceresr.noblockresall { width:99%; padding-right:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITHOUT BLOCK ELEMENTS NOSPACE RIGHT
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.nospaceres.noblockresall { width:8.333333333333333%; padding:0; }
+		.grid-holder .column.two.nospaceres.noblockresall { width:16.666666666666667%; padding:0; }
+		.grid-holder .column.three.nospaceres.noblockresall { width:25%; padding:0; }
+		.grid-holder .column.four.nospaceres.noblockresall { width:33.33333333333334%; padding:0; }
+		.grid-holder .column.five.nospaceres.noblockresall { width:41.66666666666667%; padding:0; }
+		.grid-holder .column.six.nospaceres.noblockresall { width:50%; padding:0; }
+		.grid-holder .column.seven.nospaceres.noblockresall { width:58.33333333333334%; padding:0; }
+		.grid-holder .column.eight.nospaceres.noblockresall { width:66.66666666666667%; padding:0; }
+		.grid-holder .column.nine.nospaceres.noblockresall { width:75%; padding:0; }
+		.grid-holder .column.ten.nospaceres.noblockresall { width:83.33333333333334%; padding:0; }
+		.grid-holder .column.eleven.nospaceres.noblockresall { width:91.66666666666667%; padding:0; }
+		.grid-holder .column.twelve.nospaceres.noblockresall { width:100%; padding:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS OFFSETS RESPONSIVE WITHOUT BLOCK
+		-------------------------------------------------- */
+        
+        .grid-holder .column.offsetres-one.noblockresall { margin-left:8.333333333333333%; }
+		.grid-holder .column.offsetres-two.noblockresall { margin-left:16.666666666666667%; }
+		.grid-holder .column.offsetres-three.noblockresall { margin-left:25%; }
+		.grid-holder .column.offsetres-four.noblockresall { margin-left:33.33333333333334%; }
+		.grid-holder .column.offsetres-five.noblockresall { margin-left:41.66666666666667%; }
+		.grid-holder .column.offsetres-six.noblockresall { margin-left:50%; }
+		.grid-holder .column.offsetres-seven.noblockresall { margin-left:58.33333333333334%; }
+		.grid-holder .column.offsetres-eight.noblockresall { margin-left:66.66666666666667%; }
+		.grid-holder .column.offsetres-nine.noblockresall { margin-left:75%; }
+		.grid-holder .column.offsetres-ten.noblockresall { margin-left:83.33333333333334%; }
+		.grid-holder .column.offsetres-eleven.noblockresall { margin-left:91.66666666666667%; }
+		.grid-holder .column.offsetres-twelve.noblockresall { margin-left:100%; }
+		
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH BLOCK ELEMENTS
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.noblockres479,
+		.grid-holder .column.two.noblockres479,
+		.grid-holder .column.three.noblockres479,
+		.grid-holder .column.four.noblockres479,
+		.grid-holder .column.five.noblockres479,
+		.grid-holder .column.six.noblockres479,
+		.grid-holder .column.seven.noblockres479,
+		.grid-holder .column.eight.noblockres479,
+		.grid-holder .column.nine.noblockres479,
+		.grid-holder .column.ten.noblockres479,
+		.grid-holder .column.eleven.noblockres479,
+		.grid-holder .column.twelve.noblockres479 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresl.noblockres479,
+		.grid-holder .column.two.nospaceresl.noblockres479,
+		.grid-holder .column.three.nospaceresl.noblockres479,
+		.grid-holder .column.four.nospaceresl.noblockres479,
+		.grid-holder .column.five.nospaceresl.noblockres479,
+		.grid-holder .column.six.nospaceresl.noblockres479,
+		.grid-holder .column.seven.nospaceresl.noblockres479,
+		.grid-holder .column.eight.nospaceresl.noblockres479,
+		.grid-holder .column.nine.nospaceresl.noblockres479,
+		.grid-holder .column.ten.nospaceresl.noblockres479,
+		.grid-holder .column.eleven.nospaceresl.noblockres479,
+		.grid-holder .column.twelve.nospaceresl.noblockres479 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceresr.noblockres479,
+		.grid-holder .column.two.nospaceresr.noblockres479,
+		.grid-holder .column.three.nospaceresr.noblockres479,
+		.grid-holder .column.four.nospaceresr.noblockres479,
+		.grid-holder .column.five.nospaceresr.noblockres479,
+		.grid-holder .column.six.nospaceresr.noblockres479,
+		.grid-holder .column.seven.nospaceresr.noblockres479,
+		.grid-holder .column.eight.nospaceresr.noblockres479,
+		.grid-holder .column.nine.nospaceresr.noblockres479,
+		.grid-holder .column.ten.nospaceresr.noblockres479,
+		.grid-holder .column.eleven.nospaceresr.noblockres479,
+		.grid-holder .column.twelve.nospaceresr.noblockres479 { width:100%; padding:0; }
+		
+		.grid-holder .column.one.nospaceres.noblockres479,
+		.grid-holder .column.two.nospaceres.noblockres479,
+		.grid-holder .column.three.nospaceres.noblockres479,
+		.grid-holder .column.four.nospaceres.noblockres479,
+		.grid-holder .column.five.nospaceres.noblockres479,
+		.grid-holder .column.six.nospaceres.noblockres479,
+		.grid-holder .column.seven.nospaceres.noblockres479,
+		.grid-holder .column.eight.nospaceres.noblockres479,
+		.grid-holder .column.nine.nospaceres.noblockres479,
+		.grid-holder .column.ten.nospaceres.noblockres479,
+		.grid-holder .column.eleven.nospaceres.noblockres479,
+		.grid-holder .column.twelve.nospaceres.noblockres479 { width:100%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.noblockres479,
+		.grid-holder .column.offsetres-two.noblockres479,
+		.grid-holder .column.offsetres-three.noblockres479,
+		.grid-holder .column.offsetres-four.noblockres479,
+		.grid-holder .column.offsetres-five.noblockres479,
+		.grid-holder .column.offsetres-six.noblockres479,
+		.grid-holder .column.offsetres-seven.noblockres479,
+		.grid-holder .column.offsetres-eight.noblockres479,
+		.grid-holder .column.offsetres-nine.noblockres479,
+		.grid-holder .column.offsetres-ten.noblockres479,
+		.grid-holder .column.offsetres-eleven.noblockres479,
+		.grid-holder .column.offsetres-twelve.noblockres479 { width:100%; margin-left:0; }
+		
+	/*	--------------------------------------------------
+		:: COLUMNS WITH HALF DIVISION COLUMN
+		-------------------------------------------------- */
+		
+		.grid-holder .column.one.halfdivision479,
+		.grid-holder .column.two.halfdivision479,
+		.grid-holder .column.three.halfdivision479,
+		.grid-holder .column.four.halfdivision479,
+		.grid-holder .column.five.halfdivision479,
+		.grid-holder .column.six.halfdivision479,
+		.grid-holder .column.seven.halfdivision479,
+		.grid-holder .column.eight.halfdivision479,
+		.grid-holder .column.nine.halfdivision479,
+		.grid-holder .column.ten.halfdivision479,
+		.grid-holder .column.eleven.halfdivision479,
+		.grid-holder .column.twelve.halfdivision479 { width:48%; padding:0 1%; }
+		
+		.grid-holder .column.one.nospaceresl.halfdivision479,
+		.grid-holder .column.two.nospaceresl.halfdivision479,
+		.grid-holder .column.three.nospaceresl.halfdivision479,
+		.grid-holder .column.four.nospaceresl.halfdivision479,
+		.grid-holder .column.five.nospaceresl.halfdivision479,
+		.grid-holder .column.six.nospaceresl.halfdivision479,
+		.grid-holder .column.seven.nospaceresl.halfdivision479,
+		.grid-holder .column.eight.nospaceresl.halfdivision479,
+		.grid-holder .column.nine.nospaceresl.halfdivision479,
+		.grid-holder .column.ten.nospaceresl.halfdivision479,
+		.grid-holder .column.eleven.nospaceresl.halfdivision479,
+		.grid-holder .column.twelve.nospaceresl.halfdivision479 { width:49%; padding:0 1% 0 0; }
+		
+		.grid-holder .column.one.nospaceresr.halfdivision479,
+		.grid-holder .column.two.nospaceresr.halfdivision479,
+		.grid-holder .column.three.nospaceresr.halfdivision479,
+		.grid-holder .column.four.nospaceresr.halfdivision479,
+		.grid-holder .column.five.nospaceresr.halfdivision479,
+		.grid-holder .column.six.nospaceresr.halfdivision479,
+		.grid-holder .column.seven.nospaceresr.halfdivision479,
+		.grid-holder .column.eight.nospaceresr.halfdivision479,
+		.grid-holder .column.nine.nospaceresr.halfdivision479,
+		.grid-holder .column.ten.nospaceresr.halfdivision479,
+		.grid-holder .column.eleven.nospaceresr.halfdivision479,
+		.grid-holder .column.twelve.nospaceresr.halfdivision479 { width:49%; padding:0 0 0 1%; }
+		
+		.grid-holder .column.one.nospaceres.halfdivision479,
+		.grid-holder .column.two.nospaceres.halfdivision479,
+		.grid-holder .column.three.nospaceres.halfdivision479,
+		.grid-holder .column.four.nospaceres.halfdivision479,
+		.grid-holder .column.five.nospaceres.halfdivision479,
+		.grid-holder .column.six.nospaceres.halfdivision479,
+		.grid-holder .column.seven.nospaceres.halfdivision479,
+		.grid-holder .column.eight.nospaceres.halfdivision479,
+		.grid-holder .column.nine.nospaceres.halfdivision479,
+		.grid-holder .column.ten.nospaceres.halfdivision479,
+		.grid-holder .column.eleven.nospaceres.halfdivision479,
+		.grid-holder .column.twelve.nospaceres.halfdivision479 { width:50%; padding:0; }
+		
+		.grid-holder .column.offsetres-one.halfdivision479,
+		.grid-holder .column.offsetres-two.halfdivision479,
+		.grid-holder .column.offsetres-three.halfdivision479,
+		.grid-holder .column.offsetres-four.halfdivision479,
+		.grid-holder .column.offsetres-five.halfdivision479,
+		.grid-holder .column.offsetres-six.halfdivision479,
+		.grid-holder .column.offsetres-seven.halfdivision479,
+		.grid-holder .column.offsetres-eight.halfdivision479,
+		.grid-holder .column.offsetres-nine.halfdivision479,
+		.grid-holder .column.offsetres-ten.halfdivision479,
+		.grid-holder .column.offsetres-eleven.halfdivision479,
+		.grid-holder .column.offsetres-twelve.halfdivision479 { width:50%; margin-left:0; }
+				
+	}

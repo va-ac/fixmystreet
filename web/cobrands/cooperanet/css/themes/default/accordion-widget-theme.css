@@ -1,0 +1,162 @@
+/*
+    Description: 	Accordion Framework
+    Author: 		Insidelabdev
+    Version: 		1.0
+*/
+
+/*	--------------------------------------------------
+	:: Accordion Widget Blue
+	-------------------------------------------------- */
+
+    .accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper .accordion-widget-label {
+		background-color:#6bbef8;
+		color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-label:after,
+    .accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-input:checked + .accordion-widget-label:after,
+	.accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper .accordion-widget-label i{
+		color:#fdfdfd; 
+    }
+
+	.accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper.accordion-widget-arrow .accordion-widget-input:checked + .accordion-widget-label:before {
+	    border-left:20px solid transparent;
+	    border-right:20px solid transparent;
+	    border-top:20px solid #6bbef8;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Green
+	-------------------------------------------------- */
+
+	.accordion-widget-default.accordion-widget-green .accordion-widget-wrapper .accordion-widget-label{
+		background-color:#6ed790;
+		color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-green .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-label:after,
+    .accordion-widget-default.accordion-widget-green .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-input:checked + .accordion-widget-label:after,
+	.accordion-widget-default.accordion-widget-green .accordion-widget-wrapper .accordion-widget-label i{
+		color:#fdfdfd; 
+    }
+
+	.accordion-widget-default.accordion-widget-green .accordion-widget-wrapper.accordion-widget-arrow .accordion-widget-input:checked + .accordion-widget-label:before {
+	    border-left:20px solid transparent;
+	    border-right:20px solid transparent;
+	    border-top:20px solid #6ed790;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Red
+	-------------------------------------------------- */
+
+	.accordion-widget-default.accordion-widget-red .accordion-widget-wrapper .accordion-widget-label{
+		background-color:#ed7066;
+		color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-red .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-label:after,
+    .accordion-widget-default.accordion-widget-red .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-input:checked + .accordion-widget-label:after,
+	.accordion-widget-default.accordion-widget-red .accordion-widget-wrapper .accordion-widget-label i{
+		color:#fdfdfd; 
+    }
+
+	.accordion-widget-default.accordion-widget-red .accordion-widget-wrapper.accordion-widget-arrow .accordion-widget-input:checked + .accordion-widget-label:before {
+	    border-left:20px solid transparent;
+	    border-right:20px solid transparent;
+	    border-top:20px solid #ed7066;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Orange
+	-------------------------------------------------- */
+
+	.accordion-widget-default.accordion-widget-orange .accordion-widget-wrapper .accordion-widget-label{
+		background-color:#f6a258;
+		color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-orange .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-label:after,
+    .accordion-widget-default.accordion-widget-orange .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-input:checked + .accordion-widget-label:after,
+	.accordion-widget-default.accordion-widget-orange .accordion-widget-wrapper .accordion-widget-label i{
+		color:#fdfdfd; 
+    }
+
+	.accordion-widget-default.accordion-widget-orange .accordion-widget-wrapper.accordion-widget-arrow .accordion-widget-input:checked + .accordion-widget-label:before {
+	    border-left:20px solid transparent;
+	    border-right:20px solid transparent;
+	    border-top:20px solid #f6a258;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Purple
+	-------------------------------------------------- */
+
+	.accordion-widget-default.accordion-widget-purple .accordion-widget-wrapper .accordion-widget-label{
+		background-color:#f36e93;
+		color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-purple .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-label:after,
+    .accordion-widget-default.accordion-widget-purple .accordion-widget-wrapper#accordion-widget-right-arrow .accordion-widget-input:checked + .accordion-widget-label:after,
+	.accordion-widget-default.accordion-widget-purple .accordion-widget-wrapper .accordion-widget-label i{
+		color:#fdfdfd; 
+    }
+
+	.accordion-widget-default.accordion-widget-purple .accordion-widget-wrapper.accordion-widget-arrow .accordion-widget-input:checked + .accordion-widget-label:before {
+	    border-left:20px solid transparent;
+	    border-right:20px solid transparent;
+	    border-top:20px solid #f36e93;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Light
+	-------------------------------------------------- */
+
+	.accordion-widget-default.accordion-widget-light .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content {
+		background-color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-light .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > li {
+		border-bottom:1px solid #f1f1f1;
+    }
+	
+	.accordion-widget-default.accordion-widget-light .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > li:hover {
+        background-color:#f9f9f9;
+    }
+	
+    .accordion-widget-default.accordion-widget-light .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > li a,
+	.accordion-widget-default.accordion-widget-light .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > i {
+		color:#70828f;
+    }
+	
+	.accordion-widget-default.accordion-widget-light .accordion-widget-wrapper .accordion-widget-label span {
+	    background-color:#fdfdfd;
+        color:#70828f;
+    }
+    
+/*	--------------------------------------------------
+	:: Accordion Widget Dark
+	-------------------------------------------------- */
+    
+	.accordion-widget-default.accordion-widget-dark .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content {
+		background-color:#262c35;
+    }
+	
+	.accordion-widget-default.accordion-widget-dark .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > li {
+		border-bottom:1px solid #2f3740;
+    }
+	
+	.accordion-widget-default.accordion-widget-dark .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > li:hover {
+        background-color:#212730;
+    }
+	
+    .accordion-widget-default.accordion-widget-dark .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > li a,
+	.accordion-widget-default.accordion-widget-dark .accordion-widget-wrapper .accordion-widget-section .accordion-widget-section-content > i {
+		color:#fdfdfd;
+    }
+	
+	.accordion-widget-default.accordion-widget-dark .accordion-widget-wrapper .accordion-widget-label span {
+	    background-color:#fdfdfd;
+        color:#70828f;
+    }

@@ -1,0 +1,219 @@
+/*
+    Description: 	Accordion Framework
+    Author: 		Insidelabdev
+    Version: 		1.0
+*/
+
+/*	--------------------------------------------------
+	:: Accordion Widget Zoom-in
+	-------------------------------------------------- */
+
+	.accordion-widget-zoom-in .accordion-widget-wrapper .accordion-widget-section {
+	    -webkit-transform:scale(1.2);
+		   -moz-transform:scale(1.2);
+                transform:scale(1.2);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+    .accordion-widget-zoom-in .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:scale(1);
+		   -moz-transform:scale(1);
+                transform:scale(1);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Zoom-out
+	-------------------------------------------------- */
+	
+	.accordion-widget-zoom-out .accordion-widget-wrapper .accordion-widget-section {
+	    -webkit-transform:scale(0.8);
+		   -moz-transform:scale(0.8);
+                transform:scale(0.8);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+
+    .accordion-widget-zoom-out .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:scale(1);
+		   -moz-transform:scale(1);
+                transform:scale(1);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Flip
+	-------------------------------------------------- */
+
+	.accordion-widget-flip .accordion-widget-wrapper .accordion-widget-section  { 
+		-webkit-transform:rotatey(-180deg) scale(1);
+	       -moz-transform:rotatey(-180deg) scale(1);
+	            transform:rotatey(-180deg) scale(1);
+	    -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;           		
+    }
+	
+	.accordion-widget-flip .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:rotatey(0deg) scale(1);
+	       -moz-transform:rotatey(0deg) scale(1);
+	            transform:rotatey(0deg) scale(1);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Slide-left
+	-------------------------------------------------- */
+	
+	.accordion-widget-slide-left .accordion-widget-wrapper .accordion-widget-section  { 
+		-webkit-transform:translateX(-10%);
+	       -moz-transform:translateX(-10%);
+	            transform:translateX(-10%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-slide-left .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:translateX(0%);
+	       -moz-transform:translateX(0%);
+	            transform:translateX(0%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Slide-right
+	-------------------------------------------------- */
+	
+	.accordion-widget-slide-right .accordion-widget-wrapper .accordion-widget-section  {
+		-webkit-transform:translateX(10%);
+	       -moz-transform:translateX(10%);
+	            transform:translateX(10%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-slide-right .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:translateX(0%);
+	       -moz-transform:translateX(0%);
+	            transform:translateX(0%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Slide-up
+	-------------------------------------------------- */
+	
+	.accordion-widget-slide-up .accordion-widget-wrapper .accordion-widget-section  { 
+		-webkit-transform:translateY(-10%);
+	       -moz-transform:translateY(-10%);
+	            transform:translateY(-10%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-slide-up .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:translateY(0%);
+	       -moz-transform:translateY(0%);
+	            transform:translateY(0%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Slide-down
+	-------------------------------------------------- */
+	
+	.accordion-widget-slide-down .accordion-widget-wrapper .accordion-widget-section  { 
+		-webkit-transform:translateY(10%);
+	       -moz-transform:translateY(10%);
+	            transform:translateY(10%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-slide-down .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:translateY(0%);
+	       -moz-transform:translateY(0%);
+	            transform:translateY(0%);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Fall
+	-------------------------------------------------- */
+	
+	.accordion-widget-fall .accordion-widget-wrapper .accordion-widget-section  { 
+	    -webkit-transform:translateY(10%) rotate(10deg);
+	       -moz-transform:translateY(10%) rotate(10deg);
+	            transform:translateY(10%) rotate(10deg);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-fall .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+	    -webkit-transform:translateY(0%) rotate(0deg);
+	       -moz-transform:translateY(0%) rotate(0deg);
+	            transform:translateY(0%) rotate(0deg);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Fade
+	-------------------------------------------------- */
+	
+	.accordion-widget-fade .accordion-widget-wrapper .accordion-widget-section {
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-fade .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section{
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+/*	--------------------------------------------------
+	:: Accordion Widget Rotate
+	-------------------------------------------------- */
+	
+	.accordion-widget-rotate .accordion-widget-wrapper .accordion-widget-section  {
+	    -webkit-transform:rotatex(-180deg) scale(1);
+	       -moz-transform:rotatex(-180deg) scale(1);
+	            transform:rotatex(-180deg) scale(1); 
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
+	
+	.accordion-widget-rotate .accordion-widget-wrapper .accordion-widget-input:checked ~ .accordion-widget-section {
+        -webkit-transform:rotatex(0deg) scale(1);
+	       -moz-transform:rotatex(0deg) scale(1);
+	            transform:rotatex(0deg) scale(1);
+        -webkit-transition:all 0.8s ease-in-out;
+           -moz-transition:all 0.8s ease-in-out;
+		        transition:all 0.8s ease-in-out;
+    }
