@@ -10,7 +10,7 @@
                 <ul class="accordion-widget-section-content">
                     <li><a href='/report/new?longitude=-72.06851242883265&latitude=-45.571014931144894&cat=ACCIDENTES%20AUTOMOVILÍSTICO'><i class='icon-circle-right2'></i>Accidentes automovilístico</a></li>
                     <li><a href='/report/new?longitude=-72.06851242883265&latitude=-45.571014931144894&cat=CAIDA%20DE%20ARBOLES'><i class='icon-circle-right2'></i>Caida de arboles</a></li>
-                    <li><a href='/report/new?longitude=-72.06851242883265&latitude=-45.571014931144894&cat=DERRAME%20DE%20COMBUSTIBLE%20EN%20LA%20VÍA'><i class='icon-circle-right2'></i>Derrame de combustible en la vía</a></li>
+                    <li><a href='#' onclick="getLocationandGo('DERRAME%20DE%20COMBUSTIBLE%20EN%20LA%20VÍA')"><i class='icon-circle-right2'></i>Derrame de combustible en la vía</a></li>
                     <li><a href='/report/new?longitude=-72.06851242883265&latitude=-45.571014931144894&cat=FUGAS%20DE%20GAS'><i class='icon-circle-right2'></i>Fugas de gas</a></li>
                     <li><a href='/report/new?longitude=-72.06851242883265&latitude=-45.571014931144894&cat=INCENDIO'><i class='icon-circle-right2'></i>Incendio</a></li>
                     <li><a href='/report/new?longitude=-72.06851242883265&latitude=-45.571014931144894&cat=INUNDACIONES%20O%20ANEGAMIENTO'><i class='icon-circle-right2'></i>Inundaciones o anegamiento</a></li>
@@ -94,6 +94,13 @@
             </div>
         </div>                
     </div>
+</div>
+<div id="form_oculto">
+<form action="report/new" method="get" name="nreport" id="nreport">
+<input type="hidden" name="latitude" id="latitude" value="-45.571014931144894">
+<input type="hidden" name="longitude" id="longitude" value="-72.06851242883265">
+<input type="hidden" name="cat" id="cat">
+</form>
 </div>        
 
 <div id="front-main">
@@ -120,3 +127,19 @@
         </form>
     </div>
 </div>
+<script type="text/javascript">
+    function getLocationandGo(categoria) {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(pos);
+                    document.getElementById("cat").value = encodeURI(categoria);
+                } else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function pos(position) {
+                 document.getElementById("latitude").value = position.coords.latitude;
+                 document.getElementById("longitude").value = position.coords.longitude; 
+                 document.getElementById('nreport').submit();
+            }
+</script>
