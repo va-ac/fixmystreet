@@ -62,4 +62,13 @@
             <option value='SITIO ERIAZO'>Sitio eriazo</option>
         </optgroup>
     </select>
+    <script type="text/javascript">
+function SelectElement()
+{    
+    var myParam = location.search.split('cat=')[1]
+    alert(myParam);
+    var element = document.getElementById('form_category');
+    element.value = myParam;
+}
+</script>
 [%~ END ~%]
