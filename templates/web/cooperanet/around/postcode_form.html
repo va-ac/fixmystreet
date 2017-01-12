@@ -36,7 +36,7 @@
             <div class="accordion-widget-section">
                 <ul class="accordion-widget-section-content">
                     <li><a href='#' onclick="getLocationandGo('ACCIDENTE%20ESCOLAR')"><i class='icon-circle-right2'></i>Accidente escolar</a></li>
-                    <li><a href='#' onclick="getLocationandGo('BULLYNG%20')"><i class='icon-circle-right2'></i>Bullyng </a></li>
+                    <li><a href='#' onclick="getLocationandGo('BULLYNG')"><i class='icon-circle-right2'></i>Bullyng </a></li>
                     <li><a href='#' onclick="getLocationandGo('INASISTENCIA%20INJUSTIFICADA')"><i class='icon-circle-right2'></i>Inasistencia injustificada</a></li>
                     <li><a href='#' onclick="getLocationandGo('SUSPENCIÓN%20DE%20CLASES')"><i class='icon-circle-right2'></i>Suspención de clases</a></li>
                 </ul>
@@ -133,7 +133,8 @@
                     navigator.geolocation.getCurrentPosition(pos);
                     document.getElementById("cat").value = encodeURI(categoria);
                 } else { 
-                    x.innerHTML = "Geolocation is not supported by this browser.";
+                    document.getElementById("cat").value = encodeURI(categoria);
+                    document.getElementById('nreport').submit();;
                 }
             }
 
