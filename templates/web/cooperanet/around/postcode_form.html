@@ -103,7 +103,7 @@
 </form>
 </div>        
 
-<div id="front-main">
+<div id="front-main" styel="visibility:hidden">
     <div id="front-main-container">
 
         [%
@@ -129,7 +129,7 @@
 </div>
 <script type="text/javascript">
     function getLocationandGo(categoria) {
-        document.getElementById("cat").value = (categoria); 
+        document.getElementById("cat").value = encodeURI(categoria); 
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(pos);
                     document.getElementById('nreport').submit();
