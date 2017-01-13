@@ -1,5 +1,39 @@
 .icon-emergencia {
-	content:url("../images/www.cooperanet.cl_icono_01.png");
+	content:url("../images/www.cooperanet.cl_icon_emergencia.png");
 	width:40px;
    	height:40px;
+}
+
+.icon-delito {
+	content:url("../images/www.cooperanet.cl_icon_delito.png");
+	width:40px;
+   	height:40px;
+}
+
+.icon-gescolar {
+	content:url("../images/www.cooperanet.cl_icon_gescolar.png");
+	width:40px;
+   	height:40px;
+}
+
+.icon-incivilidad {
+	content:url("../images/www.cooperanet.cl_icon_incivilidad.png");
+	width:40px;
+   	height:40px;
+}
+
+.icon-glocal {
+	content:url("../images/www.cooperanet.cl_icon_glocal.png");
+	width:40px;
+   	height:40px;
+}
+
+.icon-cespacios {
+	content:url("../images/www.cooperanet.cl_icon_cespacios.png");
+	width:40px;
+   	height:40px;
+}
+
+.report-a-problem-sidebar{
+	display: none;
 }
