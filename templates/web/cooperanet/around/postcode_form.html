@@ -129,19 +129,19 @@
 </div>
 <script type="text/javascript">
     function getLocationandGo(categoria) {
+        document.getElementById("cat").value = encodeURI(categoria); 
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(pos);
-                    document.getElementById("cat").value = encodeURI(categoria);
                     document.getElementById('nreport').submit();
                 } else { 
-                    document.getElementById("cat").value = encodeURI(categoria);
                     document.getElementById('nreport').submit();
                 }
             }
 
             function pos(position) {
                  document.getElementById("latitude").value = position.coords.latitude;
-                 document.getElementById("longitude").value = position.coords.longitude; 
+                 document.getElementById("longitude").value = position.coords.longitude;
+
              }
                  
 </script>
