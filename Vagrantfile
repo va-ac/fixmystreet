@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network :forwarded_port, guest: 3000, host: 3000
+  config.vm.network :forwarded_port, guest: 3030, host: 3030
 
   config.vm.synced_folder ".", "/home/vagrant/fixmystreet", :owner => "vagrant", :group => "vagrant"
 
@@ -47,7 +47,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Even if it failed somehow, we might as well update the port if possible
     if [ -e fixmystreet/conf/general.yml ]; then
         # We want to be on port 3000 for development
-        sed -i -r -e "s,^( *BASE_URL: .*)',\\1:3000'," fixmystreet/conf/general.yml
+        sed -i -r -e "s,^( *BASE_URL: .*)',\\1:3030'," fixmystreet/conf/general.yml
     fi
     # Create a superuser for the admin
     su vagrant -c 'fixmystreet/bin/createsuperuser superuser@example.org password'
