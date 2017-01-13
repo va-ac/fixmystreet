@@ -129,7 +129,7 @@
 </div>
 <script type="text/javascript">
     function getLocationandGo(categoria) {
-        document.getElementById("cat").value = encodeURI(categoria); 
+        document.getElementById("cat").value = (categoria); 
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(pos);
                     document.getElementById('nreport').submit();
