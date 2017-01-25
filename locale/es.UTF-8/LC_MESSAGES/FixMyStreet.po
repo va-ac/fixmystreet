@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-01-10 14:48-0300\n"
+"PO-Revision-Date: 2017-01-24 12:03-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -324,11 +324,11 @@ msgstr "Notificadme actualizaciones futuras"
 #: templates/web/base/reports/index.html:6
 #: templates/web/zurich/reports/index.html:13
 msgid "All Reports"
-msgstr "Todas las notificaciones"
+msgstr "Incidentes Registrados"
 
 #: templates/web/zurich/admin/stats.html:5
 msgid "All Reports as CSV"
-msgstr "Todos las notificaciones como CSV"
+msgstr "Incidentes Registrados en CSV"
 
 #: templates/web/base/admin/responsepriorities/list.html:19
 msgid "All categories"
@@ -340,12 +340,12 @@ msgstr "Todas las categorías"
 #: templates/web/zurich/admin/stats.html:13 templates/web/zurich/footer.html:21
 #: templates/web/zurich/nav_over_content.html:6
 msgid "All reports"
-msgstr "Todas las notificaciones"
+msgstr "Incidentes Registrados"
 
 #: templates/web/base/admin/stats.html:5
 #: templates/web/zurich/admin/stats.html:8
 msgid "All reports between %s and %s"
-msgstr "Todas las notificaciones entre %s y %s"
+msgstr "Incidentes Registrados entre %s y %s"
 
 #: templates/web/base/questionnaire/index.html:47
 msgid "An update marked this problem as fixed."
@@ -458,9 +458,8 @@ msgid "Back"
 msgstr "Atras"
 
 #: templates/web/base/report/_main.html:6
-#, fuzzy
 msgid "Back to all reports"
-msgstr "Todas las notificaciones"
+msgstr "ir a Incidentes Registrados"
 
 #: templates/web/base/admin/report_blocks.html:41
 msgid "Ban email address"
@@ -1091,7 +1090,7 @@ msgstr "Introduzca un código postal cercano, o el nombre de la calle y el área
 #: templates/web/base/around/postcode_form.html:5
 #: templates/web/base/around/postcode_form.html:6
 msgid "Enter a nearby street name and area"
-msgstr "Introduzca el nombre de una calle cercana al incidente"
+msgstr "Seleccione la Categoría que mejor se ajusta al Incidente"
 
 #: templates/web/base/auth/general.html:116
 #: templates/web/base/report/new/form_user_loggedout_by_email.html:35
@@ -3577,7 +3576,7 @@ msgstr "No hay ninguna notificación que mostrar."
 
 #: perllib/FixMyStreet/App/Controller/Reports.pm:79
 msgid "There was a problem showing the All Reports page. Please try again later."
-msgstr "Hubo un problema mostrando la página de Todas las Notificaciones. Por favor, inténtelo de nuevo más tarde."
+msgstr "Hubo un problema mostrando la página de los Incidentes Registrados. Por favor, inténtelo de nuevo más tarde."
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:137
 #: perllib/FixMyStreet/App/Controller/Dashboard.pm:60
@@ -3688,7 +3687,7 @@ msgstr "Este es un sitio para desarrolladores, las cosas podrían romperse en cu
 
 #: templates/web/base/reports/index.html:10
 msgid "This is a summary of all reports on this site."
-msgstr "Este es un resumen de todos los informes en esta web."
+msgstr "Este es un resumen de todos los incidentes registrados."
 
 #: templates/web/base/report/new/form_report.html:56
 msgid "This pothole has been here for two months and…"
