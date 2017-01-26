@@ -1,0 +1,37 @@
+Subject: Registro de Incidente: [% title %]
+
+Estimado [% bodies_name %],
+
+[% missing %][% multiple %]Un usuario de 
+[% site_name %] ha registrado el siguiente incidente
+en una ubicación que pensamos podría requerir de vuestra atención.
+
+[% fuzzy %], o para agregar una actualización de este incidente,
+por favor visite el siguiente link: 
+
+    [% url %]
+
+[% has_photo %]----------
+
+Nombre: [% name %]
+
+Correo: [% email %]
+
+[% phone_line %][% category_line %]Asunto: [% title %]
+
+Detalle: [% detail %]
+
+Latitud: [% latitude %]
+
+Longitud: [% longitude %]
+
+Vea la ubicación de este incidente: [% osm_url %]
+
+[% closest_address %]----------
+
+Al responder a este correo su mensaje será dirgido al usuario que registró el incidente.
+
+[% signature %]
+
+Si existe una casilla de correo mas apropiada para dirgir este mensaje
+[% category_footer %], por favor déjenos saberlo para mejorar el servicio que prestamos a los Ciudadanos. Por favor escríbanos también si tiene otro comentario.
