@@ -12,17 +12,16 @@ INCLUDE '_email_top.html';
 
 <th style="[% td_style %][% primary_column_style %]" id="primary_column">
   [% start_padded_box %]
-  <h1 style="[% h1_style %]">New problem in your&nbsp;area</h1>
-  <p style="[% p_style %]">[% missing %][% multiple %]A user of [% site_name %] has submitted the following report
-of a local problem that they believe might require your attention.</p>
+  <h1 style="[% h1_style %]">Nuevo incidente registrado en su área</h1>
+  <p style="[% p_style %]">[% missing %][% multiple %]Un usuario de [% site_name %] ha registrado el siguiente incidente o problema local y pensamos que podría requerir de vuestra atención.</p>
 
   <p style="margin: 20px auto; text-align: center">
-    <a style="[% button_style %]" href="[% url %]">Show full report</a>
+    <a style="[% button_style %]" href="[% url %]">Ver el registro</a>
   </p>
-  <h2 style="[% h2_style %] margin: 30px 0 10px 0">Reported by:</h2>
+  <h2 style="[% h2_style %] margin: 30px 0 10px 0">Registrado por:</h2>
   <table [% table_reset %]>
     <tr>
-      <th style="[% contact_th_style %]">Name</th>
+      <th style="[% contact_th_style %]">Nombre</th>
       <td style="[% contact_td_style %]">[% name | html %]</td>
     </tr>
     <tr>
@@ -31,12 +30,12 @@ of a local problem that they believe might require your attention.</p>
     </tr>
     [%~ IF phone %]
       <tr>
-        <th style="[% contact_th_style %]">Phone</th>
+        <th style="[% contact_th_style %]">Teléfono</th>
         <td style="[% contact_td_style %]"><a href="tel:[% phone | html %]">[% phone | html %]</a></td>
       </tr>
     [%~ END %]
   </table>
-  <p style="[% p_style %] margin-top: 0.5em;">Replies to this message will go directly to [% name | html %], the user who reported the problem.</p>
+  <p style="[% p_style %] margin-top: 0.5em;">Al responder directamente a este mensaje, su respuesta será enviada al usuario [% name | html %] que registro el incidente.</p>
   [% end_padded_box %]
 </th>
 [% WRAPPER '_email_sidebar.html' object = report %]
@@ -46,7 +45,7 @@ of a local problem that they believe might require your attention.</p>
     [%~ END %]
     <p style="[% secondary_p_style %]">[% detail | html %]</p>
     <p style="[% secondary_p_style %]">
-      <strong>Location:</strong>
+      <strong>Ubicación:</strong>
       <a href="[% osm_url %]" title="View OpenStreetMap of this location">
         [%~ latitude %], [% longitude ~%]
       </a>
