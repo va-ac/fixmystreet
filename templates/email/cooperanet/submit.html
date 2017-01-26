@@ -1,7 +1,8 @@
 [%
 
-email_summary = "A new problem in your area has been reported by a " _ site_name _ " user.";
-email_footer = "If there is a more appropriate email address for messages about " _ category_footer _ ", please let us know. This will help improve the service for local people. We also welcome any other feedback you may have.";
+email_summary = "Nuevo incidente registrado en su área a sido registrado en " _ site_name _;
+email_footer = "
+si existe una casilla de correo mas apropiada a quien dirigir los incidentes registrados en la categoría " _ category_footer _ ", por favor déjenos saberlo. Esto nos permitirá mejorar el sevicio que prestamos. Cualquier otra recomendación o comentario es bienvenido";
 email_columns = 2;
 
 PROCESS '_email_settings.html';
@@ -13,7 +14,7 @@ INCLUDE '_email_top.html';
 <th style="[% td_style %][% primary_column_style %]" id="primary_column">
   [% start_padded_box %]
   <h1 style="[% h1_style %]">Nuevo incidente registrado en su área</h1>
-  <p style="[% p_style %]">[% missing %][% multiple %]Un usuario de [% site_name %] ha registrado el siguiente incidente o problema local y pensamos que podría requerir de vuestra atención.</p>
+  <p style="[% p_style %]">Un usuario de [% site_name %] ha registrado el siguiente incidente o problema local y pensamos que podría requerir de vuestra atención.</p>
 
   <p style="margin: 20px auto; text-align: center">
     <a style="[% button_style %]" href="[% url %]">Ver el registro</a>
@@ -35,7 +36,7 @@ INCLUDE '_email_top.html';
       </tr>
     [%~ END %]
   </table>
-  <p style="[% p_style %] margin-top: 0.5em;">Al responder directamente a este mensaje, su respuesta será enviada al usuario [% name | html %] que registro el incidente.</p>
+  <p style="[% p_style %] margin-top: 0.5em;">Al responder directamente a este mensaje, su respuesta será enviada al usuario [% name | html %] quién registro el incidente en CooperaNet.</p>
   [% end_padded_box %]
 </th>
 [% WRAPPER '_email_sidebar.html' object = report %]
