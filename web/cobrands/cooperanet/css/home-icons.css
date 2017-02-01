@@ -12,9 +12,11 @@ a.rap-notes-trigger {
 #site-logo_va{
   display: block;
   width: 602px;
-  height: 207px;
-  top: 1em;
+  height: 100px;
+  top: 3em;
+  left: 10px;
   background: url(/cobrands/cooperanet/images/cooperanet_logo_main.jpg) -3px -3px no-repeat;
+  background-size: 200px
   text-indent: -999999px;
   position: relative;
   z-index:1000;
