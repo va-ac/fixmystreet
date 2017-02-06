@@ -646,27 +646,27 @@ sub admin_pages {
         $pages->{config} = [ _('Configuration'), 9];
     };
     # And some that need special permissions
-    if ( $user->is_superuser || $user->has_body_permission_to('category_edit') ) {
+    if ( $user->has_body_permission_to('category_edit') ) {
         my $page_title = $user->is_superuser ? _('Bodies') : _('Categories');
         $pages->{bodies} = [ $page_title, 1 ];
         $pages->{body} = [ undef, undef ];
     }
-    if ( $user->is_superuser || $user->has_body_permission_to('report_edit') ) {
+    if ( $user->has_body_permission_to('report_edit') ) {
         $pages->{reports} = [ _('Reports'), 2 ];
         $pages->{report_edit} = [ undef, undef ];
         $pages->{update_edit} = [ undef, undef ];
         $pages->{abuse_edit} = [ undef, undef ];
     }
-    if ( $user->is_superuser || $user->has_body_permission_to('template_edit') ) {
+    if ( $user->has_body_permission_to('template_edit') ) {
         $pages->{templates} = [ _('Templates'), 3 ];
         $pages->{template_edit} = [ undef, undef ];
     };
-    if ( $user->is_superuser || $user->has_body_permission_to('responsepriority_edit') ) {
+    if ( $user->has_body_permission_to('responsepriority_edit') ) {
         $pages->{responsepriorities} = [ _('Priorities'), 4 ];
         $pages->{responsepriority_edit} = [ undef, undef ];
     };
 
-    if ( $user->is_superuser || $user->has_body_permission_to('user_edit') ) {
+    if ( $user->has_body_permission_to('user_edit') ) {
         $pages->{users} = [ _('Users'), 6 ];
         $pages->{user_edit} = [ undef, undef ];
     }
@@ -713,6 +713,7 @@ sub available_permissions {
             planned_reports => _("Manage shortlist"),
             contribute_as_another_user => _("Create reports/updates on a user's behalf"),
             contribute_as_body => _("Create reports/updates as the council"),
+            view_body_contribute_details => _("See user detail for reports created as the council"),
 
             # NB this permission is special in that it can be assigned to users
             # without their from_body being set. It's included here for

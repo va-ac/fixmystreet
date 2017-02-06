@@ -42,13 +42,13 @@ sub restriction {
 
 sub problems_restriction {
     my ($self, $rs) = @_;
-    return $rs if FixMyStreet->config('STAGING_SITE') && FixMyStreet->config('SKIP_CHECKS_ON_STAGING');
+    return $rs if FixMyStreet->staging_flag('skip_checks');
     return $rs->to_body($self->council_id);
 }
 
 sub updates_restriction {
     my ($self, $rs) = @_;
-    return $rs if FixMyStreet->config('STAGING_SITE') && FixMyStreet->config('SKIP_CHECKS_ON_STAGING');
+    return $rs if FixMyStreet->staging_flag('skip_checks');
     return $rs->to_body($self->council_id);
 }
 
@@ -105,7 +105,7 @@ sub enter_postcode_text {
 sub area_check {
     my ( $self, $params, $context ) = @_;
 
-    return 1 if FixMyStreet->config('STAGING_SITE') && FixMyStreet->config('SKIP_CHECKS_ON_STAGING');
+    return 1 if FixMyStreet->staging_flag('skip_checks');
 
     my $councils = $params->{all_areas};
     my $council_match = defined $councils->{$self->council_id};
@@ -200,6 +200,7 @@ sub available_permissions {
 
     my $perms = $self->next::method();
     $perms->{Problems}->{contribute_as_body} = "Create reports/updates as " . $self->council_name;
+    $perms->{Problems}->{view_body_contribute_details} = "See user detail for reports created as " . $self->council_name;
     $perms->{Users}->{user_assign_areas} = "Assign users to areas in " . $self->council_name;
 
     return $perms;

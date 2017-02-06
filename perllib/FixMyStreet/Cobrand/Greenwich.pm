@@ -55,4 +55,10 @@ sub contact_email {
     return join( '@', 'fixmystreet', 'royalgreenwich.gov.uk' );
 }
 
+sub reports_per_page { return 20; }
+
+sub on_map_default_max_pin_age {
+    return '3 month';
+}
+
 1;
