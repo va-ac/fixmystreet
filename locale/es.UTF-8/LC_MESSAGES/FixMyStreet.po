@@ -2792,7 +2792,7 @@ msgstr "Notificar sobre %s"
 #: templates/web/base/report/new/login_success_form.html:1
 #: templates/web/base/report/new/oauth_email_form.html:1
 msgid "Report your problem"
-msgstr "Registre su Incidente"
+msgstr "Complete los datos del formulario"
 
 #: templates/web/base/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1
