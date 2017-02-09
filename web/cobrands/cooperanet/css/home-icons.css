@@ -21,3 +21,19 @@ a.rap-notes-trigger {
   position: relative;
   z-index:1000;
 }
+
+
+@media screen and (max-device-width: 480px) { 
+#site-logo_va{
+  display: block;
+  width: 176px;
+  height: 40px;
+  top: 7px;
+  left: 5px;
+  background: url(/cobrands/cooperanet/images/cooperanet_logo_main.jpg) -1px -1px no-repeat;
+  background-size: 109px;
+  text-indent: -999999px;
+  position: relative;
+  z-index:1000;
+  }
+}
