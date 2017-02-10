@@ -9,7 +9,7 @@
 	-------------------------------------------------- */
 
     .accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper .accordion-widget-label {
-		background-color:#6bbef8;
+		background-color:#0f69b4;
 		color:#fdfdfd;
     }
 	
@@ -22,7 +22,7 @@
 	.accordion-widget-default.accordion-widget-blue .accordion-widget-wrapper.accordion-widget-arrow .accordion-widget-input:checked + .accordion-widget-label:before {
 	    border-left:20px solid transparent;
 	    border-right:20px solid transparent;
-	    border-top:20px solid #6bbef8;
+	    border-top:20px solid #0f69b4;
     }
 	
 /*	--------------------------------------------------
