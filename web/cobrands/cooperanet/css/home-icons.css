@@ -36,10 +36,6 @@ a.rap-notes-trigger {
   position: relative;
   z-index:1000;
   }
-  
-header#site-header {
-    display: none;
-}
 
 }
 
