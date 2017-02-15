@@ -37,3 +37,7 @@ a.rap-notes-trigger {
   z-index:1000;
   }
 }
+
+header#site-header {
+    display: none;
+}
