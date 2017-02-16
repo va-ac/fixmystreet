@@ -12,12 +12,12 @@ a.rap-notes-trigger {
 
 #site-logo_va{
   display: block;
-  width: 602px;
+  width: 250px;
   height: 100px;
-  top: 3em;
-  left: 40px;
+  top: 1em;
+  left: 30px;
   background: url(/cobrands/cooperanet/images/cooperanet_logo_main.jpg) -3px -3px no-repeat;
-  background-size: 300px;
+  background-size: 215px;
   text-indent: -999999px;
   position: relative;
   z-index:1000;
@@ -60,5 +60,13 @@ a.report-cta {
   
 }
 
+#report-a-problem-main h3{
+  font-size: 1.25em;
+  line-height: 0.20em;
+  margin-top: 1.2em;
+  margin-bottom: -0.2em;
+  font-weight: normal;
+
 }
 
+}

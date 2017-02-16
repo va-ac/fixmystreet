@@ -2,9 +2,7 @@
     [% IF category;
         category_lc = category | lower;
        END; ~%]
-    <label for='form_category' id="form_category_label">
-        <a href="#" onClick="SelectElement()">[%~ loc('Category') ~%]</a>
-    </label>[% =%]
+    <label for='form_category_va' id="form_category_label_va"></label>[% =%]
     <select class="form-control" name='category' id='form_category'>
         <option value=''>Selecione una Categoría</option>
         <optgroup label="EMERGENCIA" id="EMERGENCIA" style="display:none">
