@@ -9,6 +9,11 @@ a.rap-notes-trigger {
 	
 }
 
+a.report-cta {
+  display:none;
+  
+}
+
 #site-logo_va{
   display: block;
   width: 602px;
@@ -27,13 +32,32 @@ a.rap-notes-trigger {
 #site-logo_va{
   display: block;
   width: 176px;
-  height: 40px;
-  top: 7px;
-  left: 5px;
+  height: 45px;
+  top: 0px;
+  left: -16px;
   background: url(/cobrands/cooperanet/images/cooperanet_logo_main.jpg) -1px -1px no-repeat;
-  background-size: 109px;
+  background-size: 140px;
   text-indent: -999999px;
   position: relative;
   z-index:1000;
   }
+
+  a.report-cta {
+  display:none;
+  
+}
+
+#intcity-logo {
+ width: 176px;
+  height: 45px;
+  top: 0px;
+  left: -16px;
+  background: url(/cobrands/cooperanet/images/mci-logo-platform.png) -1px -1px no-repeat;
+  background-size: 140px;
+  text-indent: -999999px;
+  position: relative;
+  z-index:1000;
+}
+
+
 }

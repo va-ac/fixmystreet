@@ -11,16 +11,16 @@
             <div class="nav-wrapper-2">
                 <div id="main-nav" role="navigation">
                     <ul class="nav-menu nav-menu--mysoc">
-                        <li><a id="mysoc-logo" href="http://www.miciudadinteligente.com/">MiCiudadInteligente.com</a></li>
+                        <li><a id="intcity-logo" class="intcity-logo" href="http://www.miciudadinteligente.com/">MiCiudadInteligente.com</a></li>
                     </ul>
 [%
     SET base = "";
     SET base = c.cobrand.base_url IF admin;
 %]
                     <ul class="nav-menu nav-menu--main">
-                        <li><[% IF c.req.uri.path == '/'
+                        <!--li><[% IF c.req.uri.path == '/'
                             %]span[% ELSE %]a href="[% base %]/"[% END %] class="report-a-problem-btn"
-                            >[% loc("Report a problem") %]</[% c.req.uri.path == '/' ? 'span' : 'a' %]></li>[%
+                            >[% loc("Report a problem") %]</[% c.req.uri.path == '/' ? 'span' : 'a' %]></li-->[%
                         %]<li><[% IF c.req.uri.path == '/my'
                             %]span[% ELSE %]a href="[% base %]/my"[% END
                             %]>[% c.user_exists ? loc("Your account") : loc("Sign in") %]</[% c.req.uri.path == '/my' ? 'span' : 'a' %]></li>[%
@@ -30,12 +30,12 @@
                         %]<li><[% IF c.req.uri.path == '/alert'
                             %]span[% ELSE %]a href="[% base %]/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"[% END
                             %]>[% loc("Local alerts") %]</[% c.req.uri.path == '/alert' ? 'span' : 'a' %]></li>[%
-                        %]<li><[% IF c.req.uri.path == '/faq'
+                        %]<!--li><[% IF c.req.uri.path == '/faq'
                             %]span[% ELSE %]a href="[% base %]/faq"[% END
-                            %]>[% loc("Help") %]</[% c.req.uri.path == '/faq' ? 'span' : 'a' %]></li>[%
-                        %]<li class="nav-menu__item--privacy"><[% IF c.req.uri.path == '/privacy'
+                            %]>[% loc("Help") %]</[% c.req.uri.path == '/faq' ? 'span' : 'a' %]></li-->[%
+                        %]<!--li class="nav-menu__item--privacy"><[% IF c.req.uri.path == '/privacy'
                             %]span[% ELSE %]a href="[% base %]/privacy"[% END
-                            %]>[% loc("Privacy") %]</[% c.req.uri.path == '/privacy' ? 'span' : 'a' %]></li>
+                            %]>[% loc("Privacy") %]</[% c.req.uri.path == '/privacy' ? 'span' : 'a' %]></li-->
                     </ul>
                 </div>
             </div>
