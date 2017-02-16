@@ -48,17 +48,21 @@ a.report-cta {
 }
 
 #intcity-logo {
- width: 176px;
-  height: 45px;
+  height: 70px;
   top: 0px;
-  left: -16px;
+  left: 0px;
   background: url(/cobrands/cooperanet/images/mci-logo-platform.png) -1px -1px no-repeat;
-  background-size: 140px;
+  background-size: 244px;
   text-indent: -999999px;
   position: relative;
   z-index:1001;
+  border-top: 0.25em solid #333;
 }
 
+a.report-cta {
+  display:none;
+  
+}
 
 }
 
