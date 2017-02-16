@@ -10,18 +10,28 @@ a.rap-notes-trigger {
 }
 
 .campo_opcion_va {
-    display: inline-block;
-    margin: 0 0.2em;
-    font-size: 0.875em;
+    display: block;
+    margin: 4px 2.2em;
+    font-size: 13px;
     background-color: #fff;
-    color: #000;
+    color: #0f69b4;
     max-width: 10em;
     vertical-align: top;
-    height: 1.8em;
+    height: 10em;
     line-height: 1.8em;
     padding: 0;
 }
 
+.report-list-filters_va {
+    padding: 1em;
+    padding-bottom: 1.75em;
+    margin-bottom: 0;
+    color: #0f69b4;
+    font-size: 17px;
+    line-height: 1.8em;
+    font-family: Lato;
+    font-weight: bolder;
+}
 
 #site-logo_va{
   display: block;
