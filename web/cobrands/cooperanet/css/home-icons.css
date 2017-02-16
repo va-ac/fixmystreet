@@ -9,6 +9,19 @@ a.rap-notes-trigger {
 	
 }
 
+.campo_opcion_va {
+    display: inline-block;
+    margin: 0 0.2em;
+    font-size: 0.875em;
+    background-color: #fff;
+    color: #000;
+    max-width: 10em;
+    vertical-align: top;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding: 0;
+}
+
 
 #site-logo_va{
   display: block;
@@ -104,6 +117,10 @@ color: #FFFF7D;
 #form_photo_label_va {
   font-family: Lato;
   color: #FFFFFF;
+}
+
+table.nicetable {
+  background-color: #47748B;
 }
 
 }

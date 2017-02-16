@@ -1,0 +1,72 @@
+[% IF ward %]
+    [% name = "$ward.name, $body.name"
+       thing = loc('ward')
+    %]
+[% ELSE %]
+    [% name = body.name
+       thing = loc('council')
+    %]
+[% END %]
+
+[% IF c.cobrand.moniker == 'oxfordshire' %]
+    [% ward_text = 'View reports by division' %]
+[% ELSIF c.cobrand.is_council %]
+    [% ward_text = loc( 'View reports by ward' ) %]
+[% ELSE %]
+    [% ward_text = loc( 'Wards of this council' ) %]
+[% END %]
+
+[%
+    PROCESS "report/photo-js.html";
+    PROCESS "maps/${map.type}.html";
+    SET bodyclass = 'mappage';
+    INCLUDE 'header.html',
+        title = tprintf(loc('%s - Summary reports'), name)
+        rss = [ tprintf(loc('Problems within %s, %s', "First %s is the body name, second %s the site name"), name, site_name), rss_url ]
+%]
+
+[% map_html %]
+
+</div>
+<div id="map_sidebar">
+    <div id="side">
+
+<h3 id="reports_heading">
+Incidentes reportados en : 
+    [% IF ward %]
+    [% ward.name %]<span>, </span><a href="[% body_url %]">[% body.name %]</a>
+    [% ELSE %]
+    [% body.name %]
+    [% END %]
+</h3>
+
+[% IF c.cobrand.moniker == 'hart' %]
+    [% INCLUDE '_hart_hants_note.html' %]
+[% END %]
+
+[% IF NOT body.areas.size %]
+    [% TRY %][% INCLUDE 'reports/_body_gone.html' %][% CATCH file %][% END %]
+[% ELSE %]
+    [% INCLUDE 'reports/_rss.html' %]
+[% END %]
+
+[% TRY %][% INCLUDE 'reports/cobrand_stats.html' %][% CATCH file %][% END %]
+
+[% INCLUDE 'reports/_ward-list.html' %]
+
+<section class="full-width">
+[% INCLUDE "reports/_list-filters.html", use_form_wrapper = 1 %]
+<div class="js-pagination">
+[% INCLUDE 'pagination.html', param = 'p' %]
+</div>
+<div id="js-reports-list">
+    [% INCLUDE 'reports/_problem-list.html' %]
+</div>
+<div class="js-pagination">
+[% INCLUDE 'pagination.html', param = 'p' %]
+</div>
+</section>
+
+    </div>
+</div>
+[% INCLUDE 'footer.html' %]
