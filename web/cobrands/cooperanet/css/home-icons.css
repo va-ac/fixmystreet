@@ -25,6 +25,11 @@ a.rap-notes-trigger {
 
 
 @media screen and (max-device-width: 480px) { 
+
+  .container{
+    background-color: #4774b7;
+  }
+  
 #site-logo_va{
   display: block;
   width: 176px;
@@ -67,6 +72,15 @@ a.report-cta {
   margin-bottom: -0.2em;
   font-weight: normal;
 
+}
+
+#form_title_label_va {
+  font-family: Lato;
+
+}
+
+#form_detail_label_va {
+  font-family: Lato;
 }
 
 }

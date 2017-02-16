@@ -7,7 +7,7 @@
 [% PROCESS "report/new/category_wrapper.html" %]
 [% TRY %][% PROCESS 'report/new/after_category.html' %][% CATCH file %][% END %]
 
-    <label for="form_title" id="form_title_label">[% loc('Summarise the problem') %]</label>
+    <label for="form_title" id="form_title_label_va">[% loc('Summarise the problem') %]</label>
 [% IF field_errors.title %]
     <p class='form-error'>[% field_errors.title %]</p>
 [% END %]
