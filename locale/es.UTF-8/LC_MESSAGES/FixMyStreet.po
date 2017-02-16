@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-01-24 12:03-0300\n"
+"PO-Revision-Date: 2017-02-15 16:37-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -1133,7 +1133,7 @@ msgstr "Categoría existente"
 
 #: templates/web/base/report/new/form_report.html:52
 msgid "Explain what’s wrong"
-msgstr "Entregue mayores antecedentes de lo sucedido"
+msgstr "Entregue mayores antecedentes"
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:174
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:913
@@ -2218,7 +2218,7 @@ msgstr "Foto requerida"
 #: templates/web/base/report/update/form_update.html:7
 #: templates/web/zurich/report/new/fill_in_details_form.html:20
 msgid "Photos"
-msgstr "Fotos"
+msgstr "Agregue Fotos"
 
 #: templates/web/base/alert/list.html:23
 msgid "Photos of recent nearby reports"
@@ -2570,7 +2570,7 @@ msgstr "Incidentes en el mapa"
 
 #: db/alert_types.pl:14
 msgid "Problems recently reported fixed on FixMyStreet"
-msgstr "Incidentes recientemente notificados como arreglados en CooperaNet"
+msgstr "Incidentes recientes"
 
 #: templates/web/base/alert/_list.html:22
 msgid "Problems within %.1fkm of this location"
@@ -2725,7 +2725,7 @@ msgstr "Recientemente <br>arreglado"
 
 #: templates/web/base/front/recent.html:11
 msgid "Recently reported problems"
-msgstr "Incidentes recientemente notificados"
+msgstr "Incidentes recientes"
 
 #: templates/web/base/reports/_list-filters.html:37
 #, fuzzy
@@ -2792,7 +2792,7 @@ msgstr "Notificar sobre %s"
 #: templates/web/base/report/new/login_success_form.html:1
 #: templates/web/base/report/new/oauth_email_form.html:1
 msgid "Report your problem"
-msgstr "Complete los datos del formulario"
+msgstr "Complete el formulario"
 
 #: templates/web/base/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1

@@ -42,6 +42,7 @@ a.report-cta {
   z-index:1000;
   }
 
+<<<<<<< HEAD
   a.report-cta {
   display:none;
   
@@ -60,5 +61,7 @@ a.report-cta {
 }
 
 
+=======
+>>>>>>> origin/cooperanet
 }
 
