@@ -28,7 +28,7 @@ a.rap-notes-trigger {
 
   .container{
     background-color: #4774b7;
-    padding: -1px 0px 0px;
+    padding: 0px 0px 0px;
   }
 
 #site-logo_va{
@@ -83,6 +83,16 @@ a.report-cta {
 }
 
 #form_detail_label_va {
+  font-family: Lato;
+  color: #FFFFFF;
+}
+
+#form_category_label_va{
+  font-family: Lato;
+  color:#FFFFFF;
+}
+
+#form_category_label_va{
   font-family: Lato;
   color: #FFFFFF;
 }

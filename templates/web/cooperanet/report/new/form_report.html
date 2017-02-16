@@ -13,11 +13,11 @@
 [% END %]
     <input class="form-control" type="text" value="[% report.title | html %]" name="title" id="form_title" placeholder="[% loc('10 inch pothole on Example St, near post box') %]" required>
 
-    <label for="form_detail" id="form_detail_label">[% loc('Explain what’s wrong') %]</label>
+    <label for="form_detail" id="form_detail_label_va">[% loc('Explain what’s wrong') %]</label>
 [% IF field_errors.detail %]
     <p class='form-error'>[% field_errors.detail %]</p>
 [% END %]
-    <textarea class="form-control" rows="7" cols="26" name="detail" id="form_detail" placeholder="" required>[% report.detail | html %]</textarea>
+    <textarea class="form-control" rows="3" cols="26" name="detail" id="form_detail" placeholder="" required>[% report.detail | html %]</textarea>
 
 
 [% IF c.cobrand.allow_photo_upload %]
