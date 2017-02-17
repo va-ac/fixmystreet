@@ -1,0 +1,28 @@
+[% INCLUDE 'header.html', bodyclass = 'fullwidthpage', title = loc('Confirm account') %]
+
+[% IF token_not_found %]
+[%# Shown whenever there's an invalid token, eg while confirming a report or logging in without a password %]
+
+  <div class="confirmation-header confirmation-header--failure">
+
+    <h1>[% loc('Sorry, that wasn&rsquo;t a valid link') %]</h1>
+    <p>[% loc('The link might have expired, or maybe you didn&rsquo;t quite copy and paste it correctly.') %]</p>
+
+  </div>
+
+[% ELSE %]
+
+  <div class="confirmation-header confirmation-header--inbox">
+
+    <h1>[% loc("Nearly done! Now check your email&hellip;") %]</h1>
+    <p>[% loc("Click the link in our confirmation email to sign in.") %]</p>
+
+    <p>
+        [% loc("Can&rsquo;t find our email? Check your spam folder&nbsp;&ndash; that&rsquo;s the solution 99% of the time.") %]
+    </p>
+
+  </div>
+
+[% END %]
+
+[% INCLUDE 'footer.html' %]
