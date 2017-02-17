@@ -2570,7 +2570,7 @@ msgstr "Incidentes en el mapa"
 
 #: db/alert_types.pl:14
 msgid "Problems recently reported fixed on FixMyStreet"
-msgstr "Incidentes recientes"
+msgstr "Incidentes recientemente corregidos"
 
 #: templates/web/base/alert/_list.html:22
 msgid "Problems within %.1fkm of this location"
