@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-02-16 16:50-0300\n"
+"PO-Revision-Date: 2017-02-17 13:10-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -1628,7 +1628,7 @@ msgstr "Última&nbsp;actualización:"
 #: templates/web/base/reports/_list-filters.html:38
 #, fuzzy
 msgid "Least recently updated"
-msgstr "Menos actualizado:"
+msgstr "Última actualización:"
 
 #: templates/web/base/admin/body-form.html:127
 msgid "Leave this blank if all reports to this body should be sent using the same send method (e.g., \"%s\")."
@@ -2058,11 +2058,11 @@ msgstr "Estado antiguo"
 
 #: templates/web/base/reports/index.html:28
 msgid "Older <br>fixed"
-msgstr "Antiguo <br>arreglado"
+msgstr "Históricos"
 
 #: templates/web/base/reports/index.html:25
 msgid "Older <br>problems"
-msgstr "Antigüos"
+msgstr "Antiguos"
 
 #: templates/web/base/reports/_list-filters.html:36
 msgid "Oldest"
@@ -2570,7 +2570,7 @@ msgstr "Incidentes en el mapa"
 
 #: db/alert_types.pl:14
 msgid "Problems recently reported fixed on FixMyStreet"
-msgstr "Incidentes recientemente corregidos"
+msgstr "Incidentes recientes"
 
 #: templates/web/base/alert/_list.html:22
 msgid "Problems within %.1fkm of this location"
@@ -2721,7 +2721,7 @@ msgstr "Problemas locales recientes, %s"
 
 #: templates/web/base/reports/index.html:27
 msgid "Recently <br>fixed"
-msgstr "Recientemente <br>arreglado"
+msgstr "Arreglados"
 
 #: templates/web/base/front/recent.html:11
 msgid "Recently reported problems"
@@ -2730,7 +2730,7 @@ msgstr "Incidentes recientes"
 #: templates/web/base/reports/_list-filters.html:37
 #, fuzzy
 msgid "Recently updated"
-msgstr "Actualizado recientemente"
+msgstr "Recibe actualizaciones"
 
 #: templates/web/zurich/report/new/notes.html:5
 msgid "Remember that FixMyStreet is primarily for reporting physical problems that can be fixed. If your problem is not appropriate for submission via this site remember that you can contact your council directly using their own website."
@@ -3081,7 +3081,7 @@ msgstr "Compartir"
 #: templates/web/base/report/_main.html:21
 #: templates/web/base/report/_main.html:26
 msgid "Shortlist"
-msgstr "Lista Corta"
+msgstr ""
 
 #: templates/web/base/report/_main.html:130
 #: templates/web/base/report/_main.html:20
@@ -3193,7 +3193,7 @@ msgstr ""
 
 #: templates/web/base/reports/_list-filters.html:33
 msgid "Sort by"
-msgstr "Ordenar por"
+msgstr ""
 
 #: templates/web/base/admin/user-form.html:47
 msgid "Staff users have permission to log in to the admin."
@@ -4025,7 +4025,7 @@ msgstr "Sólo utilizaremos su información personal de acuerdo a nuestra <a href
 
 #: templates/web/base/questionnaire/completed-open.html:2
 msgid "We&rsquo;re sorry to hear the problem’s not fixed. Why not try writing to your local representatives?"
-msgstr "Lamentamos que el problema no esté arreglado. ¿Por qué no prueba a escribir directamente a sus representantes locales?"
+msgstr "Lamentamos que el problema no esté arreglado."
 
 #: templates/web/base/contact/submit.html:7
 msgid "We’ll get back to you as soon as we can."
