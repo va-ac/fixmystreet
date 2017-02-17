@@ -3081,7 +3081,7 @@ msgstr "Compartir"
 #: templates/web/base/report/_main.html:21
 #: templates/web/base/report/_main.html:26
 msgid "Shortlist"
-msgstr ""
+msgstr "Lista Corta"
 
 #: templates/web/base/report/_main.html:130
 #: templates/web/base/report/_main.html:20
