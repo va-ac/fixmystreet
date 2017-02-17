@@ -9,13 +9,26 @@ a.rap-notes-trigger {
 	
 }
 
+#   form-control_va .sort{
+    display: inline-block;
+    margin: 0 0.2em;
+    font-size: 0.875em;
+    background-color: #fff;
+    color: #000;
+    max-width: 10em;
+    vertical-align: top;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding: 0;
+}
+
 .campo_opcion_va {
     display: block;
     margin: 4px 2.2em;
     font-size: 13px;
     background-color: #fff;
     color: #0f69b4;
-    max-width: 10em;
+    max-width: 25em;
     vertical-align: top;
     height: 10em;
     line-height: 1.8em;
@@ -33,6 +46,16 @@ a.rap-notes-trigger {
     font-weight: bolder;
 }
 
+#BtnIryFiltrar{
+
+  border : solid 0px #ffffff;
+  border-radius : 0px 15px 15px 0px ;
+  moz-border-radius : 0px 15px 15px 0px ;
+  font-size : 19px;
+  color : #ffffff;
+  padding : 4px 15px;
+  background-color : #4774b7;
+}
 #site-logo_va{
   display: block;
   width: 250px;

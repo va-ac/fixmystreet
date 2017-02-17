@@ -1628,7 +1628,7 @@ msgstr "Última&nbsp;actualización:"
 #: templates/web/base/reports/_list-filters.html:38
 #, fuzzy
 msgid "Least recently updated"
-msgstr "Última actualización:"
+msgstr "Menos actualizado:"
 
 #: templates/web/base/admin/body-form.html:127
 msgid "Leave this blank if all reports to this body should be sent using the same send method (e.g., \"%s\")."
@@ -2730,7 +2730,7 @@ msgstr "Incidentes recientes"
 #: templates/web/base/reports/_list-filters.html:37
 #, fuzzy
 msgid "Recently updated"
-msgstr "Recibe actualizaciones"
+msgstr "Actualizado recientemente"
 
 #: templates/web/zurich/report/new/notes.html:5
 msgid "Remember that FixMyStreet is primarily for reporting physical problems that can be fixed. If your problem is not appropriate for submission via this site remember that you can contact your council directly using their own website."
@@ -3193,7 +3193,7 @@ msgstr ""
 
 #: templates/web/base/reports/_list-filters.html:33
 msgid "Sort by"
-msgstr ""
+msgstr "Ordenar por"
 
 #: templates/web/base/admin/user-form.html:47
 msgid "Staff users have permission to log in to the admin."
