@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-02-17 13:10-0300\n"
+"PO-Revision-Date: 2016-12-19 17:07-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -75,7 +75,7 @@ msgid ""
 "%s has a variety of RSS feeds and email alerts for local\n"
 "problems, including alerts for all problems within a particular ward, or all\n"
 "problems within a certain distance of a particular location."
-msgstr "%s permite el envío de alerta vía email o RSS. Registre su email y acepte la suscripción para recibir las alertas."
+msgstr "%s tiene una variedad de canales RSS y alertas por email de los problemas locales, incluyendo alertas para todos los problemas dentro de un pabellón específico, o todos los problemas dentro de una cierta distancia de un lugar determinado."
 
 #. ("%s is the site name")
 #: templates/web/base/alert/index.html:11
@@ -141,7 +141,7 @@ msgstr "(sin teléfono)"
 
 #: templates/web/base/alert/_list.html:25
 msgid "(a default distance which covers roughly 200,000 people)"
-msgstr "(aproximadamente 200.000 personas)"
+msgstr "(distancia que cubre aproximadamente 200.000 personas)"
 
 #. ("%s is a list of distance links, e.g. [2km] / [5km] / [10km] / [20km]")
 #: templates/web/base/alert/_list.html:30
@@ -160,7 +160,7 @@ msgstr "(arreglado)"
 
 #: templates/web/base/around/intro.html:2
 msgid "(like graffiti, fly tipping, broken paving slabs, or street lighting)"
-msgstr "Escoja la categoría que mejor se ajusta al incidente"
+msgstr "(Riñas, Perros vagos, Consumo de alcohol en la vía pública)"
 
 #: templates/web/base/report/_item.html:21
 msgid "(not sent to council)"
@@ -319,16 +319,16 @@ msgstr "Alerta %d desactivada (creada %s)"
 
 #: templates/web/base/report/update/form_name.html:38
 msgid "Alert me to future updates"
-msgstr "Alertarme de actualizaciones futuras"
+msgstr "Notificadme actualizaciones futuras"
 
 #: templates/web/base/reports/index.html:6
 #: templates/web/zurich/reports/index.html:13
 msgid "All Reports"
-msgstr "Incidentes Registrados"
+msgstr "Todas las notificaciones"
 
 #: templates/web/zurich/admin/stats.html:5
 msgid "All Reports as CSV"
-msgstr "Incidentes Registrados en CSV"
+msgstr "Todos las notificaciones como CSV"
 
 #: templates/web/base/admin/responsepriorities/list.html:19
 msgid "All categories"
@@ -340,12 +340,12 @@ msgstr "Todas las categorías"
 #: templates/web/zurich/admin/stats.html:13 templates/web/zurich/footer.html:21
 #: templates/web/zurich/nav_over_content.html:6
 msgid "All reports"
-msgstr "Incidentes Registrados"
+msgstr "Todas las notificaciones"
 
 #: templates/web/base/admin/stats.html:5
 #: templates/web/zurich/admin/stats.html:8
 msgid "All reports between %s and %s"
-msgstr "Incidentes Registrados entre %s y %s"
+msgstr "Todas las notificaciones entre %s y %s"
 
 #: templates/web/base/questionnaire/index.html:47
 msgid "An update marked this problem as fixed."
@@ -458,8 +458,9 @@ msgid "Back"
 msgstr "Atras"
 
 #: templates/web/base/report/_main.html:6
+#, fuzzy
 msgid "Back to all reports"
-msgstr "ir a Incidentes Registrados"
+msgstr "Todas las notificaciones"
 
 #: templates/web/base/admin/report_blocks.html:41
 msgid "Ban email address"
@@ -756,21 +757,21 @@ msgstr "No se pudo consultar la ubicación"
 
 #: templates/web/base/admin/list_updates.html:9
 msgid "Council"
-msgstr "CooperaNet"
+msgstr "Gobernación"
 
 #: templates/web/base/admin/body.html:1
 #: templates/web/base/admin/category_edit.html:1
 #: templates/web/zurich/admin/body.html:1
 msgid "Council contacts for %s"
-msgstr "Contactos de CooperaNet para %s"
+msgstr "Contactos de la Gobernación para %s"
 
 #: templates/web/base/report/_council_sent_info.html:6
 msgid "Council ref:&nbsp;%s"
-msgstr "Referencia de CooperaNet:&nbsp;%s"
+msgstr "Referencia de la Gobernación:&nbsp;%s"
 
 #: templates/web/base/admin/stats.html:92
 msgid "Council:"
-msgstr "CooperaNet:"
+msgstr "Gobernación:"
 
 #: templates/web/base/admin/stats.html:12
 #: templates/web/base/admin/stats.html:32
@@ -1090,7 +1091,7 @@ msgstr "Introduzca un código postal cercano, o el nombre de la calle y el área
 #: templates/web/base/around/postcode_form.html:5
 #: templates/web/base/around/postcode_form.html:6
 msgid "Enter a nearby street name and area"
-msgstr "Seleccione la Categoría que mejor se ajusta al Incidente"
+msgstr "Introduzca el nombre de una calle cercana al incidente"
 
 #: templates/web/base/auth/general.html:116
 #: templates/web/base/report/new/form_user_loggedout_by_email.html:35
@@ -1133,7 +1134,7 @@ msgstr "Categoría existente"
 
 #: templates/web/base/report/new/form_report.html:52
 msgid "Explain what’s wrong"
-msgstr "Entregue mayores antecedentes"
+msgstr "Entregue mayores antecedentes de lo sucedido"
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:174
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:913
@@ -1199,7 +1200,7 @@ msgstr "Arreglado"
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:11
 msgid "Fixed - Council"
-msgstr "Arreglado - CooperaNet"
+msgstr "Arreglado - Gobernación"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:10
@@ -1282,21 +1283,21 @@ msgstr "Listado de Preguntas Frecuentes"
 #: templates/web/base/around/_updates.html:3
 #: templates/web/base/report/display_tools.html:12
 msgid "Get updates"
-msgstr "Recibe actualizaciones RSS"
+msgstr "Recibe actualizaciones"
 
 #: templates/web/base/reports/_rss.html:3
 #: templates/web/base/reports/_rss.html:9
 msgid "Get updates of %s problems"
-msgstr "Recibe actualizaciones RSS %s"
+msgstr "Recibe actualizaciones de los problemas %s"
 
 #: templates/web/base/reports/_rss.html:11
 #: templates/web/base/reports/_rss.html:3
 msgid "Get updates of problems in this %s"
-msgstr "Recibe actualizaciones RSS desde %s"
+msgstr "Recibe actualizaciones de los problemas en este %s"
 
 #: templates/web/base/alert/_list.html:83
 msgid "Give me an RSS feed"
-msgstr "Feed RSS"
+msgstr "Proporcióname un listado RSS"
 
 #: templates/web/base/questionnaire/completed.html:14
 msgid "Glad to hear it’s been fixed!"
@@ -1394,12 +1395,12 @@ msgstr "¿Cómo enviar informes exitosos?"
 #: templates/web/base/tokens/confirm_problem.html:36
 #: templates/web/base/tokens/confirm_problem.html:40
 msgid "I just reported a problem on @fixmystreet"
-msgstr "Acabo de registrar un incidente en @CooperaNet"
+msgstr "Acabo de registrar un incidente en @cooperanet"
 
 #: templates/web/base/tokens/confirm_update.html:19
 #: templates/web/base/tokens/confirm_update.html:23
 msgid "I just updated a problem on @fixmystreet"
-msgstr "Acabo de actualizar un incidente en @CooperaNet"
+msgstr "Acabo de actualizar un incidente en @cooperanet"
 
 #: perllib/FixMyStreet/App/Controller/Questionnaire.pm:88
 msgid "I'm afraid we couldn't locate your problem in the database.\n"
@@ -1449,13 +1450,13 @@ msgstr "Si sólo desea que esta plantilla para ser una opción para categorías 
 #: templates/web/base/report/new/top_message_none.html:10
 #: templates/web/base/report/new/top_message_none.html:9
 msgid "If you submit a problem here the problem will <strong>not</strong> be reported to the council."
-msgstr "Si registras un incidente, este <strong>no</strong> se informó a CooperaNet."
+msgstr "Si registras un incidente este <strong>no</strong> se informó a CooperaNet."
 
 #: templates/web/base/questionnaire/index.html:70
 msgid ""
 "If you wish to leave a public update on the problem, please enter it here\n"
 "(please note it will not be sent to the council)."
-msgstr "Si desea dejar una actualización pública en el incidente, por favor introdúzcalo aquí."
+msgstr "Si desea dejar una actualización pública en el incidente, por favor introdúzcalo aquí (tenga en cuenta no se enviará a CooperaNet)."
 
 #: templates/web/base/admin/contact-form.html:30
 msgid "If you're using <strong>a send method that is not email</strong>, enter the service ID (Open311) or equivalent identifier here."
@@ -1648,12 +1649,12 @@ msgstr "Cargando..."
 #: templates/web/base/alert/list.html:5 templates/web/base/alert/updates.html:1
 #: templates/web/base/tokens/confirm_alert.html:1
 msgid "Local RSS feeds and email alerts"
-msgstr "Listado de Alertas por email y RSS"
+msgstr "Listados RSS locales y alertas por email"
 
 #: templates/web/base/alert/list.html:1 templates/web/base/alert/list.html:12
 #: templates/web/base/alert/list.html:14 templates/web/base/alert/list.html:3
 msgid "Local RSS feeds and email alerts for ‘%s’"
-msgstr "Listado de Alertas por email y RSS para '%s'"
+msgstr "Listados RSS locales y alertas por email para '%s'"
 
 #: templates/web/base/footer.html:32
 msgid "Local alerts"
@@ -1775,7 +1776,7 @@ msgstr "Nombre: %s"
 
 #: templates/web/base/report/_inspect.html:23
 msgid "Navigate to this problem"
-msgstr "Listado de Alerta sobre actualizaciones"
+msgstr "Listado RSS de actualizaciones sobre este incidente"
 
 #: perllib/FixMyStreet/Geocode/FixaMinGata.pm:160
 #: perllib/FixMyStreet/Geocode/OSM.pm:145
@@ -1805,7 +1806,7 @@ msgstr "¡Casi hecho! Ahora Revise su correo electrónico &hellip;"
 
 #: templates/web/base/reports/index.html:24
 msgid "New <br>problems"
-msgstr "Nuevos"
+msgstr "Nuevos <br>incidentes"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:259
 msgid "New body added"
@@ -1850,7 +1851,7 @@ msgstr "Nuevos incidente en {{COUNCIL}} para el barrio {{WARD}} en CooperaNet"
 
 #: db/alert_types.pl:26 db/alert_types.pl:30
 msgid "New problems near {{POSTCODE}} on FixMyStreet"
-msgstr "Nuevos incidentes cerca de {{POSTCODE}}"
+msgstr "Nuevos incidentes cerca de {{POSTCODE}} en CooperaNet"
 
 #: db/alert_types.pl:10
 msgid "New problems on FixMyStreet"
@@ -1858,11 +1859,11 @@ msgstr "Nuevos incidente en CooperaNet"
 
 #: db/alert_types.pl:34
 msgid "New problems to {{COUNCIL}} on FixMyStreet"
-msgstr "Nuevos incidentes en {{COUNCIL}}"
+msgstr "Nuevos incidentes en {{COUNCIL}} en CooperaNet"
 
 #: db/alert_types.pl:42
 msgid "New problems within {{NAME}}'s boundary on FixMyStreet"
-msgstr "Nuevos incidentes en los límites de {{NAME}}"
+msgstr "Nuevos incidentes en los límites de {{NAME}} en CooperaNet"
 
 #: templates/web/zurich/admin/index-sdm.html:4
 msgid "New reports"
@@ -2050,7 +2051,7 @@ msgstr "OK"
 
 #: templates/web/base/reports/index.html:26
 msgid "Old / unknown <br>problems"
-msgstr "Desatendido"
+msgstr "Incidentes<br>Antiguos / desconocidos"
 
 #: templates/web/base/admin/questionnaire.html:24
 msgid "Old state"
@@ -2058,11 +2059,11 @@ msgstr "Estado antiguo"
 
 #: templates/web/base/reports/index.html:28
 msgid "Older <br>fixed"
-msgstr "Históricos"
+msgstr "Antiguo <br>arreglado"
 
 #: templates/web/base/reports/index.html:25
 msgid "Older <br>problems"
-msgstr "Antiguos"
+msgstr "Incidentes <br>antiguos"
 
 #: templates/web/base/reports/_list-filters.html:36
 msgid "Oldest"
@@ -2218,7 +2219,7 @@ msgstr "Foto requerida"
 #: templates/web/base/report/update/form_update.html:7
 #: templates/web/zurich/report/new/fill_in_details_form.html:20
 msgid "Photos"
-msgstr "Agregue Fotos"
+msgstr "Fotos"
 
 #: templates/web/base/alert/list.html:23
 msgid "Photos of recent nearby reports"
@@ -2405,7 +2406,7 @@ msgstr "Por favor, indique si le gustaría recibir algún otro cuestionario"
 
 #: templates/web/base/report/updates-sidebar-notes.html:2
 msgid "Please note that updates are not sent to the council."
-msgstr "Las actualizaciones aparacerán públicamente en CooperaNet."
+msgstr "Tenga en cuenta que las actualizaciones no son enviadas a CooperaNet."
 
 #: templates/web/base/report/new/oauth_email_form.html:4
 msgid "Please note your report has <strong>not yet been sent</strong>."
@@ -2570,7 +2571,7 @@ msgstr "Incidentes en el mapa"
 
 #: db/alert_types.pl:14
 msgid "Problems recently reported fixed on FixMyStreet"
-msgstr "Incidentes recientes"
+msgstr "Incidentes recientemente notificados como arreglados en CooperaNet"
 
 #: templates/web/base/alert/_list.html:22
 msgid "Problems within %.1fkm of this location"
@@ -2658,15 +2659,15 @@ msgstr "Cuestionario rellenado por el usuario que registro el incidente"
 #: templates/web/base/around/display_location.html:3
 #: templates/web/base/report/display_tools.html:40
 msgid "RSS feed"
-msgstr "Listado de Alertas RSS"
+msgstr "Listado RSS"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:251 perllib/FixMyStreet/Cobrand/UK.pm:263
 msgid "RSS feed for %s"
-msgstr "Listado de Alertas RSS para %s"
+msgstr "Listado RSS para %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:257 perllib/FixMyStreet/Cobrand/UK.pm:269
 msgid "RSS feed for %s ward, %s"
-msgstr "Listado de Alertas RSS para %s del área, %s"
+msgstr "Listado RSS para %s del barrio, %s"
 
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:153
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:161
@@ -2674,35 +2675,35 @@ msgstr "Listado de Alertas RSS para %s del área, %s"
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:179
 #: perllib/FixMyStreet/Cobrand/UK.pm:277 perllib/FixMyStreet/Cobrand/UK.pm:289
 msgid "RSS feed of %s"
-msgstr "Listado de Alertas RSS para %s"
+msgstr "Listado RSS para %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:282 perllib/FixMyStreet/Cobrand/UK.pm:294
 msgid "RSS feed of %s, within %s ward"
-msgstr "Listado de Alertas RSS para %s, en el área %s"
+msgstr "Listado RSS para %s, en el barrio %s"
 
 #: templates/web/base/alert/_list.html:23
 msgid "RSS feed of nearby problems"
-msgstr "Listado de Alertas RSS"
+msgstr "Listado RSS de los incidente cercanos"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:834
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:136
 #: perllib/FixMyStreet/Cobrand/UK.pm:215
 msgid "RSS feed of problems within %s"
-msgstr "Listado de Alertas RSS de %s"
+msgstr "Listado RSS de los incidentes dentro de %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:221
 msgid "RSS feed of problems within %s ward"
-msgstr "Listado de Alertas RSS de %s"
+msgstr "Listado RSS de los incidentes dentro del barrio %s"
 
 #: templates/web/base/around/display_location.html:1
 #: templates/web/base/around/display_location.html:4
 msgid "RSS feed of recent local problems"
-msgstr "Listado de Alertas RSS"
+msgstr "Listado RSS de los incidentes locales más recientes"
 
 #: templates/web/base/alert/updates.html:9
 #: templates/web/base/report/display_tools.html:40
 msgid "RSS feed of updates to this problem"
-msgstr "Listado de Alertas RSS"
+msgstr "Listado RSS de actualizaciones sobre este incidente"
 
 #: templates/web/base/alert/updates.html:14
 #: templates/web/base/report/display_tools.html:42
@@ -2721,11 +2722,11 @@ msgstr "Problemas locales recientes, %s"
 
 #: templates/web/base/reports/index.html:27
 msgid "Recently <br>fixed"
-msgstr "Arreglados"
+msgstr "Recientemente <br>arreglado"
 
 #: templates/web/base/front/recent.html:11
 msgid "Recently reported problems"
-msgstr "Incidentes recientes"
+msgstr "Incidentes recientemente notificados"
 
 #: templates/web/base/reports/_list-filters.html:37
 #, fuzzy
@@ -2792,12 +2793,12 @@ msgstr "Notificar sobre %s"
 #: templates/web/base/report/new/login_success_form.html:1
 #: templates/web/base/report/new/oauth_email_form.html:1
 msgid "Report your problem"
-msgstr "Complete el formulario"
+msgstr "Notifique su incidencia"
 
 #: templates/web/base/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1
 msgid "Report, view, or discuss local problems"
-msgstr "Registre su Incidente"
+msgstr "Registre Incidentes en la plataforma CooperaNet"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:605
 #: templates/web/base/contact/index.html:57
@@ -3041,7 +3042,7 @@ msgstr "Seleccione un área"
 
 #: templates/web/base/alert/_list.html:11
 msgid "Select which type of alert you’d like and click the button for an RSS feed, or enter your email address to subscribe to an email alert."
-msgstr "Seleccione el tipo de alerta que desea recibir si es vía Email o RSS."
+msgstr ""
 
 #: templates/web/base/admin/category-checkboxes.html:6
 #, fuzzy
@@ -3488,7 +3489,7 @@ msgstr ""
 #: templates/web/base/report/new/fill_in_details_text.html:1
 #: templates/web/base/report/new/fill_in_details_text.html:3
 msgid "The council won&rsquo;t be able to help unless you leave as much detail as you can. Please describe the exact location of the problem (e.g. on a wall), what it is, how long it has been there, a description (and a photo of the problem if you have one), etc."
-msgstr "CooperaNet necesita la mayor cantidad de detalles posibles para atender su incidente. Por favor, describa la ubicación exacta del problema, en qué consiste éste, el tiempo que lleva ahí, una descripción y si es posible también una foto que permita localizarlo, etc."
+msgstr "La Gobernación necesita la mayor cantidad de detalles posibles para atender su incidente. Por favor, describa la ubicación exacta del problema, en qué consiste éste, el tiempo que lleva ahí, una descripción y si es posible también una foto que permita localizarlo, etc."
 
 #: templates/web/base/admin/edit-league.html:3
 #: templates/web/base/admin/edit-league.html:4
@@ -3576,7 +3577,7 @@ msgstr "No hay ninguna notificación que mostrar."
 
 #: perllib/FixMyStreet/App/Controller/Reports.pm:79
 msgid "There was a problem showing the All Reports page. Please try again later."
-msgstr "Hubo un problema mostrando la página de los Incidentes Registrados. Por favor, inténtelo de nuevo más tarde."
+msgstr "Hubo un problema mostrando la página de Todas las Notificaciones. Por favor, inténtelo de nuevo más tarde."
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:137
 #: perllib/FixMyStreet/App/Controller/Dashboard.pm:60
@@ -3687,7 +3688,7 @@ msgstr "Este es un sitio para desarrolladores, las cosas podrían romperse en cu
 
 #: templates/web/base/reports/index.html:10
 msgid "This is a summary of all reports on this site."
-msgstr "Este es un resumen de todos los incidentes registrados."
+msgstr "Este es un resumen de todos los informes en esta web."
 
 #: templates/web/base/report/new/form_report.html:56
 msgid "This pothole has been here for two months and…"
@@ -4025,7 +4026,7 @@ msgstr "Sólo utilizaremos su información personal de acuerdo a nuestra <a href
 
 #: templates/web/base/questionnaire/completed-open.html:2
 msgid "We&rsquo;re sorry to hear the problem’s not fixed. Why not try writing to your local representatives?"
-msgstr "Lamentamos que el problema no esté arreglado."
+msgstr "Lamentamos que el problema no esté arreglado. ¿Por qué no prueba a escribir directamente a sus representantes locales?"
 
 #: templates/web/base/contact/submit.html:7
 msgid "We’ll get back to you as soon as we can."
@@ -4308,7 +4309,7 @@ msgstr "por %s"
 #: templates/web/base/reports/body.html:6
 #: templates/web/base/reports/body.html:7
 msgid "council"
-msgstr "CooperaNet"
+msgstr "Gobernación"
 
 #: templates/web/base/admin/report_edit.html:52
 msgid "didn't use map"
