@@ -131,7 +131,7 @@
 <script type="text/javascript">
 
     function getLocationandGo(categoria) {
-        document.getElementById("gr").value = encodeURI(categoria); 
+        document.getElementById("cat").value = encodeURI(categoria); 
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(pos);
                     document.getElementById('nreport').submit();
