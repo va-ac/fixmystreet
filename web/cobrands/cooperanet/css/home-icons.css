@@ -122,6 +122,151 @@ a.rap-notes-trigger {
   z-index:1000;
 }
 
+#header_bg {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 6px;
+}
+#logo_cooperanet_header {
+  left: 6px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#header_spacer {
+  left: 361px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 55px;
+}
+#ico_registrate {
+  left: 416px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 85px;
+}
+#ico_telegram {
+  left: 501px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 83px;
+}
+#ico_menu_context {
+  left: 584px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 134px;
+}
+#header_bg_top_rigth {
+  left: 718px;
+  position: absolute;
+  top: 0px;
+  height: 119px;
+  margin-bottom: 0;
+  width: 1px;
+}
+#home_bg {
+  left: 0px;
+  position: absolute;
+  top: 145px;
+  height: 6px;
+  margin-bottom: 0;
+  width: 6px;
+}
+#ico_emergencia {
+  left: 6px;
+  position: absolute;
+  top: 145px;
+  height: 316px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#ico_delito {
+  left: 361px;
+  position: absolute;
+  top: 145px;
+  height: 316px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#ico_gestion_escolar {
+  left: 6px;
+  position: absolute;
+  top: 461px;
+  height: 318px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#ico_incivilidad {
+  left: 361px;
+  position: absolute;
+  top: 461px;
+  height: 318px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#ico_gestion_local {
+  left: 6px;
+  position: absolute;
+  top: 779px;
+  height: 321px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#ico_control_espacios {
+  left: 361px;
+  position: absolute;
+  top: 779px;
+  height: 321px;
+  margin-bottom: 0;
+  width: 355px;
+}
+#logo_cooperanet {
+  left: 3px;
+  position: absolute;
+  top: 1137px;
+  height: 141px;
+  margin-bottom: 0;
+  width: 164px;
+}
+#footer_bg {
+  left: 167px;
+  position: absolute;
+  top: 1137px;
+  height: 141px;
+  margin-bottom: 0;
+  width: 6px;
+}
+#logo_gobernacion {
+  left: 173px;
+  position: absolute;
+  top: 1137px;
+  height: 141px;
+  margin-bottom: 0;
+  width: 202px;
+}
+#logo_mci {
+  left: 381px;
+  position: absolute;
+  top: 1137px;
+  height: 141px;
+  margin-bottom: 0;
+  width: 339px;
+}
+
 
 @media screen and (max-device-width: 480px) { 
 
