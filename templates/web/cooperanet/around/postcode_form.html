@@ -1,24 +1,99 @@
-<div class="accordion-widget-container">
-    <div class="accordion-widget accordion-widget-default accordion-widget-blue accordion-widget-light accordion-widget-fade">
-         <img src="/cobrands/cooperanet/images/bs/header_bg.png" id="header_bg" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/logo_cooperanet_header.png" id="logo_cooperanet_header" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/header_spacer.png" id="header_spacer" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_registrate.png" id="ico_registrate" alt="" onclick="gotopage('/my');" />
-        <img src="/cobrands/cooperanet/images/bs/ico_telegram.png" id="ico_telegram" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_menu_context.png" id="ico_menu_context" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/header_bg_top_rigth.png" id="header_bg_top_rigth" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/home_bg.png" id="home_bg" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_emergencia.png" id="ico_emergencia" alt="" onclick="getLocationandGo('EMERGENCIA');" />
-        <img src="/cobrands/cooperanet/images/bs/ico_delito.png" id="ico_delito" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_gestion_escolar.png" id="ico_gestion_escolar" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_incivilidad.png" id="ico_incivilidad" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_gestion_local.png" id="ico_gestion_local" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_control_espacios.png" id="ico_control_espacios" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/logo_cooperanet.png" id="logo_cooperanet" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/footer_bg.png" id="footer_bg" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/logo_gobernacion.png" id="logo_gobernacion" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/logo_mci.png" id="logo_mci" alt="" />            
-    </div>
+ <div class="accordion-widget-container">
+ -
+ -    [% INCLUDE 'around/intro.html' %]
+ -
+ -    <div class="accordion-widget accordion-widget-default accordion-widget-blue accordion-widget-light accordion-widget-fade">
+ -        <div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
+ -            <input type="checkbox" id="accordion-widget-one" name="accordion-widget" class="accordion-widget-input">
+ -            <label for="accordion-widget-one" class="accordion-widget-label"><i class="icon-ambulance"></i>Emergencia</label>
+ -            <div class="accordion-widget-section">
+ -                <ul class="accordion-widget-section-content">
+ -                    <li><a href='#' onclick="getLocationandGo('ACCIDENTES AUTOMOVILÍSTICO')"><i class='icon-circle-right2'></i>Accidentes automovilístico</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CAIDA DE ARBOLES')"><i class='icon-circle-right2'></i>Caida de arboles</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('DERRAME DE COMBUSTIBLE EN LA VÍA')"><i class='icon-circle-right2'></i>Derrame de combustible en la vía</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('FUGAS DE GAS')"><i class='icon-circle-right2'></i>Fugas de gas</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('INCENDIO')"><i class='icon-circle-right2'></i>Incendio</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('INUNDACIONES O ANEGAMIENTO')"><i class='icon-circle-right2'></i>Inundaciones o anegamiento</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('MATRIZ DE AGUA ROTA')"><i class='icon-circle-right2'></i>Matriz de agua rota</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('NIEVE O ESCARCHA PELIGROSA')"><i class='icon-circle-right2'></i>Nieve o escarcha peligrosa</a></li>
+ -                </ul>
+ -            </div>
+ -        </div>
+ -        <div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
+ -            <input type="checkbox" id="accordion-widget-two" name="accordion-widget" class="accordion-widget-input">
+ -            <label for="accordion-widget-two" class="accordion-widget-label"><i class="icon-wall"></i>Delito</label>
+ -            <div class="accordion-widget-section">
+ -                <ul class="accordion-widget-section-content">
+ -                    <li><a href='#' onclick="getLocationandGo('ROBO O HURTO')"><i class='icon-circle-right2'></i>Robo o hurto</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('TRÁFICO DE DROGAS')"><i class='icon-circle-right2'></i>Tráfico de drogas</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('VIOLENCIA INTRAFAMILIAR')"><i class='icon-circle-right2'></i>Violencia intrafamiliar</a></li>
+ -                </ul>
+ -            </div>
+ -        </div>
+ -        <div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
+ -            <input type="checkbox" id="accordion-widget-three" name="accordion-widget" class="accordion-widget-input">
+ -            <label for="accordion-widget-three" class="accordion-widget-label"><i class="icon-books"></i>Gestión Escolar</label>
+ -            <div class="accordion-widget-section">
+ -                <ul class="accordion-widget-section-content">
+ -                    <li><a href='#' onclick="getLocationandGo('ACCIDENTE ESCOLAR')"><i class='icon-circle-right2'></i>Accidente escolar</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('BULLYNG')"><i class='icon-circle-right2'></i>Bullyng </a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('INASISTENCIA INJUSTIFICADA')"><i class='icon-circle-right2'></i>Inasistencia injustificada</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('SUSPENCIÓN DE CLASES')"><i class='icon-circle-right2'></i>Suspención de clases</a></li>
+ -                </ul>
+ -            </div>
+ -        </div>
+ -        <div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
+ -            <input type="checkbox" id="accordion-widget-four" name="accordion-widget" class="accordion-widget-input">
+ -            <label for="accordion-widget-four" class="accordion-widget-label"><i class="icon-spray"></i>Incivilidad</label>
+ -            <div class="accordion-widget-section">
+ -                <ul class="accordion-widget-section-content">
+ -                    <li><a href='#' onclick="getLocationandGo('CARRERAS CLANDESTINAS')"><i class='icon-circle-right2'></i>Carreras clandestinas</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CONSUMO DE ALCOHOL EN LA VÍA PÚBLICA')"><i class='icon-circle-right2'></i>Consumo de alcohol en la vía pública</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('DAÑOS A LA PROPIEDAD PÚBLICA')"><i class='icon-circle-right2'></i>Daños a la propiedad pública</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('PERSONA EN SITUACIÓN DE CALLE')"><i class='icon-circle-right2'></i>Persona en situación de calle</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('RIÑAS Y DESÓRDENES')"><i class='icon-circle-right2'></i>Riñas y desórdenes</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('RUIDOS MOLESTOS')"><i class='icon-circle-right2'></i>Ruidos molestos</a></li>
+ -                </ul>
+ -            </div>
+ -        </div>
+ -        <div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
+ -            <input type="checkbox" id="accordion-widget-five" name="accordion-widget" class="accordion-widget-input">
+ -            <label for="accordion-widget-five" class="accordion-widget-label"><i class="icon-station"></i>Gestión local</label>
+ -            <div class="accordion-widget-section">
+ -                <ul class="accordion-widget-section-content">
+ -                    <li><a href='#' onclick="getLocationandGo('ABUNDANTE FOLLAJE')"><i class='icon-circle-right2'></i>Abundante follaje</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('AGUA TURBIA EN LAS CAÑERÍAS')"><i class='icon-circle-right2'></i>Agua turbia en las cañerías</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('ALCANTARILLAS ABIERTAS O ROTAS')"><i class='icon-circle-right2'></i>Alcantarillas abiertas o rotas</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('ANIMALES EN LA VÍA')"><i class='icon-circle-right2'></i>Animales en la vía</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CABLES EXPUESTOS')"><i class='icon-circle-right2'></i>Cables expuestos</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CALLES EN MAL ESTADO')"><i class='icon-circle-right2'></i>Calles en mal estado</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CORTE DE AGUA')"><i class='icon-circle-right2'></i>Corte de agua</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CORTE DE INTERNET')"><i class='icon-circle-right2'></i>Corte de internet</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('CORTE DE LUZ')"><i class='icon-circle-right2'></i>Corte de luz</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('FALTA DE SEÑALIZACION')"><i class='icon-circle-right2'></i>Falta de señalizacion</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('PERROS VAGOS')"><i class='icon-circle-right2'></i>Perros vagos</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('PLAZAS EN MAL ESTADO')"><i class='icon-circle-right2'></i>Plazas en mal estado</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('POSTES O ALUMBRADO PÚBLICO MAL ESTADO')"><i class='icon-circle-right2'></i>Postes o alumbrado público mal estado</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('SEMAFOROS APAGADOS')"><i class='icon-circle-right2'></i>Semaforos apagados</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('VEHÍCULOS ABANDONADOS')"><i class='icon-circle-right2'></i>Vehículos abandonados</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('VEREDAS O ESPACIOS PÚBLICOS EN MAL ESTADO')"><i class='icon-circle-right2'></i>Veredas o espacios públicos en mal estado</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('VERTEDERO ILEGAL')"><i class='icon-circle-right2'></i>Vertedero ilegal</a></li>
+ -                </ul>
+ -            </div>
+ -        </div>
+ -        <div class="accordion-widget-wrapper accordion-widget-arrow" id="accordion-widget-right-arrow">
+ -            <input type="checkbox" id="accordion-widget-six" name="accordion-widget" class="accordion-widget-input">
+ -            <label for="accordion-widget-six" class="accordion-widget-label"><i class="icon-bullhorn"></i>Control de Espacios</label>
+ -            <div class="accordion-widget-section">
+ -                <ul class="accordion-widget-section-content">
+ -                    <li><a href='#' onclick="getLocationandGo('DOMICILIO ABANDONADO')"><i class='icon-circle-right2'></i>Domicilio abandonado</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('LUGAR RIESGOSO')"><i class='icon-circle-right2'></i>Lugar riesgoso</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('OCUPACIÓN ILEGALES')"><i class='icon-circle-right2'></i>Ocupación ilegales</a></li>
+ -                    <li><a href='#' onclick="getLocationandGo('SITIO ERIAZO')"><i class='icon-circle-right2'></i>Sitio eriazo</a></li>
+ -                </ul>
+ -            </div>
+ -        </div>                
+ -    </div>
 </div>
 <div id="form_oculto">
 <form action="report/new" method="get" name="nreport" id="nreport">
@@ -54,30 +129,6 @@
     </div>
 </div>
 <script type="text/javascript">
-
-if(window.attachEvent) {
-    window.attachEvent('onload', SelectElement());
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function(evt) {
-            curronload(evt);
-            SelectElement()(evt);
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = ocultaTodo();
-    }
-}
-
-
-function ocultaTodo() {
-    document.getElementById('site-header').style.display='none';
-}
-
-function gotourl(pagina) {
-    window.location = pagina;
-}
 
     function getLocationandGo(categoria) {
         document.getElementById("gr").value = encodeURI(categoria); 
