@@ -9,9 +9,15 @@
     <p class="form-error">[% loc('Sorry, we could not log you in. Please fill in the form below.') %]</p>
 [% END %]
 
+ <div class="form-box">
+        <button name="btn_email_va" id="btn_email_va" value="btn_email_va" class="btn_email_va" onclick="document.getElementById('js-social-email-hide').style.display='block'">
+            <img alt="" src="/i/email-icon-32.png" width="17" height="32">
+            Ingrese con email
+        </button>
+      </div>
+
 <form action="[% c.uri_for() %]" method="post" name="general_auth" class="validate">
     <fieldset>
-
         <input type="hidden" name="r" value="[% c.req.params.r | html %]">
 [% IF NOT oauth_need_email AND (c.config.FACEBOOK_APP_ID OR c.config.TWITTER_KEY) %]
     [% IF c.config.FACEBOOK_APP_ID %]
