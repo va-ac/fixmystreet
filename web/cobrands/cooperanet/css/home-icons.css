@@ -122,6 +122,10 @@ a.rap-notes-trigger {
   z-index:1000;
 }
 
+.menumovil_va{
+ display: inline-block;
+}
+
 #header_bg {
   left: 0px;
   position: absolute;
