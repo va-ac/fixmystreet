@@ -11,7 +11,7 @@
         <img src="/cobrands/cooperanet/images/bs/ico_menu_context.png" id="ico_menu_context" alt="" />
         <img src="/cobrands/cooperanet/images/bs/header_bg_top_rigth.png" id="header_bg_top_rigth" alt="" />
         <img src="/cobrands/cooperanet/images/bs/home_bg.png" id="home_bg" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_emergencia.png" id="ico_emergencia" alt="" getLocationandGo("EMERGENCIA") />
+        <img src="/cobrands/cooperanet/images/bs/ico_emergencia.png" id="ico_emergencia" alt="" onclick="getLocationandGo('EMERGENCIA');" />
         <img src="/cobrands/cooperanet/images/bs/ico_delito.png" id="ico_delito" alt="" />
         <img src="/cobrands/cooperanet/images/bs/ico_gestion_escolar.png" id="ico_gestion_escolar" alt="" />
         <img src="/cobrands/cooperanet/images/bs/ico_incivilidad.png" id="ico_incivilidad" alt="" />
@@ -57,6 +57,27 @@
     </div>
 </div>
 <script type="text/javascript">
+if(window.attachEvent) {
+    window.attachEvent('onload', SelectElement());
+} else {
+    if(window.onload) {
+        var curronload = window.onload;
+        var newonload = function(evt) {
+            curronload(evt);
+            SelectElement()(evt);
+        };
+        window.onload = newonload;
+    } else {
+        window.onload = ocultaTodo();
+    }
+}
+
+function ocultaTodo() {
+    document.getElementById('container').style.display='none';
+    document.getElementById('nav-wrapper-2').style.display='none';
+
+}
+
     function getLocationandGo(categoria) {
         document.getElementById("gr").value = encodeURI(categoria); 
                 if (navigator.geolocation) {
