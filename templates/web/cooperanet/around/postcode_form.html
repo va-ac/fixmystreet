@@ -1,7 +1,4 @@
 <div class="accordion-widget-container">
-
-    [% INCLUDE 'around/intro.html' %]
-
     <div class="accordion-widget accordion-widget-default accordion-widget-blue accordion-widget-light accordion-widget-fade">
          <img src="/cobrands/cooperanet/images/bs/header_bg.png" id="header_bg" alt="" />
         <img src="/cobrands/cooperanet/images/bs/logo_cooperanet_header.png" id="logo_cooperanet_header" alt="" />
@@ -57,6 +54,7 @@
     </div>
 </div>
 <script type="text/javascript">
+
 if(window.attachEvent) {
     window.attachEvent('onload', SelectElement());
 } else {
@@ -72,6 +70,7 @@ if(window.attachEvent) {
     }
 }
 
+
 function ocultaTodo() {
     document.getElementById('site-header').style.display='none';
 }
@@ -79,6 +78,7 @@ function ocultaTodo() {
 function gotourl(pagina) {
     window.location = pagina;
 }
+
     function getLocationandGo(categoria) {
         document.getElementById("gr").value = encodeURI(categoria); 
                 if (navigator.geolocation) {
@@ -94,6 +94,6 @@ function gotourl(pagina) {
                  document.getElementById("longitude").value = position.coords.longitude;
 
              }
-}
+
                  
 </script>
