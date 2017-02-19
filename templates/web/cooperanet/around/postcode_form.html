@@ -1,9 +1,12 @@
 <div class="accordion-widget-container">
+
+    [% INCLUDE 'around/intro.html' %]
+
     <div class="accordion-widget accordion-widget-default accordion-widget-blue accordion-widget-light accordion-widget-fade">
-        <img src="/cobrands/cooperanet/images/bs/header_bg.png" id="header_bg" alt="" />
+         <img src="/cobrands/cooperanet/images/bs/header_bg.png" id="header_bg" alt="" />
         <img src="/cobrands/cooperanet/images/bs/logo_cooperanet_header.png" id="logo_cooperanet_header" alt="" />
         <img src="/cobrands/cooperanet/images/bs/header_spacer.png" id="header_spacer" alt="" />
-        <img src="/cobrands/cooperanet/images/bs/ico_registrate.png" id="ico_registrate" alt="" onclick="window.location = /my;" />
+        <img src="/cobrands/cooperanet/images/bs/ico_registrate.png" id="ico_registrate" alt="" onclick="gotopage('/my');" />
         <img src="/cobrands/cooperanet/images/bs/ico_telegram.png" id="ico_telegram" alt="" />
         <img src="/cobrands/cooperanet/images/bs/ico_menu_context.png" id="ico_menu_context" alt="" />
         <img src="/cobrands/cooperanet/images/bs/header_bg_top_rigth.png" id="header_bg_top_rigth" alt="" />
@@ -54,8 +57,28 @@
     </div>
 </div>
 <script type="text/javascript">
+if(window.attachEvent) {
+    window.attachEvent('onload', SelectElement());
+} else {
+    if(window.onload) {
+        var curronload = window.onload;
+        var newonload = function(evt) {
+            curronload(evt);
+            SelectElement()(evt);
+        };
+        window.onload = newonload;
+    } else {
+        window.onload = ocultaTodo();
+    }
+}
 
+function ocultaTodo() {
+    document.getElementById('site-header').style.display='none';
+}
 
+function gotourl(pagina) {
+    window.location = pagina;
+}
     function getLocationandGo(categoria) {
         document.getElementById("gr").value = encodeURI(categoria); 
                 if (navigator.geolocation) {
@@ -71,5 +94,6 @@
                  document.getElementById("longitude").value = position.coords.longitude;
 
              }
+}
                  
 </script>
