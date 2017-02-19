@@ -57,26 +57,7 @@
     </div>
 </div>
 <script type="text/javascript">
-if(window.attachEvent) {
-    window.attachEvent('onload', SelectElement());
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function(evt) {
-            curronload(evt);
-            SelectElement()(evt);
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = ocultaTodo();
-    }
-}
 
-function ocultaTodo() {
-    document.getElementById('container').style.display='none';
-    document.getElementById('nav-wrapper-2').style.display='none';
-
-}
 
     function getLocationandGo(categoria) {
         document.getElementById("gr").value = encodeURI(categoria); 

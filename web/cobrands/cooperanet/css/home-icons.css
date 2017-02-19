@@ -73,7 +73,14 @@ a.rap-notes-trigger {
   top:1px;
 }
 
+#container_va {
+  display:none;
+}
 
+#container_superior_va{
+ display: none;
+
+}
 .campo_opcion_va {
     display: block;
     margin: 4px 2.2em;
