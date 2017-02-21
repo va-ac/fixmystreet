@@ -953,7 +953,6 @@ input.final-submit {
 
 .item-list__item {
   list-style: none;
-  background-color: $itemlist_item_background;
   margin: 0.25em 0 0;
   padding: 0.5em 1em;
   display: block;
@@ -1012,7 +1011,7 @@ input.final-submit {
   }
 
   small {
-    color: #666;
+    color: #000;
     display: block;
     padding: 0.25em 0;
   }

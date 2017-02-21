@@ -130,6 +130,13 @@ a.rap-notes-trigger {
   color:#666666;
 }
 
+.item-list__item {
+    list-style: none;
+    background-color: #f6f6f6;
+    margin: 0.25em 0 0;
+    padding: 0.5em 1em;
+    display: block;
+}
 
 
 @media screen and (max-device-width: 480px) { 
