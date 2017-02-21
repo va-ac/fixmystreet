@@ -224,6 +224,29 @@ a.report-cta {
 
 }
 
+.report-list-filters_va {
+    padding: 2px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 10px;
+    font-family: Lato;
+    font-weight: bolder;
+}
+
+.campo_opcion_va {
+    display: block;
+    margin: 2px 5px;
+    font-size: 13px;
+    background-color: #fff;
+    color: #0f69b4;
+    max-width: 275px;
+    vertical-align: top;
+    height: 10em;
+    line-height: 1.8em;
+    padding: 6px;
+}
+
 #form_title_label_va {
   font-family: Lato;
   color: #FFFFFF;
@@ -238,6 +261,10 @@ a.report-cta {
 #form_category_label_va{
   font-family: Lato;
   color:#FFFFFF;
+}
+
+.form-control_va {
+  color: #0f69b4;
 }
 
 #form_category_label_va{
