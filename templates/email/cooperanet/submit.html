@@ -1,8 +1,7 @@
 [%
 
-email_summary = "Nuevo incidente registrado en su área a sido registrado en " _ site_name _;
-email_footer = "
-si existe una casilla de correo mas apropiada a quien dirigir los incidentes registrados en la categoría " _ category_footer _ ", por favor déjenos saberlo. Esto nos permitirá mejorar el sevicio que prestamos. Cualquier otra recomendación o comentario es bienvenido";
+email_summary = "Nuevo incidente registrado en su área a sido registrado en " _ site_name _ "";
+email_footer = "Si existe una casilla de correo mas apropiada a quien dirigir los incidentes registrados en la categoría " _ category_footer _ ", por favor déjenos saberlo. Esto nos permitirá mejorar el sevicio que prestamos. Cualquier otra recomendación o comentario es bienvenido";
 email_columns = 2;
 
 PROCESS '_email_settings.html';
@@ -13,29 +12,52 @@ INCLUDE '_email_top.html';
 
 <th style="[% td_style %][% primary_column_style %]" id="primary_column">
   [% start_padded_box %]
-  <h1 style="[% h1_style %]">Nuevo incidente registrado en su área</h1>
-  <p style="[% p_style %]">Un usuario de [% site_name %] ha registrado el siguiente incidente o problema local y pensamos que podría requerir de vuestra atención.</p>
-
-  <p style="margin: 20px auto; text-align: center">
-    <a style="[% button_style %]" href="[% url %]">Ver el registro</a>
-  </p>
-  <h2 style="[% h2_style %] margin: 30px 0 10px 0">Registrado por:</h2>
-  <table [% table_reset %]>
-    <tr>
-      <th style="[% contact_th_style %]">Nombre</th>
-      <td style="[% contact_td_style %]">[% name | html %]</td>
-    </tr>
-    <tr>
-      <th style="[% contact_th_style %]">Email</th>
-      <td style="[% contact_td_style %]"><a href="mailto:[% email | html %]">[% email | html %]</a></td>
-    </tr>
-    [%~ IF phone %]
+    <h1 style="[% h1_style %]">Nuevo incidente registrado en su área</h1>
+    <p style="[% p_style %]">ORD N°_______/</p>
+    <p style="[% p_style %]">ANT.: Incidente N° </p>
+    <p style="[% p_style %]">MAT.: NOTIFICA INCIDENTE COOPERANET.</p>
+    <p style="[% p_style %]">COYHAIQUE, 22 de Febrero de 2017</p>
+    <br>
+    <p style="[% p_style %]">DE: CRISTIÁN LÓPEZ MONTECINOS</p>
+    <p style="[% p_style %]">GOBERNADOR PROVINCIA DE COYHAIQUE</p>
+    <br>
+    <p style="[% p_style %]">A: JEFE DE SERVICIO</p>
+    <p style="[% p_style %]">SERVICIO</p>
+    <br>
+    <p style="[% p_style %]">Junto con saludar a Ud., y en atención a la recepción de Incidente: [% title %] reportado vía Aplicación para Celulares COOPERANET, con fecha 22/02/2017; por don(a) [% name %]; Correo electrónico [% email %], teléfono [% phone_line %] solicito instruir a quien competa dentro de vuestro servicio, informar vía oficio al requirente las acciones seguidas y sus resultados en torno a su solución.</p>
+    <p style="margin: 20px auto; text-align: center">
+        <a style="[% button_style %]" href="[% url %]">Ver el registro</a>
+      </p>
+    <h2 style="[% h2_style %] margin: 30px 0 10px 0">Registrado por:</h2>
+    <table [% table_reset %]>
       <tr>
-        <th style="[% contact_th_style %]">Teléfono</th>
-        <td style="[% contact_td_style %]"><a href="tel:[% phone | html %]">[% phone | html %]</a></td>
+        <th style="[% contact_th_style %]">Nombre</th>
+        <td style="[% contact_td_style %]">[% name | html %]</td>
       </tr>
-    [%~ END %]
-  </table>
+      <tr>
+        <th style="[% contact_th_style %]">Email</th>
+        <td style="[% contact_td_style %]"><a href="mailto:[% email | html %]">[% email | html %]</a></td>
+      </tr>
+      [%~ IF phone %]
+        <tr>
+          <th style="[% contact_th_style %]">Teléfono</th>
+          <td style="[% contact_td_style %]"><a href="tel:[% phone | html %]">[% phone | html %]</a></td>
+        </tr>
+      [%~ END %]
+    </table>
+    <br>
+    <p style="[% p_style %]">Junto a lo anterior, solicito remitir copia del mencionado oficio a esta Gobernación Provincial de Coyhaique.
+    <br>
+    <p style="[% p_style %]">Sin otro particular, Saluda Atte. a Ud.,</p>
+    <br>
+    <p style="[% p_style %]">DR. CRISTIÁN LÓPEZ MONTECINOS</p>
+    <p style="[% p_style %]">GOBERNADOR</p>
+    <p style="[% p_style %]">PROVINCIA DE COYHAIQUE</p>
+    <br>
+    <p style="[% p_style %]">DISTRIBUCION:</p>
+    <p style="[% p_style %]">- La Indicada</p>
+    <p style="[% p_style %]">- Oficina de Partes Gobernación de Coyhaique</p>
+    <br>
   <p style="[% p_style %] margin-top: 0.5em;">Al responder directamente a este mensaje, su respuesta será enviada al usuario [% name | html %] quién registro el incidente en CooperaNet.</p>
   [% end_padded_box %]
 </th>
