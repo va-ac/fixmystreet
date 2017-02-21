@@ -264,7 +264,13 @@ a.report-cta {
 }
 
 .form-control_va {
-  color: #0f69b4;
+    color: #0f69b4;
+    font-family: Lato;
+    font-size: 15px;
+    width: 275px;
+    padding: 2px;
+    margin-bottom: 12px;
+    margin: 2px 5px 8px;
 }
 
 #form_category_label_va{
