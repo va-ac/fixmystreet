@@ -164,6 +164,14 @@ a.rap-notes-trigger {
   color:#FFFFFF;
 }
 
+.item-list__item {
+    list-style: none;
+    background-color: #4774b7;
+    margin: 0.25em 0 0;
+    padding: 0.5em 1em;
+    display: block;
+}
+
 #site-logo_va{
   display: block;
   width: 176px;
