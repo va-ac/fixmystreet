@@ -129,6 +129,7 @@ a.rap-notes-trigger {
 
 
 
+
 @media screen and (max-device-width: 480px) { 
 
   .container{
@@ -142,7 +143,15 @@ a.rap-notes-trigger {
   }
 
   #front-recently {
-    color:#FFFFF;
+    color:#FFFFFF;
+  }
+
+  .item-list__heading{
+    color: #FFFFFF;
+  }
+
+  #item_list_status_va{
+    color: #FFFFFF;
   }
 
 #site-logo_va{
