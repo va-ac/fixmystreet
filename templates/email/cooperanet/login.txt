@@ -1,13 +1,11 @@
-Subject: Your [% site_name %] account details
+Subject: Confirme el registro de su Cuenta en [% site_name %]
 
-Please click on the link below to confirm your email address.
+Por favor haz click en el link abajo para confirmar su dirección de correo.
 
 [% c.uri_for_action( 'auth/token', token ) %]
 
-Once you've done this, you'll be able to view and manage all reports and
-updates you've made on [% site_name %].
+Una vez que realice ésta confirmación podrá revisar todos los registros que ha realizado en [% site_name %].
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

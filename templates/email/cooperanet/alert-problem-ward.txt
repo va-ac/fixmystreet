@@ -1,24 +1,18 @@
-Subject: New [% site_name %] reports to [% area_name %] within [% ward_name %]
+Subject: Alerta: Nuevos Incidentes Registrado en [% site_name %] para el área de [% area_name %], [% ward_name %]
 
-The following new [% site_name %] reports have been sent to [% area_name %]
-within [% ward_name %]:
+Los siguientes Incidentes han sido registrado en [% site_name %] para el área [% area_name %], [% ward_name %]:
 
 [% INCLUDE '_email_report_list.txt' %]
 
 [% signature %]
 
 
-Unsubscribe?
+¿Desea cancelar la subscripción?
 
-You subscribed to receive an email every time someone makes a new [% site_name %]
-report to [% area_name %] within [% ward_name %]. This is a
-free service from [% site_name %].
+Actualmente recibirá una notificación cada vez se registre un nuevo incidente en [% site_name %] para el área de [% area_name %], [% ward_name %].
 
-If you no longer wish to receive an email whenever there are new reports to
-[% area_name %] within [% ward_name %], please follow
-this link:
+Si no desea recibir mas notificaciones sobre nuevos registros de incidentes en [% site_name %] para el área de [% area_name %], [% ward_name %] por favor haz click en el siguiente link: 
 
 [% unsubscribe_url %]
 
-This email was sent automatically, from an unmonitored email account - so please
-do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

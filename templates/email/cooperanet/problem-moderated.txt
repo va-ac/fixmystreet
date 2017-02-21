@@ -1,37 +1,34 @@
-Subject: Your report on [% site_name %] has been moderated
+Subject: Su registro de Incidente en [% site_name %] ha sido moderado.
 
-Hello [% user.name %],
+Hola, [% user.name %],
 
-Your report on [% site_name %] has been moderated.
+Su registro de incidente en [% site_name %] ha sido moderado.
 
 [% IF types == 'hide' -%]
-The report has been hidden from the site.
+El registro ha sido ocultado del sitio.
 [% ELSE %]
-The following data has been changed:
+Los siguientes datos han sido modificados:
 
 	[% types %]
 
 [% END -%]
 
-Your report had the title:
+Su regsitro tenía el siguiente titulo:
 
 [% problem.moderation_original_data.title %]
 
-And details:
+y el siguiente detalle:
 
 [% problem.moderation_original_data.detail %]
 
 [% UNLESS types == 'hide' %]
-You can see the report at [% report_uri %]
+Usted puede ver su regsitro en [% report_uri %]
 [% END %]
 
-If you do not think that this report should have been moderated, you may contact
-the team at [% report_complain_uri %]
+Si usted considera que el registor no debió ser modificado puede contactarse con el equipo de [% site_name %] en [% report_complain_uri %]
 
-Thank you for submitting a report through [% site_name %].
-
+Gracias por registrar su incidente en [% site_name %].
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

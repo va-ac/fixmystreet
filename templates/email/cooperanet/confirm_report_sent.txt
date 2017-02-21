@@ -1,25 +1,19 @@
-Subject: [% site_name %] Report Sent: [% title %]
+Subject: [% site_name %] - Incidente Registrado: [% title %]
 
-Hello,
+Hola,
 
-Thank you for using [% site_name %] to submit your report
-"[% title %]".
+Gracias por utilizar [% site_name %] para registrar su incidente titulado: "[% title %]".
 
-This is to confirm that it has now been sent to [% bodies_name %],
-who should respond to you directly.
+Esta es una confirmación automática de que su incidente ha sifo notificado a  [% bodies_name %], quienes deberían responderle directamente a su solicitud.
 
-Your report is also on [% url %], where others may read, comment or
-offer advice.
+Su Incidente puede ser revisado [% url %], otros usuarios de la Aplicación puede leer, actualizar y comentar este registro.
 
-You should also feel free to add updates to that page, although note that they
-will not be sent to your council.
+Usted también puede realizar actualizaciones sobre el incidente.
 
-If you'd like to update your council, please wait for their reply so that you
-can respond to them directly.
+Los Actores responsables tambien podrán actualizar el incidente en la Aplicación e incluso solicitarle mayores antencedentes.
 
-Good luck in getting your problem fixed.
+Muchas gracias por utilizar CooperaNet para registrar su incidente.
 
 [% signature %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

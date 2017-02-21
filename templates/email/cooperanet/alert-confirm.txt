@@ -1,18 +1,15 @@
-Subject: Confirm your [% INCLUDE 'site-name.txt' | trim %] alert
+Subject: Alerta: Confirme si desea recibir alertas en  [% INCLUDE 'site-name.txt' | trim %]
 
-Please click on the link below to confirm your [% INCLUDE 'site-name.txt' | trim %] alert.
+Por favor confirme en el siguiente linnk si desea recibir alertas desde [% INCLUDE 'site-name.txt' | trim %].
 
    [% token_url %]
 
-If you can't click the link, copy and paste it to the address bar of your web
-browser.
+Si no puede hacer click en el link entonces copie y pegue el link en un navegador de internet.
 
-This confirms that you'd like to receive an email when someone makes a
-[% INCLUDE 'site-name.txt' | trim %] report within your chosen area.
+Al confirmar esta subscripción ustede recibirá notificaciones sobre los registros de incidente en [% INCLUDE 'site-name.txt' | trim %] para el área seleccionada.
 
-Email alerts are a free service from [% INCLUDE 'site-name.txt' | trim %].
+El servicio de notificaciones de alertas de [% INCLUDE 'site-name.txt' | trim %] es gratuito.
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

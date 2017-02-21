@@ -1,21 +1,21 @@
-Subject: Confirm your update on [% INCLUDE 'site-name.txt' | trim %]
+Subject: Confirme su actualización en [% INCLUDE 'site-name.txt' | trim %]
 
-Hello [% update.name %],
+Hola, [% update.name %],
 
-Please click on the link below to confirm your update on [% INCLUDE 'site-name.txt' | trim %]:
+Por favor haz click en link abajo para confirmar su actualización en [% INCLUDE 'site-name.txt' | trim %]:
 
 [% token_url %]
 
-If your email program does not let you click on this link, copy and paste it
-into your web browser and press return.
+Si no puede hacer click en el link entonces copie y pegue el link en un navegador de internet.
 
-Your update reads:
+Los datos a enviar para la actualización del Incidente son:
 
 [% update.text %]
+
+Si, no desea enviar la actualización registro simplemente ignore esta comunicación.
 
 [% INCLUDE 'update-confirm-donotsend.txt' %]
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

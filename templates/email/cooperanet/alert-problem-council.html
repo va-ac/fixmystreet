@@ -1,6 +1,6 @@
 [%
 
-email_summary = "New reports to ${ area_name }";
+email_summary = Alerta: Nuevo Incidente Registrado en el área de ${ area_name }";
 email_columns = 1;
 
 PROCESS '_email_settings.html';
@@ -10,10 +10,10 @@ INCLUDE '_email_top.html';
 %]
 
 <th style="[% td_style %][% only_column_style %]">
-  <h1 style="[% h1_style %]">New reports to [% area_name %]</h1>
+  <h1 style="[% h1_style %]">Los siguientes Incidentes han sido registrado en el área de [% area_name %]</h1>
   [%~ INCLUDE '_email_report_list.html' %]
 
-  <p style="[% p_style %]"><a href="[% unsubscribe_url %]">Unsubscribe from alerts about new reports to this area</a></p>
+  <p style="[% p_style %]"><a href="[% unsubscribe_url %]">Si no desea recibir mas notificaciones sobre nuevos registros de incidentes por favor haz click en el este link.</a></p>
 </th>
 
 [% INCLUDE '_email_bottom.html' %]

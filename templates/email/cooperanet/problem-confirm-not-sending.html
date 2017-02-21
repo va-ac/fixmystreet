@@ -1,6 +1,6 @@
 [%
 
-email_summary = "You need to confirm your " _ site_name _ " report before it can be made public.";
+email_summary = "Confirme el registro de incidente en " _ site_name _ ";
 email_columns = 2;
 
 PROCESS '_email_settings.html';
@@ -11,15 +11,13 @@ INCLUDE '_email_top.html';
 
 <th style="[% td_style %][% primary_column_style %]" id="primary_column">
   [% start_padded_box %]
-  <h1 style="[% h1_style %]">Please confirm your&nbsp;report</h1>
-  <p style="[% p_style %]">Please click on the link below to confirm that you want your report to appear
-on [% site_name %], despite not being sent to the
-council.</p>
-  <p style="[% p_style %]">Your report will also appear on the [% site_name %] website.</p>
+  <h1 style="[% h1_style %]">Confirme el registro de incidente</h1>
+  <p style="[% p_style %]">Por favor haz click en el link abajo para confirmar el envio de tu registro de incidente en [% site_name %]:</p>
+  <p style="[% p_style %]">Su reporte será publicado en [% site_name %].</p>
   <p style="margin: 20px auto; text-align: center">
-    <a style="[% button_style %]" href="[% token_url %]">Yes, publish my report</a>
+    <a style="[% button_style %]" href="[% token_url %]">Si, publicar el registro del incidente</a>
   </p>
-  <p style="[% p_style %]">If you no longer wish to publish this report, please take no further action.</p>
+  <p style="[% p_style %]">Si, no desea enviar este registro simplemente ignore esta comunicación.</p>
   [% end_padded_box %]
 </th>
 [% WRAPPER '_email_sidebar.html' object = report %]

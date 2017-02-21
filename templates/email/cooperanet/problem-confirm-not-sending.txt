@@ -1,31 +1,25 @@
-Subject: Confirm your report on [% site_name %]
+Subject: Confirme el registro de incidente en [% site_name %]
 
-Hello [% report.name %],
+Hola, [% report.name %],
 
-Please click on the link below to confirm that you want your report to appear
-on [% site_name %], despite not being sent to the council:
+Por favor haz click en el link abajo para confirmar el envio de tu registro de incidente en [% site_name %]:
 
 [% token_url %]
 
-If your email program does not let you click on this link, copy and paste it
-into your web browser and press return.
+Si no puede hacer click en el link entonces copie y pegue el link en un navegador de internet.
 
-Your problem had the title:
+Su regsitro tiene el siguiente titulo:
 
 [% report.title %]
 
-And details:
+y el siguiente detalle:
 
 [% report.detail %]
 
-If you no longer wish your report to be displayed on the site, please take no
-further action.
+Si, no desea enviar este registro simplemente ignore esta comunicación.
 
-Thank you for supporting [% site_name %].
-
-
+Gracias por registrar su incidente en [% site_name %].
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

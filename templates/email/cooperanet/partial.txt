@@ -1,16 +1,14 @@
-Subject: Confirm your report on [% INCLUDE 'site-name.txt' | trim %]
+Subject: Confirme el registro de incidente en [% INCLUDE 'site-name.txt' | trim %]
 
-Hello [% report.name || report.email %],
+Hola, [% report.name || report.email %],
 
-To confirm the report you have uploaded to [% INCLUDE 'site-name.txt' | trim %]
-via [% report.service %], and to check or add any details, please visit the
-following URL:
+Por favor haz click en el link abajo para confirmar el envio de tu registro de incidente en [% INCLUDE 'site-name.txt' | trim %]
+a través del servicio de integración [% report.service %], por favor revise los detalles del registro en:
 
 [% token_url %]
 
-Thanks!
+Gracias!
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

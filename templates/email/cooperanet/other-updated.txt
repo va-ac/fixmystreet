@@ -1,16 +1,15 @@
-Subject: Your update has been logged
+Subject: Su actualización ha sido publicada
 
-Hello [% update.name %],
+Hola, [% update.name %],
 
-Your update has been logged on [% site_name %]:
+Su actualización ha sido publicada en [% site_name %]:
 
 [% cobrand.base_url_for_report(problem) %][% problem.url %]#update_[% update.id %]
 
-Your update reads:
+Los datos a enviados para la actualización del Incidente fueron:
 
 [% update.text %]
 
 [% INCLUDE 'signature.txt' %]
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.

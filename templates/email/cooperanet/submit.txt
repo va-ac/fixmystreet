@@ -1,23 +1,20 @@
 Subject: Registro de Incidente: [% title %]
 
-Estimado [% bodies_name %],
 
-[% missing %][% multiple %]Un usuario de 
-[% site_name %] ha registrado el siguiente incidente
-en una ubicación que pensamos podría requerir de vuestra atención.
+ORD N°___________/
+ANT.: Incidente [% category_line %]
+MAT.: NOTIFICA INCIDENTE COOPERANET.
+COYHAIQUE, [% today %]
 
-[% fuzzy %], o para agregar una actualización de este incidente,
-por favor visite el siguiente link: 
+DE	:	CRISTIÁN LÓPEZ MONTECINOS
+GOBERNADOR PROVINCIA DE COYHAIQUE
 
-    [% url %]
+A	:	JEFE DE SERVICIO
+		SERVICIO
 
-[% has_photo %]----------
+Junto con saludar a Ud., y en atención a la recepción de Incidente: [% title %] reportado vía Aplicación para Celulares COOPERANET, con fecha [% today %]; por don(a) [% name %]; Correo electrónico [% email %], teléfono [% phone_line %] solicito instruir a quien competa dentro de vuestro servicio, informar vía oficio al requirente las acciones seguidas y sus resultados en torno a su solución.
 
-Nombre: [% name %]
-
-Correo: [% email %]
-
-[% phone_line %][% category_line %]Asunto: [% title %]
+Incidente: [% title %]
 
 Detalle: [% detail %]
 
@@ -27,11 +24,31 @@ Longitud: [% longitude %]
 
 Vea la ubicación de este incidente: [% osm_url %]
 
-[% closest_address %]----------
+[% closest_address %]
+
+Ver el incidente en la Aplicación CooperaNet: [% url %]
+
+Junto a lo anterior, solicito remitir copia del mencionado oficio a esta Gobernación Provincial de Coyhaique.
+
+Sin otro particular, Saluda Atte. a Ud.,
+
+DR. CRISTIÁN LÓPEZ MONTECINOS
+GOBERNADOR
+PROVINCIA DE COYHAIQUE
+
+DISTRIBUCION:
+-	La Indicada
+-	Oficina de Partes Gobernación de Coyhaique
+
+----------
 
 Al responder a este correo su mensaje será dirgido al usuario que registró el incidente.
 
 [% signature %]
 
-Si existe una casilla de correo mas apropiada para dirgir este mensaje
-[% category_footer %], por favor déjenos saberlo para mejorar el servicio que prestamos a los Ciudadanos. Por favor escríbanos también si tiene otro comentario.
+----------
+bodies name [% bodies_name %]
+missing [% missing %]
+multiple [% multiple %]
+fuzzy [% fuzzy %]
+

@@ -1,6 +1,6 @@
 [%
 
-email_summary = "Se requiere su confirmación para recibir alerta de" _ site_name _ " antes de que podamos enviar la información";
+email_summary = "Se requiere su confirmación para recibir alerta de" _ site_name _;
 email_columns = 1;
 
 PROCESS '_email_settings.html';
@@ -10,10 +10,10 @@ INCLUDE '_email_top.html';
 %]
 
 <th style="[% td_style %][% only_column_style %]">
-  <h1 style="[% h1_style %]">Por favor confirme la sucripción a las alertas vía email&nbsp;</h1>
-  <p style="[% p_style %]">Al hacer click en el link de abajo usted confirma que desea recibir las alertas de CooperaNet para el área seleccionada.</p>
+  <h1 style="[% h1_style %]">Por favor confirme en el siguiente linnk si desea recibir alertas</h1>
+  <p style="[% p_style %]">Al confirmar esta subscripción ustede recibirá notificaciones sobre los registros de incidente en para el área seleccionada.</p>
   <p style="margin: 20px auto; text-align: center">
-    <a style="[% button_style %]" href="[% token_url %]">Si, envíame alertas</a>
+    <a style="[% button_style %]" href="[% token_url %]">Si, envíeme alertas</a>
   </p>
   <p style="[% p_style %]">Si no desea recibir alertas siplemente ignore este correo.</p>
 </th>

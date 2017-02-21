@@ -1,28 +1,26 @@
-Subject: New [% site_name %] updates on report: '[% title %]'
+Subject: Alerta: Nueva actualización en incidente: '[% title %]' en [% site_name %]
 
-You asked us to send you an email every time an update was made to the
-[% site_name %] report: [% title %].
+Usted solicitó el envío de notificación de las actualizaciones del incidente [% title %] registrado en la Aplicación [% site_name %].
 
-The following updates have been left on this report:
+La siguiente actualización ha sido realizada en el registro del incidente:
 
 [% INCLUDE '_email_comment_list.txt' %]
 
 [% state_message %]
 
-If you would like to view or reply to these updates, please visit the following URL:
+Si usted desea realizar algun comentario o actualización del Incidente por favor haz click en el siguiente link:
 
     [% problem_url %]
-
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
 
 [% signature %]
 
 
-Unsubscribe?
+¿Desea cancelar la subscripción?
 
-We currently email you whenever someone leaves an update on the
-[% site_name %] report: [% title %].
+Actualmente recibirá una notificación cada vez que el incidente [% title %] sufra alguna actualización en [% site_name %].
 
-If you no longer wish to receive an email whenever this report is updated,
-please follow this link: [% unsubscribe_url %]
+Si no desea recibir mas notificaciones sobre actualización para este incidente por favor haz click en el siguiente link: 
+
+[% unsubscribe_url %]
+
+Este correo fue enviado de forma automática por la Aplicación CooperaNet, por favor no responda a este correo.
