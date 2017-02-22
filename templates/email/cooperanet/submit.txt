@@ -2,8 +2,11 @@ Subject: Registro de Incidente: [% title %]
 
 
 ORD N°___________/
+
 ANT.: Incidente [% category_line %]
+
 MAT.: NOTIFICA INCIDENTE COOPERANET.
+
 COYHAIQUE, 22 de febrero de 2017
 
 DE	:	CRISTIÁN LÓPEZ MONTECINOS
@@ -12,7 +15,7 @@ GOBERNADOR PROVINCIA DE COYHAIQUE
 A	:	JEFE DE SERVICIO
 		SERVICIO
 
-Junto con saludar a Ud., y en atención a la recepción de Incidente: [% title %] reportado vía Aplicación para Celulares COOPERANET, con fecha 23/02/2017; por don(a) [% name %]; Correo electrónico [% email %], teléfono [% phone_line %] solicito instruir a quien competa dentro de vuestro servicio, informar vía oficio al requirente las acciones seguidas y sus resultados en torno a su solución.
+Junto con saludar a Ud., y en atención a la recepción de Incidente: [% title %] reportado vía Aplicación para Celulares COOPERANET, con fecha 22/02/2017; por don(a) [% name %]; Correo electrónico [% email %], teléfono [% phone_line %] solicito instruir a quien competa dentro de vuestro servicio, informar vía oficio al requirente las acciones seguidas y sus resultados en torno a su solución.
 
 Incidente: [% title %]
 
