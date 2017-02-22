@@ -92,10 +92,14 @@ console.log("El largo del string es"+DirURL2.length);
         HideGroup(myGroup2);
         var element = document.getElementById('form_category');
         element.value = myParam;
+    } else {
+        console.log("el string esta vacio");
     }
 }
 
 function HideGroup(gr) {
+
+    console.log("la funcion hidegroup se ejecuta");
     if (gr!="all") {
         document.getElementById(gr).style.display = "inline";
     } else {
