@@ -80,18 +80,19 @@ function SelectElement()
 {    
     var DirURL = decodeURI(location.search);
     var DirURL2 = decodeURI(DirURL);
-var enform = document.getElementById('form_category').value;
-console.log("el formuario" + enform);
-
     var myGroup2="all";
 
-    myParam = DirURL2.split('cat=')[1];
-    if(DirURL.indexOf("gr")>0) {
-    myGroup = DirURL2.split('gr=')[1];
-    myGroup2 = myGroup.split('&')[0];}
-    HideGroup(myGroup2);
-    var element = document.getElementById('form_category');
-    element.value = myParam;
+console.log("El largo del string es"+DirURL2.length);
+
+    if (DirURL2.length > 2) {
+        myParam = DirURL2.split('cat=')[1];
+        if(DirURL.indexOf("gr")>0) {
+        myGroup = DirURL2.split('gr=')[1];
+        myGroup2 = myGroup.split('&')[0];}
+        HideGroup(myGroup2);
+        var element = document.getElementById('form_category');
+        element.value = myParam;
+    }
 }
 
 function HideGroup(gr) {
