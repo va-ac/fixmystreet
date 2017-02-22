@@ -87,17 +87,6 @@ a.rap-notes-trigger {
     padding: 0;
 }
 
-.report-list-filters_va {
-    padding: 1em;
-    padding-bottom: 1.75em;
-    margin-bottom: 0;
-    color: #0f69b4;
-    font-size: 17px;
-    line-height: 1.8em;
-    font-family: Lato;
-    font-weight: bolder;
-}
-
 #BtnIryFiltrar{
 
   border : solid 0px #ffffff;
@@ -233,6 +222,8 @@ a.report-cta {
     font-family: Lato;
     font-weight: bolder;
     display: none;
+}
+
 }
 
 .campo_opcion_va {
