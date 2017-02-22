@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2016-12-19 17:07-0300\n"
+"PO-Revision-Date: 2017-02-21 19:44-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -455,12 +455,11 @@ msgstr "En espera de revisión"
 
 #: templates/web/base/js/translation_strings.html:31
 msgid "Back"
-msgstr "Atras"
+msgstr "Volver"
 
 #: templates/web/base/report/_main.html:6
-#, fuzzy
 msgid "Back to all reports"
-msgstr "Todas las notificaciones"
+msgstr "Volver a Notificaciones"
 
 #: templates/web/base/admin/report_blocks.html:41
 msgid "Ban email address"
@@ -3055,7 +3054,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:826
 msgid "Sent report back"
-msgstr ""
+msgstr "Volver a Notificaciones"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:724
 msgid "Sent to %s %s later"
