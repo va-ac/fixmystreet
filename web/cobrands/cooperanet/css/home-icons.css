@@ -232,6 +232,7 @@ a.report-cta {
     line-height: 10px;
     font-family: Lato;
     font-weight: bolder;
+    display: none;
 }
 
 .campo_opcion_va {
