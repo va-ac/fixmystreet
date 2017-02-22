@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-02-21 19:44-0300\n"
+"PO-Revision-Date: 2017-02-22 12:52-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -1805,7 +1805,7 @@ msgstr "¡Casi hecho! Ahora Revise su correo electrónico &hellip;"
 
 #: templates/web/base/reports/index.html:24
 msgid "New <br>problems"
-msgstr "Nuevos <br>incidentes"
+msgstr "Nuevos"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:259
 msgid "New body added"
@@ -2050,7 +2050,7 @@ msgstr "OK"
 
 #: templates/web/base/reports/index.html:26
 msgid "Old / unknown <br>problems"
-msgstr "Incidentes<br>Antiguos / desconocidos"
+msgstr "Desatendidos"
 
 #: templates/web/base/admin/questionnaire.html:24
 msgid "Old state"
@@ -2058,11 +2058,11 @@ msgstr "Estado antiguo"
 
 #: templates/web/base/reports/index.html:28
 msgid "Older <br>fixed"
-msgstr "Antiguo <br>arreglado"
+msgstr "Historicos"
 
 #: templates/web/base/reports/index.html:25
 msgid "Older <br>problems"
-msgstr "Incidentes <br>antiguos"
+msgstr "Antiguos"
 
 #: templates/web/base/reports/_list-filters.html:36
 msgid "Oldest"
@@ -2721,7 +2721,7 @@ msgstr "Problemas locales recientes, %s"
 
 #: templates/web/base/reports/index.html:27
 msgid "Recently <br>fixed"
-msgstr "Recientemente <br>arreglado"
+msgstr "Arreglado"
 
 #: templates/web/base/front/recent.html:11
 msgid "Recently reported problems"
