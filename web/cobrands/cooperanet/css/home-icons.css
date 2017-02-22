@@ -9,6 +9,10 @@ a.rap-notes-trigger {
 	
 }
 
+#form_sign_in_yes{
+  display: none;
+}
+
 .btn_email_va{
     display: inline-block;
     margin: 0;
