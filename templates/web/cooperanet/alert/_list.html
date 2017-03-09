@@ -11,6 +11,8 @@
   [% loc('Select which type of alert you’d like and click the button for an RSS feed, or enter your email address to subscribe to an email alert.') %]
   </p>
 
+<br><hr><br><h2>RSS</h2>
+
   [% INCLUDE 'errors.html' %]
 
   <p>
@@ -82,14 +84,12 @@ for the county council.', "%s is the site name"), site_name) %]
 
   <input id="alert_rss_button" class="green-btn" type="submit" name="rss" value="[% loc('Give me an RSS feed') %]">
 
-  <p id="alert_or">
-    [% loc('or') %]
-  </p>
+<br><hr><br><h2>Email</h2>
 
   [% UNLESS c.user_exists %]
     <label for="rznvy">[% loc('Your email') %]</label>
     <input class="form-control" type="text" id="rznvy" name="rznvy" value="[% rznvy | html %]">
   [% END %]
     <input id="alert_email_button" style="margin-top:1em;" class="green-btn" type="submit" name="alert" value="[% loc('Subscribe me to an email alert') %]">
-<br><hr><br>
+<br><hr><br><h2>Telegram</h2>
 <p>Para subscribirte al <a target="_blank" href="https://t.me/joinchat/AAAAAEIb8ZbImvoR3rdZBQ">Canal de Telegram has clic aquí,</a> y recibirás alertas sobre cada Incidente registrado en CooperaNet.</p>
