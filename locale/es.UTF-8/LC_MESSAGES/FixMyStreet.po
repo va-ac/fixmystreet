@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-03-08 18:30+0100\n"
+"PO-Revision-Date: 2017-03-09 13:51+0100\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:639
 #: perllib/FixMyStreet/Script/Reports.pm:199
@@ -75,7 +75,7 @@ msgid ""
 "%s has a variety of RSS feeds and email alerts for local\n"
 "problems, including alerts for all problems within a particular ward, or all\n"
 "problems within a certain distance of a particular location."
-msgstr "%s tiene una variedad de canales RSS y alertas por email de los problemas locales, incluyendo alertas para todos los problemas dentro de un pabellón específico, o todos los problemas dentro de una cierta distancia de un lugar determinado."
+msgstr "%s ofrece la opción de subscribirse a su listado de notificaciones vía Email, Telegram o RSS. "
 
 #. ("%s is the site name")
 #: templates/web/base/alert/index.html:11
@@ -83,7 +83,7 @@ msgid ""
 "%s has a variety of RSS feeds and email alerts for local problems, including\n"
 "alerts for all problems within a particular ward or council, or all problems\n"
 "within a certain distance of a particular location."
-msgstr "%s tiene una variedad de canales RSS y alertas por email de los problemas locales, incluyendo alertas para todos los problemas dentro de una sala especial o consejo, o todos los problemas dentro de una cierta distancia de un lugar determinado."
+msgstr "%s ofrece la opción de subscribirse a su listado de notificaciones vía Email, Telegram o RSS. "
 
 #: templates/web/base/status/stats.html:23
 msgid "%s live updates"
@@ -141,12 +141,12 @@ msgstr "(sin teléfono)"
 
 #: templates/web/base/alert/_list.html:25
 msgid "(a default distance which covers roughly 200,000 people)"
-msgstr "(distancia que cubre aproximadamente 200.000 personas)"
+msgstr "(distancia que cubre aproximadamente 20.000 personas)"
 
 #. ("%s is a list of distance links, e.g. [2km] / [5km] / [10km] / [20km]")
 #: templates/web/base/alert/_list.html:30
 msgid "(alternatively the RSS feed can be customised, within %s)"
-msgstr "(alternativamente el canal de RSS puede ser personalizada, dentro de %s)"
+msgstr "(El canal de RSS puede ser personalizada, dentro de %s)"
 
 #: templates/web/base/report/_item.html:27
 #: templates/web/zurich/report/_item.html:19
@@ -1349,7 +1349,7 @@ msgstr "<strong>%s</strong> Ayude a resolver su problema más rápido, proporcio
 
 #: templates/web/base/alert/_list.html:9
 msgid "Here are the types of local problem alerts for &lsquo;%s&rsquo;."
-msgstr "Estos son los tipos de notificaciones de incidencias locales para '%s'."
+msgstr "Tipos de Notificaciones para las Alertas en %s."
 
 #: templates/web/zurich/footer.html:12
 msgid "Hi %s"
@@ -1648,12 +1648,12 @@ msgstr "Cargando..."
 #: templates/web/base/alert/list.html:5 templates/web/base/alert/updates.html:1
 #: templates/web/base/tokens/confirm_alert.html:1
 msgid "Local RSS feeds and email alerts"
-msgstr "Listados RSS locales y alertas por email"
+msgstr "Recibe alertas por Email, Telegram o RSS"
 
 #: templates/web/base/alert/list.html:1 templates/web/base/alert/list.html:12
 #: templates/web/base/alert/list.html:14 templates/web/base/alert/list.html:3
 msgid "Local RSS feeds and email alerts for ‘%s’"
-msgstr "Listados RSS locales y alertas por email para '%s'"
+msgstr "Recibe alertas por Email, Telegram o RSS para %s"
 
 #: templates/web/base/footer.html:32
 msgid "Local alerts"
@@ -2574,7 +2574,7 @@ msgstr "Incidentes recientemente notificados como arreglados en CooperaNet"
 
 #: templates/web/base/alert/_list.html:22
 msgid "Problems within %.1fkm of this location"
-msgstr "Incidentes en %.1fkm alrededor"
+msgstr "Incidentes en %.1f km alrededor"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:833
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:137
@@ -2666,7 +2666,7 @@ msgstr "Listado RSS para %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:257 perllib/FixMyStreet/Cobrand/UK.pm:269
 msgid "RSS feed for %s ward, %s"
-msgstr "Listado RSS para %s del barrio, %s"
+msgstr "Listado RSS para %s del área, %s"
 
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:153
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:161
@@ -2678,7 +2678,7 @@ msgstr "Listado RSS para %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:282 perllib/FixMyStreet/Cobrand/UK.pm:294
 msgid "RSS feed of %s, within %s ward"
-msgstr "Listado RSS para %s, en el barrio %s"
+msgstr "Listado RSS para %s, en el área %s"
 
 #: templates/web/base/alert/_list.html:23
 msgid "RSS feed of nearby problems"
@@ -2692,7 +2692,7 @@ msgstr "Listado RSS de los incidentes dentro de %s"
 
 #: perllib/FixMyStreet/Cobrand/UK.pm:221
 msgid "RSS feed of problems within %s ward"
-msgstr "Listado RSS de los incidentes dentro del barrio %s"
+msgstr "Listado RSS de los incidentes dentro del área %s"
 
 #: templates/web/base/around/display_location.html:1
 #: templates/web/base/around/display_location.html:4
@@ -3041,7 +3041,7 @@ msgstr "Seleccione un área"
 
 #: templates/web/base/alert/_list.html:11
 msgid "Select which type of alert you’d like and click the button for an RSS feed, or enter your email address to subscribe to an email alert."
-msgstr ""
+msgstr "Escoge que tipo de alerta deseas recibir y luego haz clic en el botón correspondiente:"
 
 #: templates/web/base/admin/category-checkboxes.html:6
 #, fuzzy
@@ -3761,7 +3761,7 @@ msgstr ""
 
 #: templates/web/base/alert/index.html:27
 msgid "To find out what local alerts we have for you, please enter your postcode or street name and area"
-msgstr "Para saber cuáles son las alertas locales que tenemos para usted, por favor introduzca su código postal o el nombre de la calle y el área"
+msgstr "Puede introducir el nombre de su calle para recibir alertas cercanas o escriba Coyhaique para recibir alertas de toda la Ciudad. Haga clic en el botón Ir para continuar."
 
 #: perllib/FixMyStreet/Script/Reports.pm:95
 msgid "To view a map of the precise location of this issue"
