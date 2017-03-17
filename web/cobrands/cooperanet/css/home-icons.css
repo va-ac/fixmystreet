@@ -169,7 +169,7 @@ a.rap-notes-trigger {
   border-top: 1px solid #858d99;
 }
 
-.tabla-notificaciones title{
+.tabla-notificaciones .title{
   text-align: left;
 }
 .tabla-notificaciones  thead th:first-child {
