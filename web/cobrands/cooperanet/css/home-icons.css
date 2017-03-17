@@ -139,7 +139,7 @@ a.rap-notes-trigger {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin: 50px auto;
+  margin: 10px auto;
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -168,6 +168,10 @@ a.rap-notes-trigger {
   background-image: linear-gradient(#646f7f, #4a5564);
   border-top: 1px solid #858d99;
 }
+
+.tabla-notificaciones title{
+  text-align: left;
+}
 .tabla-notificaciones  thead th:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -181,10 +185,10 @@ a.rap-notes-trigger {
 
 .tabla-notificaciones  tbody tr td {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #5f6062;
-  font-size: 13px;
-  padding: 20px 20px 20px 20px;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
   border-bottom: 1px solid #e0e0e0;
 }
 
