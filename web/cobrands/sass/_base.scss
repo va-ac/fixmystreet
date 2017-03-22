@@ -566,7 +566,7 @@ ul.error {
 //defines where the table caption is (login stuff on mob, nav menu on desktop)
 .wrapper {
   width:100%;
-  display:table;
+  display:block;
   // The 'caption' at large widths will be top, moving the menu up magically
   caption-side: bottom;
   // This is so absolutely positioned header stuff doesn't overlap banner...
