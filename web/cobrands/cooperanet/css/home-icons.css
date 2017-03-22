@@ -225,19 +225,28 @@ a.rap-notes-trigger {
   opacity: 1;
 }
 
+/* ----------------------------------------------------------- CSS PARA CELULARES ---------------------------------------*/
+
 @media screen and (max-device-width: 480px) { 
 
+body {
+    font-family: Lato;
+    margin: 0;
+    font-size: 1em;
+    color: #FFFFFE;
+    background-color: #4774B7;
+}
+
   .container{
-    background-color: #4774b7;
     padding: 0px 0px 0px;
   }
 
   .confirmation-header p {
-    color: #FFFFFF;
+    color: #FFFFFE;
   }
 
   .container_2_va {
-    background-color: #FFFFFF;
+    background-color: #FFFFFE;
     padding: 0px 0px 0px;
   }
 
