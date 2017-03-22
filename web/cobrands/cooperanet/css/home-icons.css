@@ -239,6 +239,9 @@ body {
 
   .container{
     padding: 0px 0px 0px;
+    font-size: 1em;
+    color: #FFFFFE;
+    background-color: #4774B7;
   }
 
   .confirmation-header p {
