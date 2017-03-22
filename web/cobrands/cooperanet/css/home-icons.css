@@ -399,4 +399,25 @@ table.nicetable {
   background-color: #47748B;
 }
 
+.tabla-notificaciones {
+  margin: 0px auto;
+  font-size: 12px;
+
+}
+
+
+.tabla-notificaciones  thead th {
+  font-family: 'Patua One', cursive;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.tabla-notificaciones  tbody tr td {
+  font-family: 'Lato';
+  font-size: 10px;
+  padding: 0px 1px 4px 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
 }
