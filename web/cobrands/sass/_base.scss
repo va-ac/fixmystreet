@@ -572,6 +572,9 @@ ul.error {
   // This is so absolutely positioned header stuff doesn't overlap banner...
   position: relative;
 }
+@media only screen and (max-width: 320px) {lock;
+display:block;
+}
 // ...however position: relative stops the map being clickable (?), so better
 // revert it there
 body.mappage .wrapper {
