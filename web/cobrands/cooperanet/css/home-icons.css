@@ -4,6 +4,10 @@
    	height:40px;
 }
 
+.problem-back:link, .problem-back:visited, .problem-back:hover {
+    color: #666;
+}
+
 a.rap-notes-trigger {
 	display:none;
 	
