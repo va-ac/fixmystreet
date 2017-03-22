@@ -425,4 +425,21 @@ table.nicetable {
     margin: 0px 0px 0px 0px;
 }
 
+.item-list--reports__item a {
+    padding: 0 0 0 15px;
+    background-color: #7DA2CF;
+}
+
+li.item-list__item.item-list__item--updates {
+    background-color: #7DA2CF;
+}
+
+.item-list__update-text a {
+    color: #F3F6FA;
+}
+
+.item-list__update-text p {
+    color: black;
+}
+
 }
