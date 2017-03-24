@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-03-09 13:51+0100\n"
+"PO-Revision-Date: 2017-03-24 17:04-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -3118,7 +3118,7 @@ msgstr "Iniciar sesión"
 
 #: templates/web/base/auth/general.html:96
 msgid "Sign in by email instead, providing a new password. When you click the link in your email, your password will be updated."
-msgstr ""
+msgstr "Ingrese una nueva contraseña junto con su correo y revise la bandeja de entrada para actualizar su contraseña."
 
 #: templates/web/base/auth/general.html:1
 #: templates/web/zurich/auth/general.html:1
