@@ -74,7 +74,7 @@ sub send {
         $recips = 1;
         @{$self->to} = [ $row->user->email, $self->to->[0][1] || $row->name ];
     }
-
+	
     unless ($recips) {
         $self->error( 'No recipients' );
         return 1;
@@ -131,6 +131,8 @@ sub prepareTelegram {
 
 	my($telegrammsg) = @_;
 	my $telegramres = sendTelegramMenus($telegrammsg,"-186927773");
+	$telegramres = sendTelegramMenus($telegrammsg,"-157033401");
+	$telegramres = sendTelegramMenus($telegrammsg,"-1001109127574");
 
    # print "el resultado fue: ".$telegramres;
 
