@@ -130,8 +130,7 @@ sub _get_district_for_contact {
 sub prepareTelegram {
 
 	my($telegrammsg) = @_;
-	my $telegramres = sendTelegramMenus($telegrammsg,"-1001079441117");
-	$telegramres = sendTelegramMenus($telegrammsg,"-200081254");
+	my $telegramres = sendTelegramMenus($telegrammsg,"-186927773");
 
    # print "el resultado fue: ".$telegramres;
 
@@ -143,7 +142,7 @@ sub sendTelegramMenus{
     #usage
     #sendTelegram($telegramEndPoint,$textMessage,$chat_id,$replyMarkup)
     my(@values) = @_;
-    my $telegramEndPoint = "https://api.telegram.org/bot355414756:AAGAzxq9UXE-xDHHVJ9DW980wkB-rwzkIl4/sendMessage";
+    my $telegramEndPoint = "https://api.telegram.org/bot207932100:AAHber1wFMgsFsXrJkHPe-e6NB7PO79voI4/sendMessage";
     my $textMessage = $values[0];
     my $chat_id = $values[1];
 

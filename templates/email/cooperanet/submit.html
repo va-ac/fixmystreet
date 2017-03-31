@@ -16,7 +16,7 @@ INCLUDE '_email_top.html';
     <p style="[% secondary_p_style %]">ORD N°_______/</p>
     <p style="[% secondary_p_style %]">ANT.: Incidente N° [% id %]</p>
     <p style="[% secondary_p_style %]">MAT.: NOTIFICA INCIDENTE COOPERANET.</p>
-    <p style="[% secondary_p_style %]">COYHAIQUE, [% confirmed %]</p>
+    <p style="[% secondary_p_style %]">COYHAIQUE, [% confirmed %] dia </p>
     <br>
     <p style="[% secondary_p_style %]">DE: CRISTIÁN LÓPEZ MONTECINOS</p>
     <p style="[% secondary_p_style %]">GOBERNADOR PROVINCIA DE COYHAIQUE</p>
@@ -24,10 +24,11 @@ INCLUDE '_email_top.html';
     <p style="[% secondary_p_style %]">A: JEFE DE SERVICIO</p>
     <p style="[% secondary_p_style %]">SERVICIO</p>
     <br>
-    <p style="[% p_style %]">Junto con saludar a Ud., y en atención a la recepción de Incidente: [% title %] reportado vía Aplicación para Celulares COOPERANET, con fecha 22/02/2017; por don(a) [% name %]; correo electrónico [% email %], [% phone_line %] solicito instruir a quien competa dentro de vuestro servicio, informar vía oficio al requirente las acciones seguidas y sus resultados en torno a su solución.</p>
+    <p style="[% p_style %]">Junto con saludar a Ud., y en atención a la recepción de Incidente: [% title %] reportado vía Aplicación para Celulares COOPERANET, con fecha y hora [% confirmed %]; por don(a) [% name %]; correo electrónico [% email %], [% phone_line %] solicito instruir a quien competa dentro de vuestro servicio, informar vía oficio al requirente las acciones seguidas y sus resultados en torno a su solución.</p>
+
     <p style="margin: 20px auto; text-align: center">
         <a style="[% button_style %]" href="[% url %]">Ver el registro</a>
-      </p>
+      </p>     
     <h2 style="[% h2_style %] margin: 30px 0 10px 0">Registrado por:</h2>
     <table [% table_reset %]>
       <tr>
@@ -59,6 +60,7 @@ INCLUDE '_email_top.html';
     <p style="[% secondary_p_style %]">- Oficina de Partes Gobernación de Coyhaique</p>
     <br>
   <p style="[% p_style %] margin-top: 0.5em;">Al responder directamente a este mensaje, su respuesta será enviada al usuario [% name | html %] quién registro el incidente en CooperaNet.</p>
+  <p> <a href="http://verticaladvise.com/vatools/docgen.php?NI=[% id %]&TI=[% title %]&FI=[% confirmed %]&RP=[% name %]&MI=">Oficio</a></p>
   [% end_padded_box %]
 </th>
 [% WRAPPER '_email_sidebar.html' object = report %]
