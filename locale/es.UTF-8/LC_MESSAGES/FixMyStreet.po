@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-03-24 17:04-0300\n"
+"PO-Revision-Date: 2017-03-31 15:26-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -472,7 +472,7 @@ msgstr "Suspender este email"
 #: templates/web/base/admin/report_edit.html:55
 #: templates/web/zurich/header.html:56
 msgid "Bodies"
-msgstr "Órganos administrativos"
+msgstr "Actores"
 
 #: templates/web/base/admin/flagged.html:17
 #: templates/web/base/admin/index.html:57
@@ -1257,7 +1257,7 @@ msgstr "Para obtener los mejores resultados incluye fotos de cerca y ampliadas"
 
 #: templates/web/base/admin/body-form.html:71
 msgid "For more information, see <a href='http://fixmystreet.org/customising/fms_and_mapit' class='admin-offsite-link'>How FixMyStreet uses Mapit</a>."
-msgstr "Para más información, vea <a href='http://fixmystreet.org/customising/fms_and_mapit' class='admin-offsite-link'>Cómo FixMyStreet usa Mapit</a>."
+msgstr "Para más información, vea <a href='http://fixmystreet.org/customising/fms_and_mapit' class='admin-offsite-link'>Cómo CooperaNet usa Mapit</a>."
 
 #: templates/web/base/auth/general.html:95
 #: templates/web/base/report/new/form_user_loggedout_password.html:20
@@ -1431,8 +1431,8 @@ msgid ""
 "If two or more bodies serve the same location, FixMyStreet combines identical categories into a single entry in\n"
 "                  the menu. Make sure you use the same category name in the bodies if you want this to happen."
 msgstr ""
-"Si dos o más organismos tienen la misma ubicación, FixMyStreet combina categorías de notificaciones idénticas en una sola entrada en\n"
-"el menú. Asegúrese de que utiliza el mismo nombre categoría en ambos órganos si desea que sean combinadas."
+"Si dos o más organismos tienen la misma ubicación, CooperaNet combina categorías de notificaciones idénticas en una sola entrada en\n"
+"el menú. Asegúrese de que utiliza el mismo nombre categoría en ambos Actores si desea que sean combinadas."
 
 #: templates/web/base/questionnaire/completed.html:8
 msgid "If you get some more information about the status of your problem, please come back to the site and leave an update."
@@ -1489,7 +1489,7 @@ msgid ""
 "          when they are shown on the site. Enter the ID (number) of that user."
 msgstr ""
 "Si ha habilitado \"Open311 envío de actualizaciones\", debe identificar qué \n"
-"<strong>usuario</ strong> de FixMyStreet aparece como creador de dichas actualizaciones\n"
+"<strong>usuario</ strong> de CooperaNet aparece como creador de dichas actualizaciones\n"
 "en esta web. Introduzca el ID (número) del usuario."
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:133
@@ -2096,7 +2096,7 @@ msgstr ""
 
 #: templates/web/base/open311/index.html:62
 msgid "Open311 API for the mySociety FixMyStreet server"
-msgstr "API Open311 para el servidor FixMyStreet de mySociety"
+msgstr "API Open311 para el servidor CooperaNet"
 
 #: templates/web/base/admin/open311-form-fields.html:34
 #, fuzzy
@@ -2624,9 +2624,8 @@ msgid "Public response:"
 msgstr "Respuesta del público:"
 
 #: templates/web/base/report/_inspect.html:125
-#, fuzzy
 msgid "Public update:"
-msgstr "Respuesta del público:"
+msgstr "Respuesta al público:"
 
 #: templates/web/zurich/admin/report_edit.html:123
 #: templates/web/zurich/admin/stats.html:38
@@ -2990,7 +2989,7 @@ msgstr "Guardar cambios"
 
 #: templates/web/base/report/_inspect.html:121
 msgid "Save with a public update"
-msgstr ""
+msgstr "Enviar una actualización al público"
 
 #: templates/web/base/admin/index.html:24
 #: templates/web/base/admin/reports.html:1
@@ -3071,7 +3070,7 @@ msgstr "Servicio:"
 
 #: templates/web/base/report/_inspect.html:26
 msgid "Set to my current location"
-msgstr ""
+msgstr "Utilizar mi ubicación actual"
 
 #: templates/web/base/report/display_tools.html:15
 msgid "Share"
@@ -3141,7 +3140,7 @@ msgid ""
 "          sent from your FixMyStreet installation."
 msgstr ""
 "Algunos puntos finales requieren una clave de <strong>API</ strong> para indicar que las notificaciones provienen\n"
-"de tu sistema FixMyStreet."
+"de tu sistema CooperaNet."
 
 #: templates/web/base/alert/index.html:40
 msgid "Some photos of recent reports"
@@ -3435,7 +3434,7 @@ msgstr "Esa notificación no se puede ver en %s."
 
 #: perllib/FixMyStreet/App/Controller/Report.pm:131
 msgid "That report has been removed from FixMyStreet."
-msgstr "Esa notificación ha sido eliminada de FixMyStreet."
+msgstr "Esa notificación ha sido eliminada de CooperaNet."
 
 #: templates/web/base/admin/contact-form.html:25
 msgid ""
@@ -3451,7 +3450,7 @@ msgid ""
 "The <strong>endpoint</strong> is the URL of the service that FixMyStreet will connect to \n"
 "            when sending reports to this body."
 msgstr ""
-"El <strong>destino</strong> es la URL del servicio al que FixMyStreet se conectará \n"
+"El <strong>destino</strong> es la URL del servicio al que CooperaNet se conectará \n"
 "cuando envíe notificaciones al organismo administrativo."
 
 #: templates/web/base/admin/open311-form-fields.html:27
@@ -3777,7 +3776,7 @@ msgstr "Total"
 
 #: templates/web/base/report/_inspect.html:98
 msgid "Traffic management required?"
-msgstr ""
+msgstr "¿Requiere gestión del transito?"
 
 #: templates/web/base/admin/user-form.html:111
 msgid "Trusted by bodies:"
@@ -4065,7 +4064,7 @@ msgstr "En las búsquedas de solicitudes, es también posible buscar por agency_
 
 #: templates/web/base/front/footer-marketing.html:17
 msgid "Would you like to contribute to FixMyStreet? Our code is open source and <a href=\"http://fixmystreet.org\">available at fixmystreet.org</a>."
-msgstr "¿Quieres contribuir a mejorar FixMyStreet? Nuestro código es abierto y está <a href=\"http://fixmystreet.org\">disponible en fixmystreet.org</a>."
+msgstr "¿Quieres contribuir a mejorar CooperaNet? Nuestro código es abierto y está <a href=\"http://fixmystreet.org\">disponible en fixmystreet.org</a>."
 
 #: templates/web/base/questionnaire/index.html:101
 msgid "Would you like to receive another questionnaire in 4 weeks, reminding you to check the status?"
