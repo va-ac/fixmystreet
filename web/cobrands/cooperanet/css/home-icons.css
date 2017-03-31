@@ -157,7 +157,7 @@ a.rap-notes-trigger {
 }
 
 .tabla-notificaciones  thead th {
-  font-family: 'Patua One', cursive;
+  font-family: 'Lato'
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -188,7 +188,7 @@ a.rap-notes-trigger {
 }
 
 .tabla-notificaciones  tbody tr td {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato';
   font-weight: 300;
   color: #5f6062;
   font-size: 20px;
@@ -411,7 +411,7 @@ table.nicetable {
 
 
 .tabla-notificaciones  thead th {
-  font-family: 'Patua One', cursive;
+  font-family: 'Lato';
   font-size: 10px;
   padding: 5px;
 }
