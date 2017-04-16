@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-03-31 15:26-0300\n"
+"PO-Revision-Date: 2017-04-16 13:37-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -278,7 +278,7 @@ msgstr "Agregar nueva categoría"
 #: templates/web/base/report/_main.html:19
 #: templates/web/base/report/_main.html:27
 msgid "Add to shortlist"
-msgstr "Agregar a lista corta"
+msgstr "Agregar a lista favoritos"
 
 #: templates/web/base/admin/user_edit.html:4
 #: templates/web/base/admin/users.html:48
@@ -363,9 +363,8 @@ msgstr "Anónimo:"
 
 #: templates/web/base/report/new/form_user_loggedin.html:20
 #: templates/web/base/report/update/form_name.html:13
-#, fuzzy
 msgid "Another user"
-msgstr "Añadir un usuario"
+msgstr "En nombre de otro usuario"
 
 #: templates/web/base/front/footer-marketing.html:16
 msgid "Are you a developer?"
@@ -1090,7 +1089,7 @@ msgstr "Introduzca un código postal cercano, o el nombre de la calle y el área
 #: templates/web/base/around/postcode_form.html:5
 #: templates/web/base/around/postcode_form.html:6
 msgid "Enter a nearby street name and area"
-msgstr "Introduzca el nombre de una calle cercana al incidente"
+msgstr "Seleccione la categoría que mejor se ajusta al incidente"
 
 #: templates/web/base/auth/general.html:116
 #: templates/web/base/report/new/form_user_loggedout_by_email.html:35
@@ -1669,7 +1668,7 @@ msgstr "MAPA"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:713
 msgid "Manage shortlist"
-msgstr "Gestionar lista"
+msgstr "Gestionar favoritos"
 
 #: templates/web/base/js/translation_strings.html:46
 msgid "Map"
@@ -2743,7 +2742,7 @@ msgstr "Eliminar marca"
 #: templates/web/base/report/_main.html:18
 #: templates/web/base/report/_main.html:24
 msgid "Remove from shortlist"
-msgstr "Remover de esta lista"
+msgstr "Remover de favoritos"
 
 #: templates/web/base/report/display_tools.html:6
 msgid "Remove from site"
@@ -3080,13 +3079,13 @@ msgstr "Compartir"
 #: templates/web/base/report/_main.html:21
 #: templates/web/base/report/_main.html:26
 msgid "Shortlist"
-msgstr ""
+msgstr "Favoritos"
 
 #: templates/web/base/report/_main.html:130
 #: templates/web/base/report/_main.html:20
 #: templates/web/base/report/_main.html:23
 msgid "Shortlisted"
-msgstr ""
+msgstr "Favoritos"
 
 #: templates/web/base/report/_main.html:140
 #, fuzzy
@@ -4291,9 +4290,8 @@ msgstr "Sus actualizaciones"
 
 #: templates/web/base/report/new/form_user_loggedin.html:18
 #: templates/web/base/report/update/form_name.html:11
-#, fuzzy
 msgid "Yourself"
-msgstr "Su email:"
+msgstr "Usuario actual"
 
 #: templates/web/base/admin/category-checkboxes.html:7
 #: templates/web/base/admin/user-form.html:159
