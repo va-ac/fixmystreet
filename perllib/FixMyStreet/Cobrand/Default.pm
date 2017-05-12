@@ -704,16 +704,16 @@ sub available_permissions {
 
     return {
         _("Problems") => {
-            moderate => _("Moderate report details"),
-            report_edit => _("Edit reports"),
-            report_edit_category => _("Edit report category"), # future use
-            report_edit_priority => _("Edit report priority"), # future use
-            report_inspect => _("Markup problem details"),
-            report_instruct => _("Instruct contractors to fix problems"), # future use
-            planned_reports => _("Manage shortlist"),
-            contribute_as_another_user => _("Create reports/updates on a user's behalf"),
-            contribute_as_body => _("Create reports/updates as the council"),
-            view_body_contribute_details => _("See user detail for reports created as the council"),
+            moderate => _("Modificar el Incidente (Moderar)"),
+            report_edit => _("Editar Incidente"),
+            report_edit_category => _("Editar categoria"), # future use
+            report_edit_priority => _("Editar prioridad"), # future use
+            report_inspect => _("Marca el incidente como Favorito"),
+            report_instruct => _("Agregar comentarios para Actores"), # future use
+            planned_reports => _("Gestionar Favoritos"),
+            contribute_as_another_user => _("Crear/Modificar reportes en nombre de otro usuario"),
+            contribute_as_body => _("Crear/Modificar reportes como CooperaNet"),
+            view_body_contribute_details => _("Ver detalles del usuario creados como CooperaNet"),
 
             # NB this permission is special in that it can be assigned to users
             # without their from_body being set. It's included here for
@@ -722,15 +722,15 @@ sub available_permissions {
             # trusted => _("Trusted to make reports that don't need to be inspected"),
         },
         _("Users") => {
-            user_edit => _("Edit other users' details"),
-            user_manage_permissions => _("Edit other users' permissions"),
-            user_assign_body => _("Grant access to the admin"),
-            user_assign_areas => _("Assign users to areas"), # future use
+            user_edit => _("Editgar detalles del Usuario"),
+            user_manage_permissions => _("Editar permisos del usuario"),
+            user_assign_body => _("Entregar acceso de administrador"),
+            user_assign_areas => _("Asignar usuarios a un area"), # future use
         },
         _("Bodies") => {
-            category_edit => _("Add/edit problem categories"),
-            template_edit => _("Add/edit response templates"),
-            responsepriority_edit => _("Add/edit response priorities"),
+            category_edit => _("Agregar/Editar categorias"),
+            template_edit => _("Agregar/Editar plantilla respuesta"),
+            responsepriority_edit => _("Agregar/Editar prioridad de respuesta"),
         },
     };
 }

@@ -12,12 +12,12 @@
                 <input type="button" class="btn js-moderate moderate-display" value="Moderate this update">
                 <div class="moderate-edit">
                     <label><input type="checkbox" class="hide-document" name="update_hide">
-                    Hide update completely?</label>
+                    Ocultar actualizacion completamente?</label>
                     <label><input type="checkbox" name="update_show_name" [% update.anonymous ? '' : 'checked' %]>
                     Show name publicly?</label>
                     [% IF update.photo or original_update.photo %]
                         <label><input type="checkbox" name="update_show_photo" [% update.photo ? 'checked' : '' %]>
-                        Show Photo?</label>
+                        Mostrar Foto?</label>
                     [% END %]
                 </div>
           [% END %]

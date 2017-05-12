@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2016-11-08 11:39+0000\n"
-"PO-Revision-Date: 2017-04-16 13:37-0300\n"
+"PO-Revision-Date: 2017-05-12 10:53-0300\n"
 "Last-Translator: mySociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/mysociety/fixmystreet/language/es_ES/)\n"
 "Language: es_ES\n"
@@ -507,9 +507,8 @@ msgid "Categories"
 msgstr "Categoría"
 
 #: templates/web/base/admin/category-checkboxes.html:2
-#, fuzzy
 msgid "Categories:"
-msgstr "Categoría:"
+msgstr "Categorías:"
 
 #: templates/web/base/admin/body.html:72
 #: templates/web/base/admin/contact-form.html:19
@@ -1692,7 +1691,7 @@ msgstr "Marcado como resuelto/cerrado hace más de ocho semanas"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:711
 msgid "Markup problem details"
-msgstr ""
+msgstr "Marcar el Incidente"
 
 #: templates/web/base/contact/index.html:98
 msgid "Message"
@@ -1719,9 +1718,8 @@ msgid "Moderate"
 msgstr "Modera"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:707
-#, fuzzy
 msgid "Moderate report details"
-msgstr "Incluir datos del notificador"
+msgstr "Modificar los datos del Incidente"
 
 #: templates/web/base/report/_main.html:126
 #, fuzzy
@@ -2904,7 +2902,7 @@ msgstr ""
 
 #: templates/web/base/admin/user-form.html:130
 msgid "Reputation:"
-msgstr ""
+msgstr "Reputación:"
 
 #: templates/web/base/admin/report_edit.html:84
 msgid "Resend report"
@@ -3779,7 +3777,7 @@ msgstr "¿Requiere gestión del transito?"
 
 #: templates/web/base/admin/user-form.html:111
 msgid "Trusted by bodies:"
-msgstr ""
+msgstr "Monitoreo del Actor:"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:721
 msgid "Trusted to make reports that don't need to be inspected"
