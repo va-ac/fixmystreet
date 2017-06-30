@@ -1,0 +1,104 @@
+[% INCLUDE 'header.html', title = loc('Frequently Asked Questions'), bodyclass = 'twothirdswidthpage' %]
+
+[% INCLUDE 'about/_sidebar.html' %]
+
+<h1><a name="faq"></a>[% loc('Frequently Asked Questions') %]</h1>
+    <dl>
+        <dt>¿Qué es Cooperanet?</dt>
+        <dd>CooperaNet es una plataforma para el registro de incidentes de varios tipos que permite a Vecinos, Organismos Públicos y Empresas prestadoras de Servicios Públicos construir un tejido social que concentre información sobre los temas que preocupan a los Vecinos y los antecedentes necesarios para su resolución.<br>Puedes ver un video sobre que es CooperaNet aqui<br><iframe width="560" height="315" src="https://www.youtube.com/embed/Oxg1MSZb0og" frameborder="0" allowfullscreen></iframe></dd>
+
+        <dt>¿Qué incidentes puedo registrar en CooperaNet?</dt>
+            <dd>se pueden registrar mas de 40 tipos de incidentes distintos agrupados en 6 categorías principales:
+                <ul>
+                    <li>Emergencia
+                    <li>Delito
+                    <li>Gestión Escolar
+                    <li>Incivilidad
+                    <li>Gestión Local
+                    <li>Control de Espacios
+                </ul>
+            </dd>
+        <dt>¿Cómo Registro un incidente?</dt>
+            <dd>Puedes ver un video para saber como registrar un incidente en CooperaNet<br><iframe width="560" height="315" src="https://www.youtube.com/embed/jxaCwOIhojg" frameborder="0" allowfullscreen></iframe>
+            </dd>
+    </dl>
+    <dl>
+        <h2>Manuales para el uso de CooperaNet</h2>
+            <ul>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/manuales/Usuario-v1.0.html">Manual de Usuario</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/manuales/Usuario-Monitor-v1.0.html">Manual de Usuario Monitor y Analista</a>
+            </ul>
+    </dl>
+    <dl>
+        <h2>Documentación del Proyecto CooperaNet</h2>
+        <dt>Presentaciones</dt>
+            <ul>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/ppt/Taller-Informativo-Resultados-Encuesta.html">Taller Informativo con los Vecinos y Actores - Presentación</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/ppt/Taller-Levantamiento-Necesidades-v1.1.html">Taller de Levantamiento con los Vecinos y Actores, Mesa Consultiva y Reuniones Contrapartes Técnicas - Presentación</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/ppt/Taller-Invitacion-Experto.html">Inivitación a Experto para Taller de Levantamiento - Carta</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/ppt/Maqueta-v1.0.html">Maqueta Aplicación CooperaNet</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/ppt/Taller-Capacitacion-v1.0.html">Taller de Capacitación uso Aplicación CooperaNet</a>
+            </ul>  
+        <dt>Listado de Asistencia</dt>
+            <ul>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/160914-Reunion-Informativa.html">Reunión Informativa - 14 Septiembre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/161013-Taller-Levantamiento.html">Taller de Levantamiento con los Vecinos y Actores, Mesa Consultiva - 13 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/161221-Taller-de-Presentacion-y-Retroalimentacion.html">Taller de Presentación Demo Aplicación y Retroalimentación - 21 Diciembre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/170113-Presentacion-App-Entrega-Celulares.html">Presentacion Aplicacion y Entrega Celulares - 13 Enero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/170222-Taller-Capacitacion-Monitores-y-Analista.html">Taller Capacitación Usuarios Monitores y Analistas - 22 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/170516-Capacitacion-1-Backoffice-Servicios.html">Capacitación Usuarios Backoffice Servicios - 16 Mayo 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/listas/170606-Capacitacion-2-Backoffice-Servicios.html">Capacitación Usuarios Backoffice Servicios - 6 Junio 2017</a>
+            </ul>
+        <dt>Pautas de Reuniones</dt>
+            <ul>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo1.html">Pauta #1 - Reunión de Coordinación Inicial - 11 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo2.html">Pauta #2 - Mesa de Trabajo - 12 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo3.html">Pauta #3 - Taller de levantamiento de necesidades ciudadanas - 13 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo4.html">Pauta #4 - Entrega de versión demo de la Aplicación - 20 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo5.html">Pauta #5 - Presentación de versión final de la Aplicación - 13 Enero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo6.html">Pauta #6 - Taller de capacitación a otras instituciones publicas y empresas de servicios básicos- Presencial - 24 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo7.html">Pauta #7 - Taller de capacitación a Integrantes del sector público de Mesa Consultiva de Seguridad Ciudadana y Protección Civil - 22 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo8.html">Pauta #8 - Taller de Capacitación Unidades Vecinales - 23 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo9.html">Pauta #9 - Taller de Capacitación Usuarios Monitores y Analistas de la Gobernación - 12 Mayo 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo10.html">Pauta #10 - Taller de Capacitación Usuarios Monitores y Analistas de Otros Actores - 16 Mayo 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/pautas/Pauta-ReunionNo11.html">Pauta #11 - Taller de Capacitación Usuarios Monitores y Analistas de Otros Actores - 6 Junio 2017</a>
+            </ul>
+        <dt>Actas de Reuniones</dt>
+            <ul>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo1.html">Acta #1 - Reunión de Coordinación Inicial - 11 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo2.html">Acta #2 - Mesa de Trabajo - 12 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo3.html">Acta #3 - Taller de levantamiento de necesidades ciudadanas - 13 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo4.html">Acta #4 - Entrega de versión demo de la Aplicación - 20 Octubre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo5.html">Acta #5 - Presentación de versión final de la Aplicación - 13 Enero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo6.html">Acta #6 - Taller de capacitación a otras instituciones publicas y empresas de servicios básicos- Presencial - 24 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo7.html">Acta #7 - Taller de capacitación a Integrantes del sector público de Mesa Consultiva de Seguridad Ciudadana y Protección Civil - 22 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo8.html">Acta #8 - Taller de Capacitación Unidades Vecinales - 23 Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo9.html">Acta #9 - Taller de Capacitación Usuarios Monitores y Analistas de la Gobernación - 12 Mayo 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo10.html">Acta #10 - Taller de Capacitación Usuarios Monitores y Analistas de Otros Actores - 16 Mayo 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/actas/Acta-ReunionNo11.html">Acta #11 - Taller de Capacitación Usuarios Monitores y Analistas de Otros Actores - 6 junio 2017</a>
+            </ul>
+
+        <dt>Videos y Audios Registrados</dt>
+            <ul>
+                <li><a target="_blank" href="https://youtu.be/Q42_TZw7JS8">Presentación Experto - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/zJHj0Vrq4Mo">Presentación de Maqueta de la Aplicación - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/YFCylX-o7Fs">Presentación de versión Web Responsiva de la Aplicación - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/yiNPu5a5OMU">Entrega de celulares - Video y Audio</a>  
+                <li><a target="_blank" href="https://youtu.be/Vj9iPRYA47w">Rescate tanda radial - Audio</a>
+                <li><a target="_blank" href="https://youtu.be/Nb1p5NQqxwI">Rescate tanda televisiva - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/ytbbwaeXWns">Spot TV 1 - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/i8Y7PnijjlI">Spot TV 2 - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/tJILW3bJ6OM">Spot Radial 1 - Video y Audio</a>
+                <li><a target="_blank" href="https://youtu.be/Riw4JPj7PN8">Spot Radial 2 - Video y Audio</a>
+            </ul>
+
+        <dt>Informes de Avance</dt>
+            <ul>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/informes/Primer-Informe-v1.1.html">Primer Informe - Diciembre 2016</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/informes/Segundo-Informe-v1.1.html">Segundo Informe - Enero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/informes/Tercer-Informe-v1.1.html">Tercer Informe - Febrero 2017</a>
+                <li><a target="_blank" href="https://www.cooperanet.cl/cobrands/cooperanet/html/informes/Informe-Final-v1.4.html">Informe Final - Mayo 2017</a>
+            </ul>
+
+    </dl>
+[% INCLUDE 'footer.html' pagefooter = 'yes' %]

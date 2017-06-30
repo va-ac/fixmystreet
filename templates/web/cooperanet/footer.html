@@ -11,7 +11,7 @@
             <div class="nav-wrapper-2">
                 <div id="main-nav" role="navigation">
                     <ul class="nav-menu nav-menu--mysoc">
-                        <li><a id="intcity-logo" class="intcity-logo" href="http://www.miciudadinteligente.com/">MiCiudadInteligente.com</a></li>
+                        <li><a id="intcity-logo" class="intcity-logo" href="http://www.miciudadinteligente.com/">MCI</a></li>
                     </ul>
 [%
     SET base = "";
@@ -30,9 +30,9 @@
                         %]<li><[% IF c.req.uri.path == '/alert'
                             %]span[% ELSE %]a href="[% base %]/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"[% END
                             %]>[% loc("Local alerts") %]</[% c.req.uri.path == '/alert' ? 'span' : 'a' %]></li>[%
-                        %]<!--li><[% IF c.req.uri.path == '/faq'
+                        %]<li><[% IF c.req.uri.path == '/faq'
                             %]span[% ELSE %]a href="[% base %]/faq"[% END
-                            %]>[% loc("Help") %]</[% c.req.uri.path == '/faq' ? 'span' : 'a' %]></li-->[%
+                            %]>[% loc("Help") %]</[% c.req.uri.path == '/faq' ? 'span' : 'a' %]></li>[%
                         %]<!--li class="nav-menu__item--privacy"><[% IF c.req.uri.path == '/privacy'
                             %]span[% ELSE %]a href="[% base %]/privacy"[% END
                             %]>[% loc("Privacy") %]</[% c.req.uri.path == '/privacy' ? 'span' : 'a' %]></li-->
